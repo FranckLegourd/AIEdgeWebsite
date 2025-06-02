@@ -6,9 +6,11 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
+import { useTranslation } from "@/hooks/use-translation";
 
 export default function BlogDetailPage() {
   const { id } = useParams();
+  const { t } = useTranslation();
 
   // Extended blog post data with full content
   const blogPosts = [
@@ -1045,7 +1047,7 @@ export default function BlogDetailPage() {
           <Button variant="ghost" asChild className="mb-6 text-primary hover:text-primary/80">
             <Link href="/blog">
               <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to Blog
+              {t("blog.backToBlog")}
             </Link>
           </Button>
           
@@ -1130,7 +1132,7 @@ export default function BlogDetailPage() {
                 {/* Author Card */}
                 <Card>
                   <CardContent className="p-6">
-                    <h3 className="font-semibold mb-2">About the Author</h3>
+                    <h3 className="font-semibold mb-2">{t("blog.aboutAuthor")}</h3>
                     <p className="text-sm text-muted-foreground">
                       {post.author} is a leading expert in AI and machine learning with over 10 years of experience in the field.
                     </p>
@@ -1142,7 +1144,7 @@ export default function BlogDetailPage() {
                   <CardContent className="p-6">
                     <h3 className="font-semibold mb-4 flex items-center gap-2">
                       <BookOpen className="h-4 w-4" />
-                      Table of Contents
+                      {t("blog.tableOfContents")}
                     </h3>
                     <div className="space-y-2 text-sm">
                       <div className="text-muted-foreground hover:text-primary cursor-pointer">
@@ -1173,7 +1175,7 @@ export default function BlogDetailPage() {
       {relatedPosts.length > 0 && (
         <section className="py-16 bg-gradient-to-r from-primary/5 to-accent/5">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold mb-8 text-center">Related Articles</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center">{t("blog.relatedArticles")}</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {relatedPosts.map((relatedPost) => (
                 <Card key={relatedPost.id} className="group hover:shadow-lg transition-all duration-300 cursor-pointer">

@@ -173,7 +173,7 @@ export default function BlogPage() {
                       variant="ghost" 
                       className="p-0 h-auto text-primary hover:text-primary/80 font-medium"
                     >
-                      Read Article →
+                      {t("blog.readArticle")}
                     </Button>
                   </CardContent>
                 </Card>
@@ -186,18 +186,18 @@ export default function BlogPage() {
       {/* Call to Action */}
       <section className="py-16 bg-gradient-to-r from-primary/5 to-accent/5">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">Stay Updated with AI Innovations</h2>
+          <h2 className="text-3xl font-bold mb-4">{t("blog.newsletter.title")}</h2>
           <p className="text-lg text-muted-foreground mb-8">
-            Subscribe to our newsletter and get the latest insights on AI technology, automation strategies, and industry trends.
+            {t("blog.newsletter.subtitle")}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
             <input
               type="email"
-              placeholder="Enter your email address"
+              placeholder={t("blog.newsletter.placeholder")}
               className="flex-1 px-4 py-3 rounded-lg border border-border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none"
             />
             <Button className="px-8 py-3 bg-primary hover:bg-primary/90">
-              Subscribe
+              {t("blog.newsletter.button")}
             </Button>
           </div>
         </div>
