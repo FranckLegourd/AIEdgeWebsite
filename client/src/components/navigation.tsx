@@ -27,6 +27,7 @@ export function Navigation() {
     { path: "/", label: t("nav.home") },
     { path: "/services", label: t("nav.services") },
     { path: "/about", label: t("nav.about") },
+    { path: "/blog", label: t("nav.blog") },
     { path: "/contact", label: t("nav.contact") },
   ];
 
