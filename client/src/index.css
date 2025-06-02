@@ -27,6 +27,32 @@
   --radius: 0.75rem;
 }
 
+/* Custom purple scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(280 100% 50%);
+  border-radius: 6px;
+  border: 2px solid hsl(var(--background));
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(280 100% 40%);
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(280 100% 50%) hsl(var(--background));
+}
+
 .dark {
   --background: 260 30% 8%;
   --foreground: 260 15% 95%;
