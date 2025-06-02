@@ -41,7 +41,7 @@ export function PartnerTicker() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8">
           <p className="text-sm text-muted-foreground font-medium">
-            We proudly showcase our trusted partners, providing excellence across industries.
+            We proudly showcase our trusted partners, providing excellence accross the AI technology stack
           </p>
         </div>
         
