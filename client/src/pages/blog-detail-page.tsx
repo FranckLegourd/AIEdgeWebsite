@@ -1134,7 +1134,7 @@ export default function BlogDetailPage() {
                   <CardContent className="p-6">
                     <h3 className="font-semibold mb-2">{t("blog.aboutAuthor")}</h3>
                     <p className="text-sm text-muted-foreground">
-                      {post.author} is a leading expert in AI and machine learning with over 10 years of experience in the field.
+                      {post.author} {t("blog.authorBio")}
                     </p>
                   </CardContent>
                 </Card>
@@ -1148,19 +1148,19 @@ export default function BlogDetailPage() {
                     </h3>
                     <div className="space-y-2 text-sm">
                       <div className="text-muted-foreground hover:text-primary cursor-pointer">
-                        Introduction
+                        {t("blog.tableOfContentsItems.introduction")}
                       </div>
                       <div className="text-muted-foreground hover:text-primary cursor-pointer">
-                        Key Concepts
+                        {t("blog.tableOfContentsItems.keyConcepts")}
                       </div>
                       <div className="text-muted-foreground hover:text-primary cursor-pointer">
-                        Implementation
+                        {t("blog.tableOfContentsItems.implementation")}
                       </div>
                       <div className="text-muted-foreground hover:text-primary cursor-pointer">
-                        Best Practices
+                        {t("blog.tableOfContentsItems.bestPractices")}
                       </div>
                       <div className="text-muted-foreground hover:text-primary cursor-pointer">
-                        Conclusion
+                        {t("blog.tableOfContentsItems.conclusion")}
                       </div>
                     </div>
                   </CardContent>

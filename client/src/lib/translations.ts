@@ -151,6 +151,14 @@ export const translations = {
           title: "AI Ethics and Responsible Development Practices",
           excerpt: "Understanding the importance of ethical AI development and implementing responsible practices in AI projects."
         }
+      },
+      authorBio: "is a leading expert in AI and machine learning with over 10 years of experience in the field.",
+      tableOfContentsItems: {
+        introduction: "Introduction",
+        keyConcepts: "Key Concepts", 
+        implementation: "Implementation",
+        bestPractices: "Best Practices",
+        conclusion: "Conclusion"
       }
     }
   },
@@ -306,6 +314,14 @@ export const translations = {
           title: "Éthique IA et Pratiques de Développement Responsables",
           excerpt: "Comprendre l'importance du développement IA éthique et implémenter des pratiques responsables dans les projets IA."
         }
+      },
+      authorBio: "est un expert reconnu en IA et apprentissage automatique avec plus de 10 ans d'expérience dans le domaine.",
+      tableOfContentsItems: {
+        introduction: "Introduction",
+        keyConcepts: "Concepts Clés",
+        implementation: "Implémentation", 
+        bestPractices: "Meilleures Pratiques",
+        conclusion: "Conclusion"
       }
     }
   },
@@ -461,6 +477,14 @@ export const translations = {
           title: "Ética IA y Prácticas de Desarrollo Responsables",
           excerpt: "Entendiendo la importancia del desarrollo IA ético e implementando prácticas responsables en proyectos IA."
         }
+      },
+      authorBio: "es un experto líder en IA y aprendizaje automático con más de 10 años de experiencia en el campo.",
+      tableOfContentsItems: {
+        introduction: "Introducción",
+        keyConcepts: "Conceptos Clave",
+        implementation: "Implementación",
+        bestPractices: "Mejores Prácticas", 
+        conclusion: "Conclusión"
       }
     }
   }
