@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "wouter";
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
+import { PartnerTicker } from "@/components/partner-ticker";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { useTranslation } from "@/hooks/use-translation";
@@ -182,6 +183,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Partner Ticker */}
+      <PartnerTicker />
 
       {/* Services Section */}
       <section className="py-20 bg-gray-50 dark:bg-gray-800/50">
