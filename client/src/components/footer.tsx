@@ -1,17 +1,27 @@
 import { Link } from "wouter";
 import { useTranslation } from "@/hooks/use-translation";
+import { useTheme } from "@/hooks/use-theme";
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Twitter } from "lucide-react";
+import logoDark from "@assets/logo_dark.png";
+import logoLight from "@assets/logo_light.png";
 
 export function Footer() {
   const { t, language, setLanguage, languages } = useTranslation();
+  const { theme } = useTheme();
 
   return (
     <footer className="bg-gray-900 dark:bg-black text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">AI Edge International</h3>
+            <Link href="/" className="inline-block mb-4">
+              <img 
+                src={theme === "light" ? logoLight : logoDark} 
+                alt="AI Edge International" 
+                className="h-10 w-auto"
+              />
+            </Link>
             <p className="text-gray-400 mb-4">
               {t("footer.description")}
             </p>
