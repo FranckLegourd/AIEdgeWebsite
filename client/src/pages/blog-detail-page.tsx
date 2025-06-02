@@ -249,7 +249,7 @@ export default function BlogDetailPage() {
                   <CardContent className="p-6">
                     <h3 className="font-semibold mb-2">{t("blog.newsletter.title")}</h3>
                     <p className="text-sm text-muted-foreground mb-4">
-                      {t("blog.newsletter.description")}
+                      {t("blog.newsletter.subtitle")}
                     </p>
                     <div className="space-y-2">
                       <input
@@ -258,7 +258,7 @@ export default function BlogDetailPage() {
                         className="w-full px-3 py-2 border border-border rounded-md bg-background text-foreground text-sm"
                       />
                       <Button size="sm" className="w-full">
-                        {t("blog.newsletter.subscribe")}
+                        {t("blog.newsletter.button")}
                       </Button>
                     </div>
                   </CardContent>
