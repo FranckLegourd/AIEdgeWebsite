@@ -4,6 +4,8 @@ import { useTranslation } from "@/hooks/use-translation";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Navigation } from "@/components/navigation";
+import { Footer } from "@/components/footer";
 
 export default function BlogPage() {
   const { t } = useTranslation();
@@ -84,6 +86,7 @@ export default function BlogPage() {
 
   return (
     <div className="min-h-screen bg-background">
+      <Navigation />
       {/* Header Section */}
       <section className="relative bg-gradient-to-br from-primary/10 via-accent/5 to-primary/5 py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -199,6 +202,7 @@ export default function BlogPage() {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }
