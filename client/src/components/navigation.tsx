@@ -13,6 +13,8 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import logoDark from "@assets/logo_dark.png";
+import logoLight from "@assets/logo_light.png";
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,7 +40,11 @@ export function Navigation() {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-4">
             <Link href="/" className="flex-shrink-0">
-              <h1 className="text-xl font-bold text-primary">AI Edge International</h1>
+              <img 
+                src={theme === "light" ? logoLight : logoDark} 
+                alt="AI Edge International" 
+                className="h-8 w-auto"
+              />
             </Link>
           </div>
 
