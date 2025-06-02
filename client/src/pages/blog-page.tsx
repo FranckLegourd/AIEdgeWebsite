@@ -20,8 +20,8 @@ export default function BlogPage() {
   const blogPosts = [
     {
       id: 1,
-      title: "The Future of AI Agent Systems in Business Automation",
-      excerpt: "Discover how AI agents are revolutionizing business processes and creating new opportunities for intelligent automation across industries.",
+      title: t("blog.posts.1.title"),
+      excerpt: t("blog.posts.1.excerpt"),
       category: "highlights",
       readTime: `5 ${t("blog.readTime")}`,
       date: "Dec 15, 2024",
@@ -30,8 +30,8 @@ export default function BlogPage() {
     },
     {
       id: 2,
-      title: "Machine Learning Model Deployment: Best Practices for 2024",
-      excerpt: "A comprehensive guide to deploying ML models in production environments with security, scalability, and performance in mind.",
+      title: t("blog.posts.2.title"),
+      excerpt: t("blog.posts.2.excerpt"),
       category: "updates",
       readTime: `7 ${t("blog.readTime")}`,
       date: "Dec 12, 2024",
@@ -40,8 +40,8 @@ export default function BlogPage() {
     },
     {
       id: 3,
-      title: "Natural Language Processing: Transforming Customer Support",
-      excerpt: "How advanced NLP techniques are enabling more intelligent and empathetic customer service experiences.",
+      title: t("blog.posts.3.title"),
+      excerpt: t("blog.posts.3.excerpt"),
       category: "highlights",
       readTime: `6 ${t("blog.readTime")}`,
       date: "Dec 8, 2024",
@@ -50,8 +50,8 @@ export default function BlogPage() {
     },
     {
       id: 4,
-      title: "Computer Vision Applications in Quality Control",
-      excerpt: "Exploring how computer vision is revolutionizing manufacturing quality control and defect detection processes.",
+      title: t("blog.posts.4.title"),
+      excerpt: t("blog.posts.4.excerpt"),
       category: "updates",
       readTime: `4 ${t("blog.readTime")}`,
       date: "Dec 5, 2024",
@@ -60,8 +60,8 @@ export default function BlogPage() {
     },
     {
       id: 5,
-      title: "Predictive Analytics: From Data to Decision Making",
-      excerpt: "Learn how predictive analytics models are helping businesses make data-driven decisions and forecast future trends.",
+      title: t("blog.posts.5.title"),
+      excerpt: t("blog.posts.5.excerpt"),
       category: "highlights",
       readTime: `8 ${t("blog.readTime")}`,
       date: "Dec 1, 2024",
@@ -70,8 +70,8 @@ export default function BlogPage() {
     },
     {
       id: 6,
-      title: "AI Ethics and Responsible Development Practices",
-      excerpt: "Understanding the importance of ethical AI development and implementing responsible practices in AI projects.",
+      title: t("blog.posts.6.title"),
+      excerpt: t("blog.posts.6.excerpt"),
       category: "updates",
       readTime: `6 ${t("blog.readTime")}`,
       date: "Nov 28, 2024",

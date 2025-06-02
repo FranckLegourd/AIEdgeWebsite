@@ -125,6 +125,32 @@ export const translations = {
         subtitle: "Subscribe to our newsletter and get the latest insights on AI technology, automation strategies, and industry trends.",
         placeholder: "Enter your email address",
         button: "Subscribe"
+      },
+      posts: {
+        1: {
+          title: "The Future of AI Agent Systems in Business Automation",
+          excerpt: "Discover how AI agents are revolutionizing business processes and creating new opportunities for intelligent automation across industries."
+        },
+        2: {
+          title: "Machine Learning Model Deployment: Best Practices for 2024",
+          excerpt: "A comprehensive guide to deploying ML models in production environments with security, scalability, and performance in mind."
+        },
+        3: {
+          title: "Natural Language Processing: Transforming Customer Support",
+          excerpt: "How advanced NLP techniques are enabling more intelligent and empathetic customer service experiences."
+        },
+        4: {
+          title: "Computer Vision Applications in Quality Control",
+          excerpt: "Exploring how computer vision is revolutionizing manufacturing quality control and defect detection processes."
+        },
+        5: {
+          title: "Predictive Analytics: From Data to Decision Making",
+          excerpt: "Learn how predictive analytics models are helping businesses make data-driven decisions and forecast future trends."
+        },
+        6: {
+          title: "AI Ethics and Responsible Development Practices",
+          excerpt: "Understanding the importance of ethical AI development and implementing responsible practices in AI projects."
+        }
       }
     }
   },
@@ -254,6 +280,32 @@ export const translations = {
         subtitle: "Abonnez-vous à notre newsletter et recevez les dernières informations sur la technologie IA, les stratégies d'automatisation et les tendances de l'industrie.",
         placeholder: "Entrez votre adresse email",
         button: "S'abonner"
+      },
+      posts: {
+        1: {
+          title: "L'Avenir des Systèmes d'Agents IA dans l'Automatisation Commerciale",
+          excerpt: "Découvrez comment les agents IA révolutionnent les processus commerciaux et créent de nouvelles opportunités d'automatisation intelligente dans toutes les industries."
+        },
+        2: {
+          title: "Déploiement de Modèles d'Apprentissage Automatique : Meilleures Pratiques 2024",
+          excerpt: "Un guide complet pour déployer des modèles ML en environnements de production avec sécurité, évolutivité et performance à l'esprit."
+        },
+        3: {
+          title: "Traitement du Langage Naturel : Transformer le Support Client",
+          excerpt: "Comment les techniques NLP avancées permettent des expériences de service client plus intelligentes et empathiques."
+        },
+        4: {
+          title: "Applications de Vision par Ordinateur dans le Contrôle Qualité",
+          excerpt: "Explorer comment la vision par ordinateur révolutionne le contrôle qualité en fabrication et les processus de détection de défauts."
+        },
+        5: {
+          title: "Analyse Prédictive : Des Données à la Prise de Décision",
+          excerpt: "Apprenez comment les modèles d'analyse prédictive aident les entreprises à prendre des décisions basées sur les données et prévoir les tendances futures."
+        },
+        6: {
+          title: "Éthique IA et Pratiques de Développement Responsables",
+          excerpt: "Comprendre l'importance du développement IA éthique et implémenter des pratiques responsables dans les projets IA."
+        }
       }
     }
   },
@@ -383,6 +435,32 @@ export const translations = {
         subtitle: "Suscríbete a nuestro newsletter y obtén las últimas ideas sobre tecnología IA, estrategias de automatización y tendencias de la industria.",
         placeholder: "Ingresa tu dirección de email",
         button: "Suscribirse"
+      },
+      posts: {
+        1: {
+          title: "El Futuro de los Sistemas de Agentes IA en la Automatización Empresarial",
+          excerpt: "Descubre cómo los agentes IA están revolucionando los procesos comerciales y creando nuevas oportunidades para la automatización inteligente en todas las industrias."
+        },
+        2: {
+          title: "Despliegue de Modelos de Aprendizaje Automático: Mejores Prácticas 2024",
+          excerpt: "Una guía completa para desplegar modelos ML en entornos de producción con seguridad, escalabilidad y rendimiento en mente."
+        },
+        3: {
+          title: "Procesamiento de Lenguaje Natural: Transformando el Soporte al Cliente",
+          excerpt: "Cómo las técnicas NLP avanzadas están habilitando experiencias de servicio al cliente más inteligentes y empáticas."
+        },
+        4: {
+          title: "Aplicaciones de Visión por Computadora en Control de Calidad",
+          excerpt: "Explorando cómo la visión por computadora está revolucionando el control de calidad manufacturero y los procesos de detección de defectos."
+        },
+        5: {
+          title: "Análisis Predictivo: De Datos a Toma de Decisiones",
+          excerpt: "Aprende cómo los modelos de análisis predictivo están ayudando a las empresas a tomar decisiones basadas en datos y pronosticar tendencias futuras."
+        },
+        6: {
+          title: "Ética IA y Prácticas de Desarrollo Responsables",
+          excerpt: "Entendiendo la importancia del desarrollo IA ético e implementando prácticas responsables en proyectos IA."
+        }
       }
     }
   }
