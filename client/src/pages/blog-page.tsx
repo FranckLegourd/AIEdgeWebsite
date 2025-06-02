@@ -12,9 +12,9 @@ export default function BlogPage() {
   const [activeFilter, setActiveFilter] = useState("all");
 
   const filters = [
-    { id: "all", label: "All" },
-    { id: "highlights", label: "Highlights" },
-    { id: "updates", label: "Updates" },
+    { id: "all", label: t("blog.filters.all") },
+    { id: "highlights", label: t("blog.filters.highlights") },
+    { id: "updates", label: t("blog.filters.updates") },
   ];
 
   const blogPosts = [
@@ -23,7 +23,7 @@ export default function BlogPage() {
       title: "The Future of AI Agent Systems in Business Automation",
       excerpt: "Discover how AI agents are revolutionizing business processes and creating new opportunities for intelligent automation across industries.",
       category: "highlights",
-      readTime: "5 min read",
+      readTime: `5 ${t("blog.readTime")}`,
       date: "Dec 15, 2024",
       image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=500&h=300&fit=crop&crop=center",
       tags: ["AI Agents", "Automation", "Business"]
@@ -33,7 +33,7 @@ export default function BlogPage() {
       title: "Machine Learning Model Deployment: Best Practices for 2024",
       excerpt: "A comprehensive guide to deploying ML models in production environments with security, scalability, and performance in mind.",
       category: "updates",
-      readTime: "7 min read",
+      readTime: `7 ${t("blog.readTime")}`,
       date: "Dec 12, 2024",
       image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=500&h=300&fit=crop&crop=center",
       tags: ["Machine Learning", "DevOps", "Production"]
@@ -43,7 +43,7 @@ export default function BlogPage() {
       title: "Natural Language Processing: Transforming Customer Support",
       excerpt: "How advanced NLP techniques are enabling more intelligent and empathetic customer service experiences.",
       category: "highlights",
-      readTime: "6 min read",
+      readTime: `6 ${t("blog.readTime")}`,
       date: "Dec 8, 2024",
       image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=500&h=300&fit=crop&crop=center",
       tags: ["NLP", "Customer Support", "AI"]
@@ -53,7 +53,7 @@ export default function BlogPage() {
       title: "Computer Vision Applications in Quality Control",
       excerpt: "Exploring how computer vision is revolutionizing manufacturing quality control and defect detection processes.",
       category: "updates",
-      readTime: "4 min read",
+      readTime: `4 ${t("blog.readTime")}`,
       date: "Dec 5, 2024",
       image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=500&h=300&fit=crop&crop=center",
       tags: ["Computer Vision", "Manufacturing", "Quality Control"]
@@ -63,7 +63,7 @@ export default function BlogPage() {
       title: "Predictive Analytics: From Data to Decision Making",
       excerpt: "Learn how predictive analytics models are helping businesses make data-driven decisions and forecast future trends.",
       category: "highlights",
-      readTime: "8 min read",
+      readTime: `8 ${t("blog.readTime")}`,
       date: "Dec 1, 2024",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop&crop=center",
       tags: ["Predictive Analytics", "Data Science", "Business Intelligence"]
@@ -73,7 +73,7 @@ export default function BlogPage() {
       title: "AI Ethics and Responsible Development Practices",
       excerpt: "Understanding the importance of ethical AI development and implementing responsible practices in AI projects.",
       category: "updates",
-      readTime: "6 min read",
+      readTime: `6 ${t("blog.readTime")}`,
       date: "Nov 28, 2024",
       image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=500&h=300&fit=crop&crop=center",
       tags: ["AI Ethics", "Responsible AI", "Development"]
@@ -91,10 +91,10 @@ export default function BlogPage() {
       <section className="relative bg-gradient-to-br from-primary/10 via-accent/5 to-primary/5 py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6 animate-fade-in">
-            World of AI Innovation
+            {t("blog.title")}
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8 animate-slide-up">
-            Dive into our curated collection of insights, tutorials, and perspectives that explore the cutting-edge world of artificial intelligence and automation.
+            {t("blog.subtitle")}
           </p>
           
           {/* Filter Buttons */}

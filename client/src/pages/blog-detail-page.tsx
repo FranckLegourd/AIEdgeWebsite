@@ -1131,12 +1131,9 @@ export default function BlogDetailPage() {
                 <Card>
                   <CardContent className="p-6">
                     <h3 className="font-semibold mb-2">About the Author</h3>
-                    <p className="text-sm text-muted-foreground mb-3">
+                    <p className="text-sm text-muted-foreground">
                       {post.author} is a leading expert in AI and machine learning with over 10 years of experience in the field.
                     </p>
-                    <Button variant="outline" size="sm" className="w-full">
-                      View Profile
-                    </Button>
                   </CardContent>
                 </Card>
                 

@@ -105,6 +105,27 @@ export const translations = {
       legal: "Legal",
       copyright: "© 2024 AI Edge International. All rights reserved.",
       availableIn: "Available in:"
+    },
+    blog: {
+      title: "World of AI Innovation",
+      subtitle: "Dive into our curated collection of insights, tutorials, and perspectives that explore the cutting-edge world of artificial intelligence and automation.",
+      filters: {
+        all: "All",
+        highlights: "Highlights",
+        updates: "Updates"
+      },
+      readTime: "min read",
+      readArticle: "Read Article →",
+      backToBlog: "Back to Blog",
+      aboutAuthor: "About the Author",
+      tableOfContents: "Table of Contents",
+      relatedArticles: "Related Articles",
+      newsletter: {
+        title: "Stay Updated with AI Innovations",
+        subtitle: "Subscribe to our newsletter and get the latest insights on AI technology, automation strategies, and industry trends.",
+        placeholder: "Enter your email address",
+        button: "Subscribe"
+      }
     }
   },
   fr: {
@@ -213,6 +234,27 @@ export const translations = {
       legal: "Légal",
       copyright: "© 2024 AI Edge International. Tous droits réservés.",
       availableIn: "Disponible en :"
+    },
+    blog: {
+      title: "Monde de l'Innovation IA",
+      subtitle: "Plongez dans notre collection d'insights, tutoriels et perspectives qui explorent le monde de pointe de l'intelligence artificielle et de l'automatisation.",
+      filters: {
+        all: "Tous",
+        highlights: "Points Forts",
+        updates: "Mises à Jour"
+      },
+      readTime: "min de lecture",
+      readArticle: "Lire l'Article →",
+      backToBlog: "Retour au Blog",
+      aboutAuthor: "À Propos de l'Auteur",
+      tableOfContents: "Table des Matières",
+      relatedArticles: "Articles Connexes",
+      newsletter: {
+        title: "Restez Informé des Innovations IA",
+        subtitle: "Abonnez-vous à notre newsletter et recevez les dernières informations sur la technologie IA, les stratégies d'automatisation et les tendances de l'industrie.",
+        placeholder: "Entrez votre adresse email",
+        button: "S'abonner"
+      }
     }
   },
   es: {
@@ -321,6 +363,27 @@ export const translations = {
       legal: "Legal",
       copyright: "© 2024 AI Edge International. Todos los derechos reservados.",
       availableIn: "Disponible en:"
+    },
+    blog: {
+      title: "Mundo de Innovación IA",
+      subtitle: "Sumérgete en nuestra colección curada de insights, tutoriales y perspectivas que exploran el mundo de vanguardia de la inteligencia artificial y la automatización.",
+      filters: {
+        all: "Todos",
+        highlights: "Destacados",
+        updates: "Actualizaciones"
+      },
+      readTime: "min de lectura",
+      readArticle: "Leer Artículo →",
+      backToBlog: "Volver al Blog",
+      aboutAuthor: "Acerca del Autor",
+      tableOfContents: "Tabla de Contenidos",
+      relatedArticles: "Artículos Relacionados",
+      newsletter: {
+        title: "Mantente Actualizado con Innovaciones IA",
+        subtitle: "Suscríbete a nuestro newsletter y obtén las últimas ideas sobre tecnología IA, estrategias de automatización y tendencias de la industria.",
+        placeholder: "Ingresa tu dirección de email",
+        button: "Suscribirse"
+      }
     }
   }
 };
