@@ -45,40 +45,28 @@ export function PartnerTicker() {
           </p>
         </div>
         
-        <div className="relative">
-          {/* Gradient overlays for smooth fade effect */}
-          <div className="absolute left-0 top-0 w-20 h-full bg-gradient-to-r from-muted/30 to-transparent z-10"></div>
-          <div className="absolute right-0 top-0 w-20 h-full bg-gradient-to-l from-muted/30 to-transparent z-10"></div>
+        <div className="relative overflow-hidden">
+          {/* Enhanced gradient overlays for fade effect */}
+          <div className="absolute left-0 top-0 w-32 h-full bg-gradient-to-r from-muted/30 via-muted/30 to-transparent z-10 pointer-events-none"></div>
+          <div className="absolute right-0 top-0 w-32 h-full bg-gradient-to-l from-muted/30 via-muted/30 to-transparent z-10 pointer-events-none"></div>
           
-          {/* Scrolling container */}
-          <div className="flex animate-scroll">
-            {/* First set of logos */}
-            <div className="flex items-center justify-center min-w-max">
-              {partners.map((partner, index) => (
-                <div
-                  key={`first-${index}`}
-                  className="mx-8 flex items-center justify-center h-16 w-32 grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100"
-                >
-                  <div className="text-lg font-bold text-foreground/70 hover:text-foreground transition-colors">
-                    {partner.name}
+          {/* Scrolling container with multiple copies for seamless loop */}
+          <div className="flex animate-scroll-seamless">
+            {/* Create multiple sets for seamless scrolling */}
+            {[...Array(4)].map((_, setIndex) => (
+              <div key={setIndex} className="flex items-center justify-center min-w-max">
+                {partners.map((partner, index) => (
+                  <div
+                    key={`set-${setIndex}-${index}`}
+                    className="mx-8 flex items-center justify-center h-16 w-32 transition-all duration-300 opacity-60 hover:opacity-100"
+                  >
+                    <div className="text-lg font-bold text-foreground/70 hover:text-foreground transition-colors">
+                      {partner.name}
+                    </div>
                   </div>
-                </div>
-              ))}
-            </div>
-            
-            {/* Duplicate set for seamless loop */}
-            <div className="flex items-center justify-center min-w-max">
-              {partners.map((partner, index) => (
-                <div
-                  key={`second-${index}`}
-                  className="mx-8 flex items-center justify-center h-16 w-32 grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100"
-                >
-                  <div className="text-lg font-bold text-foreground/70 hover:text-foreground transition-colors">
-                    {partner.name}
-                  </div>
-                </div>
-              ))}
-            </div>
+                ))}
+              </div>
+            ))}
           </div>
         </div>
       </div>
