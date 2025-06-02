@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "wouter";
 import { useTranslation } from "@/hooks/use-translation";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -118,61 +119,62 @@ export default function BlogPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredPosts.map((post) => (
-              <Card 
-                key={post.id} 
-                className="group hover:shadow-xl transition-all duration-300 overflow-hidden border-border/50 hover:border-primary/20 cursor-pointer"
-              >
-                <div className="relative overflow-hidden">
-                  <img
-                    src={post.image}
-                    alt={post.title}
-                    className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
-                  <div className="absolute top-4 left-4">
-                    <Badge 
-                      variant="secondary" 
-                      className="bg-primary/90 text-primary-foreground capitalize"
-                    >
-                      {post.category}
-                    </Badge>
-                  </div>
-                </div>
-                
-                <CardHeader className="pb-3">
-                  <div className="flex items-center justify-between text-sm text-muted-foreground mb-2">
-                    <span>{post.date}</span>
-                    <span>{post.readTime}</span>
-                  </div>
-                  <CardTitle className="text-xl font-semibold leading-tight group-hover:text-primary transition-colors duration-200">
-                    {post.title}
-                  </CardTitle>
-                </CardHeader>
-                
-                <CardContent className="pt-0">
-                  <p className="text-muted-foreground leading-relaxed mb-4">
-                    {post.excerpt}
-                  </p>
-                  
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {post.tags.map((tag) => (
+              <Link key={post.id} href={`/blog/${post.id}`}>
+                <Card 
+                  className="group hover:shadow-xl transition-all duration-300 overflow-hidden border-border/50 hover:border-primary/20 cursor-pointer"
+                >
+                  <div className="relative overflow-hidden">
+                    <img
+                      src={post.image}
+                      alt={post.title}
+                      className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
+                    <div className="absolute top-4 left-4">
                       <Badge 
-                        key={tag} 
-                        variant="outline" 
-                        className="text-xs border-primary/20 text-primary/80"
+                        variant="secondary" 
+                        className="bg-primary/90 text-primary-foreground capitalize"
                       >
-                        {tag}
+                        {post.category}
                       </Badge>
-                    ))}
+                    </div>
                   </div>
                   
-                  <Button 
-                    variant="ghost" 
-                    className="p-0 h-auto text-primary hover:text-primary/80 font-medium"
-                  >
-                    Read Article →
-                  </Button>
-                </CardContent>
-              </Card>
+                  <CardHeader className="pb-3">
+                    <div className="flex items-center justify-between text-sm text-muted-foreground mb-2">
+                      <span>{post.date}</span>
+                      <span>{post.readTime}</span>
+                    </div>
+                    <CardTitle className="text-xl font-semibold leading-tight group-hover:text-primary transition-colors duration-200">
+                      {post.title}
+                    </CardTitle>
+                  </CardHeader>
+                  
+                  <CardContent className="pt-0">
+                    <p className="text-muted-foreground leading-relaxed mb-4">
+                      {post.excerpt}
+                    </p>
+                    
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {post.tags.map((tag) => (
+                        <Badge 
+                          key={tag} 
+                          variant="outline" 
+                          className="text-xs border-primary/20 text-primary/80"
+                        >
+                          {tag}
+                        </Badge>
+                      ))}
+                    </div>
+                    
+                    <Button 
+                      variant="ghost" 
+                      className="p-0 h-auto text-primary hover:text-primary/80 font-medium"
+                    >
+                      Read Article →
+                    </Button>
+                  </CardContent>
+                </Card>
+              </Link>
             ))}
           </div>
         </div>

@@ -13,6 +13,7 @@ import AdminDashboard from "@/pages/admin-dashboard";
 import ServicesPage from "@/pages/services-page";
 import AboutPage from "@/pages/about-page";
 import BlogPage from "@/pages/blog-page";
+import BlogDetailPage from "@/pages/blog-detail-page";
 import ContactPage from "@/pages/contact-page";
 import NotFound from "@/pages/not-found";
 
@@ -23,6 +24,7 @@ function Router() {
       <Route path="/services" component={ServicesPage} />
       <Route path="/about" component={AboutPage} />
       <Route path="/blog" component={BlogPage} />
+      <Route path="/blog/:id" component={BlogDetailPage} />
       <Route path="/contact" component={ContactPage} />
       <Route path="/auth" component={AuthPage} />
       <ProtectedRoute path="/dashboard" component={ClientDashboard} />
