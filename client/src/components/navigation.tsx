@@ -43,7 +43,7 @@ export function Navigation() {
               <img 
                 src={theme === "light" ? logoLight : logoDark} 
                 alt="AI Edge International" 
-                className="h-12 w-auto"
+                className="h-14 w-auto"
               />
             </Link>
           </div>
