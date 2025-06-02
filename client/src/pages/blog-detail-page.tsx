@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
+import { Navigation } from "@/components/navigation";
+import { Footer } from "@/components/footer";
 
 export default function BlogDetailPage() {
   const { id } = useParams();
@@ -1036,6 +1038,7 @@ export default function BlogDetailPage() {
 
   return (
     <div className="min-h-screen bg-background">
+      <Navigation />
       {/* Header Section */}
       <section className="relative py-16 bg-gradient-to-br from-primary/10 via-accent/5 to-primary/5">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1210,6 +1213,7 @@ export default function BlogDetailPage() {
           </div>
         </section>
       )}
+      <Footer />
     </div>
   );
 }
