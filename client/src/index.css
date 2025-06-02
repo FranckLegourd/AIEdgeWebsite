@@ -59,12 +59,12 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-25%);
+    transform: translateX(-50%);
   }
 }
 
 .animate-scroll-seamless {
-  animation: scroll-seamless 20s linear infinite;
+  animation: scroll-seamless 25s linear infinite;
 }
 
 .dark {
