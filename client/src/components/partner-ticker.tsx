@@ -1,35 +1,37 @@
 import { useTheme } from "@/hooks/use-theme";
+import relevanceAiLight from "@assets/relevance_ai_lt.png";
+import relevanceAiDark from "@assets/relevance_ai_dk.png";
 
 const partners = [
   {
+    name: "Relevance AI",
+    lightLogo: relevanceAiLight,
+    darkLogo: relevanceAiDark,
+  },
+  {
     name: "Blossom",
-    logo: "https://images.unsplash.com/photo-1634942537034-2531766767d1?w=120&h=40&fit=crop&crop=center",
-    darkLogo: "https://images.unsplash.com/photo-1634942537034-2531766767d1?w=120&h=40&fit=crop&crop=center",
+    lightLogo: null,
+    darkLogo: null,
   },
   {
     name: "Hues",
-    logo: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=120&h=40&fit=crop&crop=center",
-    darkLogo: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=120&h=40&fit=crop&crop=center",
+    lightLogo: null,
+    darkLogo: null,
   },
   {
     name: "Volume",
-    logo: "https://images.unsplash.com/photo-1633409361618-c73427e4e206?w=120&h=40&fit=crop&crop=center",
-    darkLogo: "https://images.unsplash.com/photo-1633409361618-c73427e4e206?w=120&h=40&fit=crop&crop=center",
+    lightLogo: null,
+    darkLogo: null,
   },
   {
     name: "Cactus",
-    logo: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=120&h=40&fit=crop&crop=center",
-    darkLogo: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=120&h=40&fit=crop&crop=center",
+    lightLogo: null,
+    darkLogo: null,
   },
   {
     name: "SnapShot",
-    logo: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=120&h=40&fit=crop&crop=center",
-    darkLogo: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=120&h=40&fit=crop&crop=center",
-  },
-  {
-    name: "Site",
-    logo: "https://images.unsplash.com/photo-1634942537034-2531766767d1?w=120&h=40&fit=crop&crop=center",
-    darkLogo: "https://images.unsplash.com/photo-1634942537034-2531766767d1?w=120&h=40&fit=crop&crop=center",
+    lightLogo: null,
+    darkLogo: null,
   },
 ];
 
@@ -57,11 +59,19 @@ export function PartnerTicker() {
               {partners.map((partner, index) => (
                 <div
                   key={`first-${index}`}
-                  className="mx-8 flex items-center justify-center h-16 w-32 transition-all duration-300 opacity-60 hover:opacity-100"
+                  className="mx-8 flex items-center justify-center h-16 w-40 transition-all duration-300 opacity-60 hover:opacity-100"
                 >
-                  <div className="text-lg font-bold text-foreground/70 hover:text-foreground transition-colors">
-                    {partner.name}
-                  </div>
+                  {partner.lightLogo && partner.darkLogo ? (
+                    <img
+                      src={theme === 'dark' ? partner.darkLogo : partner.lightLogo}
+                      alt={partner.name}
+                      className="h-8 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                    />
+                  ) : (
+                    <div className="text-lg font-bold text-foreground/70 hover:text-foreground transition-colors">
+                      {partner.name}
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
@@ -71,11 +81,19 @@ export function PartnerTicker() {
               {partners.map((partner, index) => (
                 <div
                   key={`second-${index}`}
-                  className="mx-8 flex items-center justify-center h-16 w-32 transition-all duration-300 opacity-60 hover:opacity-100"
+                  className="mx-8 flex items-center justify-center h-16 w-40 transition-all duration-300 opacity-60 hover:opacity-100"
                 >
-                  <div className="text-lg font-bold text-foreground/70 hover:text-foreground transition-colors">
-                    {partner.name}
-                  </div>
+                  {partner.lightLogo && partner.darkLogo ? (
+                    <img
+                      src={theme === 'dark' ? partner.darkLogo : partner.lightLogo}
+                      alt={partner.name}
+                      className="h-8 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                    />
+                  ) : (
+                    <div className="text-lg font-bold text-foreground/70 hover:text-foreground transition-colors">
+                      {partner.name}
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
