@@ -1,6 +1,8 @@
 import { useTheme } from "@/hooks/use-theme";
 import relevanceAiLight from "@assets/relevance_ai_lt.png";
 import relevanceAiDark from "@assets/relevance_ai_dk.png";
+import makeLight from "@assets/make_lt.png";
+import makeDark from "@assets/make_dk.png";
 
 const partners = [
   {
@@ -9,9 +11,9 @@ const partners = [
     darkLogo: relevanceAiDark,
   },
   {
-    name: "Blossom",
-    lightLogo: null,
-    darkLogo: null,
+    name: "Make",
+    lightLogo: makeLight,
+    darkLogo: makeDark,
   },
   {
     name: "Hues",
