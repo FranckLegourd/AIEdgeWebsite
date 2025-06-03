@@ -59,7 +59,7 @@ export function PartnerTicker() {
               {partners.map((partner, index) => (
                 <div
                   key={`first-${index}`}
-                  className="mx-8 flex items-center justify-center h-16 w-40 transition-all duration-300 opacity-80 hover:opacity-100"
+                  className="mx-8 flex items-center justify-center h-16 w-40"
                 >
                   {partner.lightLogo && partner.darkLogo ? (
                     <img
@@ -81,7 +81,7 @@ export function PartnerTicker() {
               {partners.map((partner, index) => (
                 <div
                   key={`second-${index}`}
-                  className="mx-8 flex items-center justify-center h-16 w-40 transition-all duration-300 opacity-80 hover:opacity-100"
+                  className="mx-8 flex items-center justify-center h-16 w-40"
                 >
                   {partner.lightLogo && partner.darkLogo ? (
                     <img
