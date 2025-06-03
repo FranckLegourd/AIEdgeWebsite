@@ -67,7 +67,7 @@ export function PartnerTicker() {
                     <img
                       src={theme === 'dark' ? partner.darkLogo : partner.lightLogo}
                       alt={partner.name}
-                      className="h-5 w-auto object-contain transition-all duration-300"
+                      className={`${partner.name === 'Relevance AI' ? 'h-8' : 'h-5'} w-auto object-contain transition-all duration-300`}
                     />
                   ) : (
                     <div className="text-lg font-bold text-foreground/70 hover:text-foreground transition-colors">
@@ -89,7 +89,7 @@ export function PartnerTicker() {
                     <img
                       src={theme === 'dark' ? partner.darkLogo : partner.lightLogo}
                       alt={partner.name}
-                      className="h-5 w-auto object-contain transition-all duration-300"
+                      className={`${partner.name === 'Relevance AI' ? 'h-8' : 'h-5'} w-auto object-contain transition-all duration-300`}
                     />
                   ) : (
                     <div className="text-lg font-bold text-foreground/70 hover:text-foreground transition-colors">
