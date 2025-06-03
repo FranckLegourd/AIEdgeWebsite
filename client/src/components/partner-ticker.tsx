@@ -3,6 +3,8 @@ import relevanceAiLight from "@assets/relevance_ai_lt.png";
 import relevanceAiDark from "@assets/relevance_ai_dk.png";
 import makeLight from "@assets/make_lt.png";
 import makeDark from "@assets/make_dk.png";
+import perplexityLight from "@assets/perplexity_lt.png";
+import perplexityDark from "@assets/perplexity_dk.png";
 
 const partners = [
   {
@@ -16,9 +18,9 @@ const partners = [
     darkLogo: makeDark,
   },
   {
-    name: "Hues",
-    lightLogo: null,
-    darkLogo: null,
+    name: "Perplexity",
+    lightLogo: perplexityLight,
+    darkLogo: perplexityDark,
   },
   {
     name: "Volume",
@@ -67,7 +69,7 @@ export function PartnerTicker() {
                     <img
                       src={theme === 'dark' ? partner.darkLogo : partner.lightLogo}
                       alt={partner.name}
-                      className={`${partner.name === 'Relevance AI' ? 'h-8' : 'h-5'} w-auto object-contain transition-all duration-300`}
+                      className={`${partner.name === 'Relevance AI' ? 'h-8' : partner.name === 'Perplexity' ? 'h-8' : 'h-5'} w-auto object-contain transition-all duration-300`}
                     />
                   ) : (
                     <div className="text-lg font-bold text-foreground/70 hover:text-foreground transition-colors">
@@ -89,7 +91,7 @@ export function PartnerTicker() {
                     <img
                       src={theme === 'dark' ? partner.darkLogo : partner.lightLogo}
                       alt={partner.name}
-                      className={`${partner.name === 'Relevance AI' ? 'h-8' : 'h-5'} w-auto object-contain transition-all duration-300`}
+                      className={`${partner.name === 'Relevance AI' ? 'h-8' : partner.name === 'Perplexity' ? 'h-8' : 'h-5'} w-auto object-contain transition-all duration-300`}
                     />
                   ) : (
                     <div className="text-lg font-bold text-foreground/70 hover:text-foreground transition-colors">
