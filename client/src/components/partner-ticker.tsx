@@ -119,50 +119,46 @@ export function PartnerTicker() {
           <div className="absolute right-0 top-0 w-32 h-full bg-gradient-to-l from-muted/30 via-muted/30 to-transparent z-10 pointer-events-none"></div>
           
           {/* Scrolling container with seamless loop */}
-          <div className="flex animate-scroll-seamless">
-            {/* First set */}
-            <div className="flex items-center justify-center min-w-max">
-              {partners.map((partner, index) => (
-                <div
-                  key={`first-${index}`}
-                  className="mx-8 flex items-center justify-center h-16 w-40"
-                >
-                  {partner.lightLogo && partner.darkLogo ? (
-                    <img
-                      src={theme === 'dark' ? partner.darkLogo : partner.lightLogo}
-                      alt={partner.name}
-                      className="h-8 w-auto object-contain transition-all duration-300"
-                    />
-                  ) : (
-                    <div className="text-lg font-bold text-foreground/70 hover:text-foreground transition-colors">
-                      {partner.name}
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
+          <div className="flex animate-scroll-seamless" style={{ width: `${14 * 224 * 2}px` }}>
+            {/* First set of all 14 logos */}
+            {partners.map((partner, index) => (
+              <div
+                key={`first-${index}`}
+                className="mx-8 flex items-center justify-center h-16 w-40 flex-shrink-0"
+              >
+                {partner.lightLogo && partner.darkLogo ? (
+                  <img
+                    src={theme === 'dark' ? partner.darkLogo : partner.lightLogo}
+                    alt={partner.name}
+                    className="h-8 w-auto object-contain transition-all duration-300"
+                  />
+                ) : (
+                  <div className="text-lg font-bold text-foreground/70 hover:text-foreground transition-colors">
+                    {partner.name}
+                  </div>
+                )}
+              </div>
+            ))}
             
             {/* Second set for seamless loop */}
-            <div className="flex items-center justify-center min-w-max">
-              {partners.map((partner, index) => (
-                <div
-                  key={`second-${index}`}
-                  className="mx-8 flex items-center justify-center h-16 w-40"
-                >
-                  {partner.lightLogo && partner.darkLogo ? (
-                    <img
-                      src={theme === 'dark' ? partner.darkLogo : partner.lightLogo}
-                      alt={partner.name}
-                      className="h-8 w-auto object-contain transition-all duration-300"
-                    />
-                  ) : (
-                    <div className="text-lg font-bold text-foreground/70 hover:text-foreground transition-colors">
-                      {partner.name}
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
+            {partners.map((partner, index) => (
+              <div
+                key={`second-${index}`}
+                className="mx-8 flex items-center justify-center h-16 w-40 flex-shrink-0"
+              >
+                {partner.lightLogo && partner.darkLogo ? (
+                  <img
+                    src={theme === 'dark' ? partner.darkLogo : partner.lightLogo}
+                    alt={partner.name}
+                    className="h-8 w-auto object-contain transition-all duration-300"
+                  />
+                ) : (
+                  <div className="text-lg font-bold text-foreground/70 hover:text-foreground transition-colors">
+                    {partner.name}
+                  </div>
+                )}
+              </div>
+            ))}
           </div>
         </div>
       </div>
