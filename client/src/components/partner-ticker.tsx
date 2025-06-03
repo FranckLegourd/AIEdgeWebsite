@@ -59,13 +59,13 @@ export function PartnerTicker() {
               {partners.map((partner, index) => (
                 <div
                   key={`first-${index}`}
-                  className="mx-8 flex items-center justify-center h-16 w-40 transition-all duration-300 opacity-60 hover:opacity-100"
+                  className="mx-8 flex items-center justify-center h-16 w-40 transition-all duration-300 opacity-80 hover:opacity-100"
                 >
                   {partner.lightLogo && partner.darkLogo ? (
                     <img
                       src={theme === 'dark' ? partner.darkLogo : partner.lightLogo}
                       alt={partner.name}
-                      className="h-8 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                      className="h-8 w-auto object-contain transition-all duration-300"
                     />
                   ) : (
                     <div className="text-lg font-bold text-foreground/70 hover:text-foreground transition-colors">
@@ -81,13 +81,13 @@ export function PartnerTicker() {
               {partners.map((partner, index) => (
                 <div
                   key={`second-${index}`}
-                  className="mx-8 flex items-center justify-center h-16 w-40 transition-all duration-300 opacity-60 hover:opacity-100"
+                  className="mx-8 flex items-center justify-center h-16 w-40 transition-all duration-300 opacity-80 hover:opacity-100"
                 >
                   {partner.lightLogo && partner.darkLogo ? (
                     <img
                       src={theme === 'dark' ? partner.darkLogo : partner.lightLogo}
                       alt={partner.name}
-                      className="h-8 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                      className="h-8 w-auto object-contain transition-all duration-300"
                     />
                   ) : (
                     <div className="text-lg font-bold text-foreground/70 hover:text-foreground transition-colors">
