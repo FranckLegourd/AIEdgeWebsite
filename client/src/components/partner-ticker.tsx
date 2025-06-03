@@ -19,6 +19,14 @@ import metaaiLight from "@assets/metaai_lt.png";
 import metaaiDark from "@assets/metaai_dk.png";
 import mistralLight from "@assets/mistral_lt.png";
 import mistralDark from "@assets/mistrai_dk.png";
+import n8nLight from "@assets/n8n_lt.png";
+import n8nDark from "@assets/n8n_dk.png";
+import openaiLight from "@assets/openai_lt.png";
+import openaiDark from "@assets/openai_dk.png";
+import replitLight from "@assets/replit_lt.png";
+import replitDark from "@assets/replit_dk.png";
+import voiceflowLight from "@assets/voiceflow_lt.png";
+import voiceflowDark from "@assets/voiceflow_dk.png";
 
 const partners = [
   {
@@ -70,6 +78,26 @@ const partners = [
     name: "Mistral",
     lightLogo: mistralLight,
     darkLogo: mistralDark,
+  },
+  {
+    name: "n8n",
+    lightLogo: n8nLight,
+    darkLogo: n8nDark,
+  },
+  {
+    name: "OpenAI",
+    lightLogo: openaiLight,
+    darkLogo: openaiDark,
+  },
+  {
+    name: "Replit",
+    lightLogo: replitLight,
+    darkLogo: replitDark,
+  },
+  {
+    name: "VoiceFlow",
+    lightLogo: voiceflowLight,
+    darkLogo: voiceflowDark,
   },
 ];
 
