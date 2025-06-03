@@ -17,6 +17,8 @@ import googleaiLight from "@assets/googleai_lt.png";
 import googleaiDark from "@assets/googleai_dk.png";
 import metaaiLight from "@assets/metaai_lt.png";
 import metaaiDark from "@assets/metaai_dk.png";
+import mistralLight from "@assets/mistral_lt.png";
+import mistralDark from "@assets/mistrai_dk.png";
 
 const partners = [
   {
@@ -64,6 +66,11 @@ const partners = [
     lightLogo: metaaiLight,
     darkLogo: metaaiDark,
   },
+  {
+    name: "Mistral",
+    lightLogo: mistralLight,
+    darkLogo: mistralDark,
+  },
 ];
 
 export function PartnerTicker() {
@@ -96,11 +103,7 @@ export function PartnerTicker() {
                     <img
                       src={theme === 'dark' ? partner.darkLogo : partner.lightLogo}
                       alt={partner.name}
-                      className={`${
-                        partner.name === 'Relevance AI' || partner.name === 'Perplexity' || partner.name === 'Google AI' || partner.name === 'Meta AI' ? 'h-8' : 
-                        partner.name === 'AWS' || partner.name === 'Anthropic' || partner.name === 'Factory' ? 'h-6' : 
-                        'h-5'
-                      } w-auto object-contain transition-all duration-300`}
+                      className="h-8 w-auto object-contain transition-all duration-300"
                     />
                   ) : (
                     <div className="text-lg font-bold text-foreground/70 hover:text-foreground transition-colors">
@@ -122,11 +125,7 @@ export function PartnerTicker() {
                     <img
                       src={theme === 'dark' ? partner.darkLogo : partner.lightLogo}
                       alt={partner.name}
-                      className={`${
-                        partner.name === 'Relevance AI' || partner.name === 'Perplexity' || partner.name === 'Google AI' || partner.name === 'Meta AI' ? 'h-8' : 
-                        partner.name === 'AWS' || partner.name === 'Anthropic' || partner.name === 'Factory' ? 'h-6' : 
-                        'h-5'
-                      } w-auto object-contain transition-all duration-300`}
+                      className="h-8 w-auto object-contain transition-all duration-300"
                     />
                   ) : (
                     <div className="text-lg font-bold text-foreground/70 hover:text-foreground transition-colors">
