@@ -5,6 +5,18 @@ import makeLight from "@assets/make_lt.png";
 import makeDark from "@assets/make_dk.png";
 import perplexityLight from "@assets/perplexity_lt.png";
 import perplexityDark from "@assets/perplexity_dk.png";
+import anthropicLight from "@assets/anthropic_lt.png";
+import anthropicDark from "@assets/anthropic_dk.png";
+import awsLight from "@assets/aws_lt.png";
+import awsDark from "@assets/aws_dk.png";
+import crewaiLight from "@assets/crewai_lt.png";
+import crewaiDark from "@assets/crewai_dk.png";
+import factoryLight from "@assets/factory_lt.png";
+import factoryDark from "@assets/factory_dk.png";
+import googleaiLight from "@assets/googleai_lt.png";
+import googleaiDark from "@assets/googleai_dk.png";
+import metaaiLight from "@assets/metaai_lt.png";
+import metaaiDark from "@assets/metaai_dk.png";
 
 const partners = [
   {
@@ -23,19 +35,34 @@ const partners = [
     darkLogo: perplexityDark,
   },
   {
-    name: "Volume",
-    lightLogo: null,
-    darkLogo: null,
+    name: "Anthropic",
+    lightLogo: anthropicLight,
+    darkLogo: anthropicDark,
   },
   {
-    name: "Cactus",
-    lightLogo: null,
-    darkLogo: null,
+    name: "AWS",
+    lightLogo: awsLight,
+    darkLogo: awsDark,
   },
   {
-    name: "SnapShot",
-    lightLogo: null,
-    darkLogo: null,
+    name: "CrewAI",
+    lightLogo: crewaiLight,
+    darkLogo: crewaiDark,
+  },
+  {
+    name: "Factory",
+    lightLogo: factoryLight,
+    darkLogo: factoryDark,
+  },
+  {
+    name: "Google AI",
+    lightLogo: googleaiLight,
+    darkLogo: googleaiDark,
+  },
+  {
+    name: "Meta AI",
+    lightLogo: metaaiLight,
+    darkLogo: metaaiDark,
   },
 ];
 
@@ -69,7 +96,11 @@ export function PartnerTicker() {
                     <img
                       src={theme === 'dark' ? partner.darkLogo : partner.lightLogo}
                       alt={partner.name}
-                      className={`${partner.name === 'Relevance AI' ? 'h-8' : partner.name === 'Perplexity' ? 'h-8' : 'h-5'} w-auto object-contain transition-all duration-300`}
+                      className={`${
+                        partner.name === 'Relevance AI' || partner.name === 'Perplexity' || partner.name === 'Google AI' || partner.name === 'Meta AI' ? 'h-8' : 
+                        partner.name === 'AWS' || partner.name === 'Anthropic' || partner.name === 'Factory' ? 'h-6' : 
+                        'h-5'
+                      } w-auto object-contain transition-all duration-300`}
                     />
                   ) : (
                     <div className="text-lg font-bold text-foreground/70 hover:text-foreground transition-colors">
@@ -91,7 +122,11 @@ export function PartnerTicker() {
                     <img
                       src={theme === 'dark' ? partner.darkLogo : partner.lightLogo}
                       alt={partner.name}
-                      className={`${partner.name === 'Relevance AI' ? 'h-8' : partner.name === 'Perplexity' ? 'h-8' : 'h-5'} w-auto object-contain transition-all duration-300`}
+                      className={`${
+                        partner.name === 'Relevance AI' || partner.name === 'Perplexity' || partner.name === 'Google AI' || partner.name === 'Meta AI' ? 'h-8' : 
+                        partner.name === 'AWS' || partner.name === 'Anthropic' || partner.name === 'Factory' ? 'h-6' : 
+                        'h-5'
+                      } w-auto object-contain transition-all duration-300`}
                     />
                   ) : (
                     <div className="text-lg font-bold text-foreground/70 hover:text-foreground transition-colors">
