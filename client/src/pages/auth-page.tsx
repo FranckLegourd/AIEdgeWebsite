@@ -13,6 +13,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { insertUserSchema } from "@shared/schema";
 import { z } from "zod";
 import { Sun, Moon, Brain, Zap, Shield } from "lucide-react";
+import logoLight from "@assets/logo_light.png";
+import logoDark from "@assets/logo_dark.png";
 
 const loginSchema = z.object({
   username: z.string().min(1, "Username is required"),
@@ -76,7 +78,11 @@ export default function AuthPage() {
         <div className="w-full max-w-md space-y-6">
           {/* Theme toggle */}
           <div className="flex justify-between items-center">
-            <h1 className="text-2xl font-bold text-primary">AI Edge International</h1>
+            <img 
+              src={theme === 'dark' ? logoDark : logoLight} 
+              alt="AI Edge International" 
+              className="h-8"
+            />
             <Button
               variant="ghost"
               size="sm"
@@ -313,8 +319,12 @@ export default function AuthPage() {
           </div>
 
           <div className="mt-12 p-6 bg-white/10 rounded-xl backdrop-blur-sm">
-            <blockquote className="text-lg italic mb-4">
-              "AI Edge International transformed our business processes. We've seen a 300% increase in efficiency."
+            <blockquote className="text-lg italic mb-4 flex items-center gap-2">
+              "<img 
+                src={logoDark} 
+                alt="AI Edge International" 
+                className="h-6 inline"
+              /> transformed our business processes. We've seen a 300% increase in efficiency."
             </blockquote>
             <cite className="text-white/80">— Sarah Chen, CTO at TechFlow</cite>
           </div>
