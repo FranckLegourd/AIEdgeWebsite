@@ -13,7 +13,7 @@ export const translations = {
     },
     hero: {
       title: "AI Solutions for the Future of Business",
-      subtitle: "Transform your business with cutting-edge AI development and automation. We specialize in agentic technologies that deliver measurable results and competitive advantages.",
+      subtitle: "The next leap in business evolution is autonomous. Transform your business with our cutting-edge AI development and automation solutions. We specialize in agentic technologies that deliver measurable results and competitive advantages.",
       cta: "Start Your AI Journey",
       ctaSecondary: "View Our Services",
       features: {
@@ -228,7 +228,7 @@ export const translations = {
     },
     hero: {
       title: "Solutions IA pour l'Avenir des Entreprises",
-      subtitle: "Transformez votre entreprise avec le développement et l'automatisation IA de pointe. Nous nous spécialisons dans les technologies agentiques qui offrent des résultats mesurables et des avantages concurrentiels.",
+      subtitle: "Le prochain bond dans l'évolution des entreprises est autonome. Transformez votre entreprise avec nos solutions de développement et d'automatisation IA de pointe. Nous nous spécialisons dans les technologies agentiques qui offrent des résultats mesurables et des avantages concurrentiels.",
       cta: "Commencez Votre Parcours IA",
       ctaSecondary: "Voir Nos Services",
       features: {
@@ -443,7 +443,7 @@ export const translations = {
     },
     hero: {
       title: "Soluciones IA para el Futuro de los Negocios",
-      subtitle: "Transforma tu negocio con desarrollo y automatización IA de vanguardia. Nos especializamos en tecnologías agénticas que entregan resultados medibles y ventajas competitivas.",
+      subtitle: "El próximo salto en la evolución empresarial es autónomo. Transforma tu negocio con nuestras soluciones de desarrollo y automatización IA de vanguardia. Nos especializamos en tecnologías agénticas que entregan resultados medibles y ventajas competitivas.",
       cta: "Comienza Tu Viaje IA",
       ctaSecondary: "Ver Nuestros Servicios",
       features: {
