@@ -327,16 +327,16 @@ export default function HomePage() {
               </Link>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
               {[
                 { text: "Rapid Development", icon: Rocket },
                 { text: "Education & Training", icon: GraduationCap }, 
                 { text: "Consulting", icon: Users },
                 { text: "Custom Solutions", icon: Settings }
               ].map((feature, index) => (
-                <div key={index} className="flex items-center space-x-4 text-white">
-                  <feature.icon className="h-5 w-5 text-white" />
-                  <span className="text-lg">{feature.text}</span>
+                <div key={index} className="flex items-center justify-center space-x-3 text-white">
+                  <feature.icon className="h-5 w-5 text-white flex-shrink-0" />
+                  <span className="text-lg whitespace-nowrap">{feature.text}</span>
                 </div>
               ))}
             </div>
