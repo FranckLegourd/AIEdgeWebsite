@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Redirect } from "wouter";
+import { Redirect, Link } from "wouter";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -78,11 +78,13 @@ export default function AuthPage() {
         <div className="w-full max-w-md space-y-6">
           {/* Theme toggle */}
           <div className="flex justify-between items-center">
-            <img 
-              src={theme === 'dark' ? logoDark : logoLight} 
-              alt="AI Edge International" 
-              className="h-14 w-auto"
-            />
+            <Link href="/">
+              <img 
+                src={theme === 'dark' ? logoDark : logoLight} 
+                alt="AI Edge International" 
+                className="h-14 w-auto cursor-pointer"
+              />
+            </Link>
             <Button
               variant="ghost"
               size="sm"
