@@ -328,10 +328,10 @@ export default function HomePage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
               {[
-                "Enterprise-grade security and compliance",
-                "24/7 global support and monitoring", 
-                "Proven ROI within 6 months",
-                "Custom solutions tailored to your needs"
+                "Rapid Development",
+                "Education & Training", 
+                "Consulting",
+                "AI-Powered Solutions"
               ].map((feature, index) => (
                 <div key={index} className="flex items-center space-x-4 text-white">
                   <CheckCircle className="h-5 w-5" />
