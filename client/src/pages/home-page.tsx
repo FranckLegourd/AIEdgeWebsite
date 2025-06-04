@@ -114,7 +114,7 @@ export default function HomePage() {
               <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
                 <span className="text-gray-900 dark:text-white">Shaping Tomorrow's Business </span>
                 <span className="text-gray-900 dark:text-white">with </span>
-                <span className="text-primary">Autonomous AI Solutions</span>
+                <span className="text-primary">Autonomous AI</span>
               </h1>
               
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
