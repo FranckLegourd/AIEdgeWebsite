@@ -112,9 +112,9 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className={`${isVisible ? "animate-slide-up" : "opacity-0"}`}>
               <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
-                <span className="text-gray-900 dark:text-white">Intelligent </span>
-                <span className="text-primary">AI Solutions </span>
-                <span className="text-gray-900 dark:text-white">for Modern Business</span>
+                <span className="text-gray-900 dark:text-white">Shaping Tomorrow's Business </span>
+                <span className="text-gray-900 dark:text-white">with </span>
+                <span className="text-primary">Autonomous AI Solutions</span>
               </h1>
               
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
