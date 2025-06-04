@@ -81,7 +81,7 @@ export const translations = {
     },
     contact: {
       title: "Ready to Transform Your Business?",
-      subtitle: "Join hundreds of companies that have already revolutionized their operations with our AI solutions.",
+      subtitle: "Join our growing portfolio of companies that have already revolutionized their operations with our AI solutions.",
       form: {
         firstName: "First Name",
         lastName: "Last Name",
@@ -296,7 +296,7 @@ export const translations = {
     },
     contact: {
       title: "Prêt à Transformer Votre Entreprise ?",
-      subtitle: "Rejoignez des centaines d'entreprises qui ont déjà révolutionné leurs opérations avec nos solutions IA.",
+      subtitle: "Rejoignez notre portefeuille croissant d'entreprises qui ont déjà révolutionné leurs opérations avec nos solutions IA.",
       form: {
         firstName: "Prénom",
         lastName: "Nom",
@@ -511,7 +511,7 @@ export const translations = {
     },
     contact: {
       title: "¿Listo para Transformar Tu Negocio?",
-      subtitle: "Únete a cientos de empresas que ya han revolucionado sus operaciones con nuestras soluciones IA.",
+      subtitle: "Únete a nuestro creciente portafolio de empresas que ya han revolucionado sus operaciones con nuestras soluciones IA.",
       form: {
         firstName: "Nombre",
         lastName: "Apellido",
