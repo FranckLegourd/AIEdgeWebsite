@@ -18,7 +18,9 @@ import {
   Network,
   Star,
   CheckCircle,
-  ArrowRight
+  ArrowRight,
+  GraduationCap,
+  Users
 } from "lucide-react";
 
 export default function HomePage() {
@@ -135,7 +137,7 @@ export default function HomePage() {
 
               <div className="flex items-center space-x-8 text-sm text-gray-600 dark:text-gray-400">
                 <div className="flex items-center space-x-2">
-                  <Shield className="h-5 w-5 text-green-500" />
+                  <GraduationCap className="h-5 w-5 text-green-500" />
                   <span>{t("hero.features.security")}</span>
                 </div>
                 <div className="flex items-center space-x-2">
@@ -143,7 +145,7 @@ export default function HomePage() {
                   <span>{t("hero.features.deployment")}</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Cog className="h-5 w-5 text-purple-500" />
+                  <Users className="h-5 w-5 text-purple-500" />
                   <span>{t("hero.features.custom")}</span>
                 </div>
               </div>

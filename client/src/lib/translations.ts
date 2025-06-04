@@ -17,9 +17,9 @@ export const translations = {
       cta: "Start Your AI Journey",
       ctaSecondary: "View Our Services",
       features: {
-        security: "Enterprise Security",
-        deployment: "Rapid Deployment",
-        custom: "Custom Solutions"
+        security: "Education & Training",
+        deployment: "Rapid Development",
+        custom: "Consulting"
       }
     },
     services: {
@@ -232,9 +232,9 @@ export const translations = {
       cta: "Commencez Votre Parcours IA",
       ctaSecondary: "Voir Nos Services",
       features: {
-        security: "Sécurité Entreprise",
-        deployment: "Déploiement Rapide",
-        custom: "Solutions Personnalisées"
+        security: "Éducation et Formation",
+        deployment: "Développement Rapide",
+        custom: "Conseil"
       }
     },
     services: {
@@ -447,9 +447,9 @@ export const translations = {
       cta: "Comienza Tu Viaje IA",
       ctaSecondary: "Ver Nuestros Servicios",
       features: {
-        security: "Seguridad Empresarial",
-        deployment: "Despliegue Rápido",
-        custom: "Soluciones Personalizadas"
+        security: "Educación y Entrenamiento",
+        deployment: "Desarrollo Rápido",
+        custom: "Consultoría"
       }
     },
     services: {
