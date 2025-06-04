@@ -103,14 +103,8 @@ export default function HomePage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="pt-8 pb-8 min-h-[80vh] flex items-center relative overflow-hidden">
-        {/* Animated background elements */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary/10 rounded-full blur-3xl animate-float"></div>
-          <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl animate-float" style={{ animationDelay: "-3s" }}></div>
-        </div>
-
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <section className="pt-8 pb-8 min-h-[80vh] flex items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className={`${isVisible ? "animate-slide-up" : "opacity-0"}`}>
               <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
