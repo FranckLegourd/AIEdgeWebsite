@@ -101,7 +101,7 @@ export default function HomePage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="pt-16 min-h-screen flex items-center relative overflow-hidden">
+      <section className="pt-8 pb-8 min-h-[80vh] flex items-center relative overflow-hidden">
         {/* Animated background elements */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary/10 rounded-full blur-3xl animate-float"></div>
