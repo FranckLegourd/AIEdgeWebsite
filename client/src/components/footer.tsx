@@ -67,7 +67,7 @@ export function Footer() {
 
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            {t("footer.copyright")}
+            {t("footer.copyright").replace("{year}", new Date().getFullYear().toString())}
           </p>
           <div className="flex items-center space-x-6 text-sm text-gray-400">
             <span>{t("footer.availableIn")}</span>

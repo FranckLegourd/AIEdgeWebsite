@@ -103,7 +103,7 @@ export const translations = {
       services: "Services",
       company: "Company",
       legal: "Legal",
-      copyright: "© 2024 AI Edge International. All rights reserved.",
+      copyright: "© {year} AI Edge International. All rights reserved.",
       availableIn: "Available in:"
     },
     blog: {
@@ -318,7 +318,7 @@ export const translations = {
       services: "Services",
       company: "Entreprise",
       legal: "Légal",
-      copyright: "© 2024 AI Edge International. Tous droits réservés.",
+      copyright: "© {year} AI Edge International. Tous droits réservés.",
       availableIn: "Disponible en :"
     },
     blog: {
@@ -533,7 +533,7 @@ export const translations = {
       services: "Servicios",
       company: "Empresa",
       legal: "Legal",
-      copyright: "© 2024 AI Edge International. Todos los derechos reservados.",
+      copyright: "© {year} AI Edge International. Todos los derechos reservados.",
       availableIn: "Disponible en:"
     },
     blog: {
