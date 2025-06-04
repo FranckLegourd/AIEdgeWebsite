@@ -12,7 +12,7 @@ export const translations = {
       logout: "Logout"
     },
     hero: {
-      title: "Intelligent AI Solutions for Modern Business",
+      title: "AI Solutions for the Future of Business",
       subtitle: "Transform your business with cutting-edge AI development and automation. We specialize in agentic technologies that deliver measurable results and competitive advantages.",
       cta: "Start Your AI Journey",
       ctaSecondary: "View Our Services",
@@ -227,7 +227,7 @@ export const translations = {
       logout: "Déconnexion"
     },
     hero: {
-      title: "Solutions IA Intelligentes pour les Entreprises Modernes",
+      title: "Solutions IA pour l'Avenir des Entreprises",
       subtitle: "Transformez votre entreprise avec le développement et l'automatisation IA de pointe. Nous nous spécialisons dans les technologies agentiques qui offrent des résultats mesurables et des avantages concurrentiels.",
       cta: "Commencez Votre Parcours IA",
       ctaSecondary: "Voir Nos Services",
@@ -442,7 +442,7 @@ export const translations = {
       logout: "Cerrar Sesión"
     },
     hero: {
-      title: "Soluciones IA Inteligentes para Empresas Modernas",
+      title: "Soluciones IA para el Futuro de los Negocios",
       subtitle: "Transforma tu negocio con desarrollo y automatización IA de vanguardia. Nos especializamos en tecnologías agénticas que entregan resultados medibles y ventajas competitivas.",
       cta: "Comienza Tu Viaje IA",
       ctaSecondary: "Ver Nuestros Servicios",
