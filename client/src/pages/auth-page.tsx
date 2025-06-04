@@ -81,7 +81,7 @@ export default function AuthPage() {
             <img 
               src={theme === 'dark' ? logoDark : logoLight} 
               alt="AI Edge International" 
-              className="h-8"
+              className="h-14 w-auto"
             />
             <Button
               variant="ghost"
