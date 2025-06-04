@@ -152,27 +152,6 @@ export default function HomePage() {
                   alt="Abstract AI technology visualization" 
                   className="rounded-2xl shadow-2xl w-full h-auto" 
                 />
-                
-                {/* Floating stats cards */}
-                <div className="absolute -top-4 -left-4 bg-white dark:bg-gray-800 rounded-xl shadow-xl p-4 animate-float">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                    <div>
-                      <div className="text-2xl font-bold text-gray-900 dark:text-white">98%</div>
-                      <div className="text-sm text-gray-600 dark:text-gray-400">Accuracy Rate</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="absolute -bottom-4 -right-4 bg-white dark:bg-gray-800 rounded-xl shadow-xl p-4 animate-float" style={{ animationDelay: "-2s" }}>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-3 h-3 bg-primary rounded-full animate-pulse"></div>
-                    <div>
-                      <div className="text-2xl font-bold text-gray-900 dark:text-white">24/7</div>
-                      <div className="text-sm text-gray-600 dark:text-gray-400">Automation</div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
