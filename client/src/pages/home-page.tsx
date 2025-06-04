@@ -92,12 +92,7 @@ export default function HomePage() {
     }
   ];
 
-  const stats = [
-    { value: "500+", label: "Projects Delivered" },
-    { value: "99.8%", label: "Client Satisfaction" },
-    { value: "50+", label: "Enterprise Clients" },
-    { value: "24/7", label: "Global Support" }
-  ];
+
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
@@ -229,14 +224,7 @@ export default function HomePage() {
                 At AI Edge International, we're not just building AI solutions – we're crafting the future of intelligent business operations. Our team of world-class engineers and data scientists brings decades of combined experience in cutting-edge AI research and enterprise implementation.
               </p>
               
-              <div className="grid grid-cols-2 gap-6 mb-8">
-                {stats.map((stat, index) => (
-                  <div key={index} className="text-center p-6 bg-primary/5 rounded-xl">
-                    <div className="text-3xl font-bold text-primary">{stat.value}</div>
-                    <div className="text-sm text-gray-600 dark:text-gray-400">{stat.label}</div>
-                  </div>
-                ))}
-              </div>
+
             </div>
 
             <div className="relative">
