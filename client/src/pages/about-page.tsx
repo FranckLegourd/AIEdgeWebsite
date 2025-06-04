@@ -216,8 +216,8 @@ export default function AboutPage() {
 
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-                alt="Modern office workspace" 
+                src="@assets/office_future.png" 
+                alt="Futuristic AI-powered office workspace" 
                 className="rounded-2xl shadow-2xl w-full h-auto" 
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
