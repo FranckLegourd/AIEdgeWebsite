@@ -216,7 +216,7 @@ export default function AboutPage() {
 
             <div className="relative">
               <img 
-                src="/attached_assets/office_future.png" 
+                src="/office_future.png" 
                 alt="Futuristic AI-powered office workspace" 
                 className="rounded-2xl shadow-2xl w-full h-auto" 
               />
