@@ -20,7 +20,8 @@ import {
   CheckCircle,
   ArrowRight,
   GraduationCap,
-  Users
+  Users,
+  Settings
 } from "lucide-react";
 
 export default function HomePage() {
@@ -328,14 +329,14 @@ export default function HomePage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
               {[
-                "Rapid Development",
-                "Education & Training", 
-                "Consulting",
-                "AI-Powered Solutions"
+                { text: "Rapid Development", icon: Rocket },
+                { text: "Education & Training", icon: GraduationCap }, 
+                { text: "Consulting", icon: Users },
+                { text: "Custom Solutions", icon: Settings }
               ].map((feature, index) => (
                 <div key={index} className="flex items-center space-x-4 text-white">
-                  <CheckCircle className="h-5 w-5" />
-                  <span className="text-lg">{feature}</span>
+                  <feature.icon className="h-5 w-5 text-white" />
+                  <span className="text-lg">{feature.text}</span>
                 </div>
               ))}
             </div>
