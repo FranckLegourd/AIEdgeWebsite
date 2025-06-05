@@ -36,6 +36,11 @@ export function TranslationProvider({ children }: { children: ReactNode }) {
       value = value?.[k];
     }
     
+    // Debug logging
+    if (!value && typeof window !== "undefined") {
+      console.log(`Translation missing for key: ${key}, language: ${language}`, { translations: translations[language] });
+    }
+    
     return value || key;
   };
 
