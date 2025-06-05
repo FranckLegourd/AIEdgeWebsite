@@ -239,7 +239,7 @@ export default function AuthPage() {
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="confirmPassword">Confirm Password</Label>
+                      <Label htmlFor="confirmPassword">{t("auth.confirmPassword")}</Label>
                       <Input
                         id="confirmPassword"
                         type="password"
@@ -282,10 +282,10 @@ export default function AuthPage() {
         
         <div className="relative z-10 p-12 flex flex-col justify-center">
           <h2 className="text-4xl font-bold mb-6">
-            Transform Your Business with AI
+            {t("auth.hero.title")}
           </h2>
           <p className="text-xl mb-8 leading-relaxed">
-            Join hundreds of companies leveraging our cutting-edge AI solutions to drive innovation, efficiency, and growth.
+            {t("auth.hero.subtitle")}
           </p>
 
           <div className="space-y-6">
@@ -294,8 +294,8 @@ export default function AuthPage() {
                 <Brain className="h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold">Intelligent Automation</h3>
-                <p className="text-white/80">Streamline operations with AI-powered workflows</p>
+                <h3 className="text-lg font-semibold">{t("auth.hero.features.automation.title")}</h3>
+                <p className="text-white/80">{t("auth.hero.features.automation.description")}</p>
               </div>
             </div>
 
@@ -304,8 +304,8 @@ export default function AuthPage() {
                 <Zap className="h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold">Rapid Deployment</h3>
-                <p className="text-white/80">Get up and running in weeks, not months</p>
+                <h3 className="text-lg font-semibold">{t("auth.hero.features.deployment.title")}</h3>
+                <p className="text-white/80">{t("auth.hero.features.deployment.description")}</p>
               </div>
             </div>
 
@@ -314,8 +314,8 @@ export default function AuthPage() {
                 <Shield className="h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold">Enterprise Security</h3>
-                <p className="text-white/80">Bank-level security and compliance standards</p>
+                <h3 className="text-lg font-semibold">{t("auth.hero.features.security.title")}</h3>
+                <p className="text-white/80">{t("auth.hero.features.security.description")}</p>
               </div>
             </div>
           </div>
@@ -326,9 +326,9 @@ export default function AuthPage() {
                 src={logoDark} 
                 alt="AI Edge International" 
                 className="h-6 inline"
-              /> transformed our business processes. We've seen a 300% increase in efficiency."
+              /> {t("auth.hero.testimonial.quote")}"
             </blockquote>
-            <cite className="text-white/80">— Sarah Chen, CTO at TechFlow</cite>
+            <cite className="text-white/80">— {t("auth.hero.testimonial.author")}</cite>
           </div>
         </div>
       </div>

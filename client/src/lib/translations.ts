@@ -99,7 +99,30 @@ export const translations = {
       loginButton: "Sign In",
       registerButton: "Create Account",
       switchToRegister: "Don't have an account? Sign up",
-      switchToLogin: "Already have an account? Sign in"
+      switchToLogin: "Already have an account? Sign in",
+      confirmPassword: "Confirm Password",
+      hero: {
+        title: "Transform Your Business with AI",
+        subtitle: "Join hundreds of companies leveraging our cutting-edge AI solutions to drive innovation, efficiency, and growth.",
+        features: {
+          automation: {
+            title: "Intelligent Automation",
+            description: "Streamline operations with AI-powered workflows"
+          },
+          deployment: {
+            title: "Rapid Deployment", 
+            description: "Get up and running in weeks, not months"
+          },
+          security: {
+            title: "Enterprise Security",
+            description: "Bank-level security and compliance standards"
+          }
+        },
+        testimonial: {
+          quote: "transformed our business processes. We've seen a 300% increase in efficiency.",
+          author: "Sarah Chen, CTO at TechFlow"
+        }
+      }
     },
     dashboard: {
       welcome: "Welcome back",
@@ -354,7 +377,30 @@ export const translations = {
       loginButton: "Se Connecter",
       registerButton: "Créer un Compte",
       switchToRegister: "Pas de compte ? Inscrivez-vous",
-      switchToLogin: "Déjà un compte ? Connectez-vous"
+      switchToLogin: "Déjà un compte ? Connectez-vous",
+      confirmPassword: "Confirmer le Mot de Passe",
+      hero: {
+        title: "Transformez Votre Entreprise avec l'IA",
+        subtitle: "Rejoignez des centaines d'entreprises qui exploitent nos solutions IA de pointe pour stimuler l'innovation, l'efficacité et la croissance.",
+        features: {
+          automation: {
+            title: "Automatisation Intelligente",
+            description: "Rationalisez les opérations avec des flux de travail alimentés par l'IA"
+          },
+          deployment: {
+            title: "Déploiement Rapide", 
+            description: "Soyez opérationnel en quelques semaines, pas en mois"
+          },
+          security: {
+            title: "Sécurité d'Entreprise",
+            description: "Sécurité et normes de conformité de niveau bancaire"
+          }
+        },
+        testimonial: {
+          quote: "a transformé nos processus commerciaux. Nous avons vu une augmentation de 300% de l'efficacité.",
+          author: "Sarah Chen, CTO chez TechFlow"
+        }
+      }
     },
     dashboard: {
       welcome: "Bon retour",
@@ -609,7 +655,30 @@ export const translations = {
       loginButton: "Iniciar Sesión",
       registerButton: "Crear Cuenta",
       switchToRegister: "¿No tienes cuenta? Regístrate",
-      switchToLogin: "¿Ya tienes cuenta? Inicia sesión"
+      switchToLogin: "¿Ya tienes cuenta? Inicia sesión",
+      confirmPassword: "Confirmar Contraseña",
+      hero: {
+        title: "Transforma Tu Negocio con IA",
+        subtitle: "Únete a cientos de empresas que aprovechan nuestras soluciones IA de vanguardia para impulsar la innovación, eficiencia y crecimiento.",
+        features: {
+          automation: {
+            title: "Automatización Inteligente",
+            description: "Optimiza operaciones con flujos de trabajo potenciados por IA"
+          },
+          deployment: {
+            title: "Despliegue Rápido", 
+            description: "Ponte en marcha en semanas, no en meses"
+          },
+          security: {
+            title: "Seguridad Empresarial",
+            description: "Seguridad y estándares de cumplimiento de nivel bancario"
+          }
+        },
+        testimonial: {
+          quote: "transformó nuestros procesos comerciales. Hemos visto un aumento del 300% en eficiencia.",
+          author: "Sarah Chen, CTO en TechFlow"
+        }
+      }
     },
     dashboard: {
       welcome: "Bienvenido de vuelta",
