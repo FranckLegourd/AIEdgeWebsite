@@ -105,17 +105,21 @@ export const translations = {
         title: "Transform Your Business with AI",
         subtitle: "Join hundreds of companies leveraging our cutting-edge AI solutions to drive innovation, efficiency, and growth.",
         features: {
-          automation: {
-            title: "Intelligent Automation",
-            description: "Streamline operations with AI-powered workflows"
+          rapidDevelopment: {
+            title: "Rapid Development",
+            description: "Fast-track your AI projects from concept to production"
           },
-          deployment: {
-            title: "Rapid Deployment", 
-            description: "Get up and running in weeks, not months"
+          education: {
+            title: "Education & Training", 
+            description: "Comprehensive AI literacy programs for your team"
           },
-          security: {
-            title: "Enterprise Security",
-            description: "Bank-level security and compliance standards"
+          consulting: {
+            title: "Consulting",
+            description: "Strategic AI guidance tailored to your industry"
+          },
+          customSolutions: {
+            title: "Custom Solutions",
+            description: "Bespoke AI systems designed for your unique needs"
           }
         },
         testimonial: {
@@ -383,17 +387,21 @@ export const translations = {
         title: "Transformez Votre Entreprise avec l'IA",
         subtitle: "Rejoignez des centaines d'entreprises qui exploitent nos solutions IA de pointe pour stimuler l'innovation, l'efficacité et la croissance.",
         features: {
-          automation: {
-            title: "Automatisation Intelligente",
-            description: "Rationalisez les opérations avec des flux de travail alimentés par l'IA"
+          rapidDevelopment: {
+            title: "Développement Rapide",
+            description: "Accélérez vos projets IA du concept à la production"
           },
-          deployment: {
-            title: "Déploiement Rapide", 
-            description: "Soyez opérationnel en quelques semaines, pas en mois"
+          education: {
+            title: "Éducation et Formation", 
+            description: "Programmes complets d'alphabétisation IA pour votre équipe"
           },
-          security: {
-            title: "Sécurité d'Entreprise",
-            description: "Sécurité et normes de conformité de niveau bancaire"
+          consulting: {
+            title: "Conseil",
+            description: "Orientation stratégique IA adaptée à votre industrie"
+          },
+          customSolutions: {
+            title: "Solutions Personnalisées",
+            description: "Systèmes IA sur mesure conçus pour vos besoins uniques"
           }
         },
         testimonial: {
@@ -661,17 +669,21 @@ export const translations = {
         title: "Transforma Tu Negocio con IA",
         subtitle: "Únete a cientos de empresas que aprovechan nuestras soluciones IA de vanguardia para impulsar la innovación, eficiencia y crecimiento.",
         features: {
-          automation: {
-            title: "Automatización Inteligente",
-            description: "Optimiza operaciones con flujos de trabajo potenciados por IA"
+          rapidDevelopment: {
+            title: "Desarrollo Rápido",
+            description: "Acelera tus proyectos IA del concepto a la producción"
           },
-          deployment: {
-            title: "Despliegue Rápido", 
-            description: "Ponte en marcha en semanas, no en meses"
+          education: {
+            title: "Educación y Entrenamiento", 
+            description: "Programas integrales de alfabetización IA para tu equipo"
           },
-          security: {
-            title: "Seguridad Empresarial",
-            description: "Seguridad y estándares de cumplimiento de nivel bancario"
+          consulting: {
+            title: "Consultoría",
+            description: "Orientación estratégica IA adaptada a tu industria"
+          },
+          customSolutions: {
+            title: "Soluciones Personalizadas",
+            description: "Sistemas IA personalizados diseñados para tus necesidades únicas"
           }
         },
         testimonial: {

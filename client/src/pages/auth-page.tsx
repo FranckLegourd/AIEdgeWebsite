@@ -12,7 +12,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { insertUserSchema } from "@shared/schema";
 import { z } from "zod";
-import { Sun, Moon, Brain, Zap, Shield } from "lucide-react";
+import { Sun, Moon, Rocket, GraduationCap, Users, Settings } from "lucide-react";
 import logoLight from "@assets/logo_light.png";
 import logoDark from "@assets/logo_dark.png";
 
@@ -291,31 +291,41 @@ export default function AuthPage() {
           <div className="space-y-6">
             <div className="flex items-center space-x-4">
               <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center">
-                <Brain className="h-6 w-6" />
+                <Rocket className="h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold">{t("auth.hero.features.automation.title")}</h3>
-                <p className="text-white/80">{t("auth.hero.features.automation.description")}</p>
+                <h3 className="text-lg font-semibold">{t("auth.hero.features.rapidDevelopment.title")}</h3>
+                <p className="text-white/80">{t("auth.hero.features.rapidDevelopment.description")}</p>
               </div>
             </div>
 
             <div className="flex items-center space-x-4">
               <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center">
-                <Zap className="h-6 w-6" />
+                <GraduationCap className="h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold">{t("auth.hero.features.deployment.title")}</h3>
-                <p className="text-white/80">{t("auth.hero.features.deployment.description")}</p>
+                <h3 className="text-lg font-semibold">{t("auth.hero.features.education.title")}</h3>
+                <p className="text-white/80">{t("auth.hero.features.education.description")}</p>
               </div>
             </div>
 
             <div className="flex items-center space-x-4">
               <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center">
-                <Shield className="h-6 w-6" />
+                <Users className="h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold">{t("auth.hero.features.security.title")}</h3>
-                <p className="text-white/80">{t("auth.hero.features.security.description")}</p>
+                <h3 className="text-lg font-semibold">{t("auth.hero.features.consulting.title")}</h3>
+                <p className="text-white/80">{t("auth.hero.features.consulting.description")}</p>
+              </div>
+            </div>
+
+            <div className="flex items-center space-x-4">
+              <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center">
+                <Settings className="h-6 w-6" />
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold">{t("auth.hero.features.customSolutions.title")}</h3>
+                <p className="text-white/80">{t("auth.hero.features.customSolutions.description")}</p>
               </div>
             </div>
           </div>
