@@ -309,7 +309,7 @@ export default function HomePage() {
                 </Button>
               </Link>
               <Link href="/services">
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary px-8 py-4 text-lg font-semibold">
+                <Button size="lg" className="btn-secondary px-8 py-4 text-lg font-semibold">
                   {t("hero.ctaSecondary")}
                 </Button>
               </Link>
