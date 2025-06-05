@@ -193,6 +193,21 @@ export const translations = {
       aboutAuthor: "About the Author",
       tableOfContents: "Table of Contents",
       relatedArticles: "Related Articles",
+      postNotFound: "Blog Post Not Found",
+      authorBio: "is a leading expert in AI technologies and business transformation.",
+      tableOfContentsItems: {
+        introduction: "Introduction",
+        keyConcepts: "Key Concepts",
+        implementation: "Implementation",
+        bestPractices: "Best Practices",
+        conclusion: "Conclusion"
+      },
+      cta: {
+        title: "Ready to Transform Your Business?",
+        description: "Get in touch with our experts to discuss how AI can revolutionize your operations.",
+        contact: "Get Started",
+        morePosts: "More Articles"
+      },
       newsletter: {
         title: "Stay Updated with AI Innovations",
         subtitle: "Subscribe to our newsletter and get the latest insights on AI technology, automation strategies, and industry trends.",
@@ -224,14 +239,6 @@ export const translations = {
           title: "AI Ethics and Responsible Development Practices",
           excerpt: "Understanding the importance of ethical AI development and implementing responsible practices in AI projects."
         }
-      },
-      authorBio: "is a leading expert in AI and machine learning with over 10 years of experience in the field.",
-      tableOfContentsItems: {
-        introduction: "Introduction",
-        keyConcepts: "Key Concepts", 
-        implementation: "Implementation",
-        bestPractices: "Best Practices",
-        conclusion: "Conclusion"
       },
       content: {
         1: `
@@ -481,6 +488,22 @@ export const translations = {
       aboutAuthor: "À Propos de l'Auteur",
       tableOfContents: "Table des Matières",
       relatedArticles: "Articles Connexes",
+      relatedPosts: "Articles Connexes",
+      postNotFound: "Article de Blog Introuvable",
+      authorBio: "est un expert de premier plan en technologies IA et transformation d'entreprise.",
+      tableOfContentsItems: {
+        introduction: "Introduction",
+        keyConcepts: "Concepts Clés",
+        implementation: "Mise en Œuvre",
+        bestPractices: "Meilleures Pratiques",
+        conclusion: "Conclusion"
+      },
+      cta: {
+        title: "Prêt à Transformer Votre Entreprise ?",
+        description: "Contactez nos experts pour discuter de la façon dont l'IA peut révolutionner vos opérations.",
+        contact: "Commencer",
+        morePosts: "Plus d'Articles"
+      },
       newsletter: {
         title: "Restez Informé des Innovations IA",
         subtitle: "Abonnez-vous à notre newsletter et recevez les dernières informations sur la technologie IA, les stratégies d'automatisation et les tendances de l'industrie.",
@@ -512,14 +535,6 @@ export const translations = {
           title: "Éthique IA et Pratiques de Développement Responsables",
           excerpt: "Comprendre l'importance du développement IA éthique et implémenter des pratiques responsables dans les projets IA."
         }
-      },
-      authorBio: "est un expert reconnu en IA et apprentissage automatique avec plus de 10 ans d'expérience dans le domaine.",
-      tableOfContentsItems: {
-        introduction: "Introduction",
-        keyConcepts: "Concepts Clés",
-        implementation: "Implémentation", 
-        bestPractices: "Meilleures Pratiques",
-        conclusion: "Conclusion"
       },
       content: {
         1: `
