@@ -305,6 +305,39 @@ export const translations = {
         description: "Déployez des agents intelligents qui gèrent de manière autonome des tâches et décisions complexes."
       }
     },
+    about: {
+      title: "Votre Partenaire IA de l'Idée à l'Exécution",
+      subtitle: "Chez AI Edge International, nous nous spécialisons dans la concrétisation de vos idées en utilisant le pouvoir de l'Intelligence Artificielle. Nous aidons les entreprises visionnaires à explorer et à mettre en œuvre des stratégies IA sur mesure sans la bureaucratie et les frais généraux des grandes entreprises.",
+      process: {
+        title: "Notre Processus de Développement",
+        analysis: {
+          title: "Analyse",
+          description: "Plongée profonde dans vos besoins commerciaux et votre paysage de données"
+        },
+        design: {
+          title: "Conception", 
+          description: "Créer des architectures IA personnalisées adaptées à vos exigences"
+        },
+        development: {
+          title: "Développement",
+          description: "Construire et entraîner des modèles IA avec des protocoles de test rigoureux"
+        },
+        deployment: {
+          title: "Déploiement",
+          description: "Intégration transparente avec support et optimisation continus"
+        }
+      }
+    },
+    testimonials: {
+      title: "Histoires de Réussite Clients",
+      subtitle: "Découvrez comment nous avons transformé les entreprises avec des solutions IA intelligentes"
+    },
+    features: {
+      rapidDevelopment: "Développement Rapide",
+      educationTraining: "Éducation et Formation", 
+      consulting: "Conseil",
+      customSolutions: "Solutions Personnalisées"
+    },
     auth: {
       login: "Se Connecter",
       register: "Créer un Compte",
@@ -359,7 +392,14 @@ export const translations = {
       company: "Entreprise",
       legal: "Légal",
       copyright: "© {year} AI Edge International. Tous droits réservés.",
-      availableIn: "Disponible en :"
+      availableIn: "Disponible en :",
+      links: {
+        aiConsulting: "Conseil IA",
+        privacyPolicy: "Politique de Confidentialité",
+        termsOfService: "Conditions de Service",
+        cookiePolicy: "Politique des Cookies",
+        gdprCompliance: "Conformité RGPD"
+      }
     },
     blog: {
       title: "Monde de l'Innovation IA",
@@ -520,6 +560,39 @@ export const translations = {
         description: "Despliega agentes inteligentes que manejan autónomamente tareas y decisiones complejas."
       }
     },
+    about: {
+      title: "Tu Socio IA de la Idea a la Ejecución",
+      subtitle: "En AI Edge International, nos especializamos en dar vida a tus ideas usando el poder de la Inteligencia Artificial. Ayudamos a empresas visionarias a explorar e implementar estrategias IA personalizadas sin la burocracia y los gastos generales de las grandes firmas.",
+      process: {
+        title: "Nuestro Proceso de Desarrollo",
+        analysis: {
+          title: "Análisis",
+          description: "Inmersión profunda en tus necesidades comerciales y paisaje de datos"
+        },
+        design: {
+          title: "Diseño", 
+          description: "Crear arquitecturas IA personalizadas adaptadas a tus requerimientos"
+        },
+        development: {
+          title: "Desarrollo",
+          description: "Construir y entrenar modelos IA con protocolos de prueba rigurosos"
+        },
+        deployment: {
+          title: "Despliegue",
+          description: "Integración perfecta con soporte continuo y optimización"
+        }
+      }
+    },
+    testimonials: {
+      title: "Historias de Éxito de Clientes",
+      subtitle: "Mira cómo hemos transformado negocios con soluciones IA inteligentes"
+    },
+    features: {
+      rapidDevelopment: "Desarrollo Rápido",
+      educationTraining: "Educación y Entrenamiento", 
+      consulting: "Consultoría",
+      customSolutions: "Soluciones Personalizadas"
+    },
     auth: {
       login: "Iniciar Sesión",
       register: "Crear Cuenta",
@@ -574,7 +647,14 @@ export const translations = {
       company: "Empresa",
       legal: "Legal",
       copyright: "© {year} AI Edge International. Todos los derechos reservados.",
-      availableIn: "Disponible en:"
+      availableIn: "Disponible en:",
+      links: {
+        aiConsulting: "Consultoría IA",
+        privacyPolicy: "Política de Privacidad",
+        termsOfService: "Términos de Servicio",
+        cookiePolicy: "Política de Cookies",
+        gdprCompliance: "Cumplimiento RGPD"
+      }
     },
     blog: {
       title: "Mundo de Innovación IA",

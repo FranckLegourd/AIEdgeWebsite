@@ -41,7 +41,7 @@ export function Footer() {
               <li><Link href="/services" className="hover:text-white transition-colors duration-200">{t("services.automation.title")}</Link></li>
               <li><Link href="/services" className="hover:text-white transition-colors duration-200">{t("services.ml.title")}</Link></li>
               <li><Link href="/services" className="hover:text-white transition-colors duration-200">{t("services.analytics.title")}</Link></li>
-              <li><Link href="/services" className="hover:text-white transition-colors duration-200">AI Consulting</Link></li>
+              <li><Link href="/services" className="hover:text-white transition-colors duration-200">{t("footer.links.aiConsulting")}</Link></li>
             </ul>
           </div>
 
@@ -57,10 +57,10 @@ export function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">{t("footer.legal")}</h4>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="#" className="hover:text-white transition-colors duration-200">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-white transition-colors duration-200">Terms of Service</a></li>
-              <li><a href="#" className="hover:text-white transition-colors duration-200">Cookie Policy</a></li>
-              <li><a href="#" className="hover:text-white transition-colors duration-200">GDPR Compliance</a></li>
+              <li><a href="#" className="hover:text-white transition-colors duration-200">{t("footer.links.privacyPolicy")}</a></li>
+              <li><a href="#" className="hover:text-white transition-colors duration-200">{t("footer.links.termsOfService")}</a></li>
+              <li><a href="#" className="hover:text-white transition-colors duration-200">{t("footer.links.cookiePolicy")}</a></li>
+              <li><a href="#" className="hover:text-white transition-colors duration-200">{t("footer.links.gdprCompliance")}</a></li>
             </ul>
           </div>
         </div>
