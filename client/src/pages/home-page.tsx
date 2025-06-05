@@ -218,10 +218,10 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
             <div>
               <h2 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-                Leading the AI Revolution
+                Your AI Partner from Idea to Execution
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
-                At AI Edge International, we're not just building AI solutions – we're crafting the future of intelligent business operations. Our team of world-class engineers and data scientists brings decades of combined experience in cutting-edge AI research and enterprise implementation.
+                At AI Edge International, we specialize in bringing your ideas to life using the power Artificial Intelligence. We help forward-thinking businesses explore and implement tailored AI strategies without the bureaucracy and overhead of big firms.
               </p>
               
 
