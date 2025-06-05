@@ -225,7 +225,19 @@ export const translations = {
         production: "Production",
         ethics: "Ethics",
         "ai governance": "AI Governance",
-        responsibility: "Responsibility"
+        responsibility: "Responsibility",
+        nlp: "NLP",
+        "customer support": "Customer Support",
+        ai: "AI",
+        "computer vision": "Computer Vision",
+        manufacturing: "Manufacturing",
+        "quality control": "Quality Control",
+        "predictive analytics": "Predictive Analytics",
+        "data science": "Data Science",
+        "business intelligence": "Business Intelligence",
+        "ai ethics": "AI Ethics",
+        "responsible ai": "Responsible AI",
+        development: "Development"
       },
       newsletter: {
         title: "Stay Updated with AI Innovations",
@@ -539,7 +551,19 @@ export const translations = {
         production: "Production",
         ethics: "Éthique",
         "ai governance": "Gouvernance IA",
-        responsibility: "Responsabilité"
+        responsibility: "Responsabilité",
+        nlp: "TAL",
+        "customer support": "Support Client",
+        ai: "IA",
+        "computer vision": "Vision par Ordinateur",
+        manufacturing: "Fabrication",
+        "quality control": "Contrôle Qualité",
+        "predictive analytics": "Analyse Prédictive",
+        "data science": "Science des Données",
+        "business intelligence": "Intelligence d'Affaires",
+        "ai ethics": "Éthique IA",
+        "responsible ai": "IA Responsable",
+        development: "Développement"
       },
       newsletter: {
         title: "Restez Informé des Innovations IA",
@@ -801,7 +825,19 @@ export const translations = {
         production: "Producción",
         ethics: "Ética",
         "ai governance": "Gobernanza IA",
-        responsibility: "Responsabilidad"
+        responsibility: "Responsabilidad",
+        nlp: "PLN",
+        "customer support": "Soporte al Cliente",
+        ai: "IA",
+        "computer vision": "Visión por Computadora",
+        manufacturing: "Fabricación",
+        "quality control": "Control de Calidad",
+        "predictive analytics": "Análisis Predictivo",
+        "data science": "Ciencia de Datos",
+        "business intelligence": "Inteligencia de Negocios",
+        "ai ethics": "Ética IA",
+        "responsible ai": "IA Responsable",
+        development: "Desarrollo"
       },
       newsletter: {
         title: "Mantente Actualizado con Innovaciones IA",
