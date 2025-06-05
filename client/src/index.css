@@ -181,5 +181,5 @@
 }
 
 .dark .btn-secondary:hover {
-  @apply bg-primary text-primary-foreground border-primary;
+  @apply bg-white text-black border-white;
 }
