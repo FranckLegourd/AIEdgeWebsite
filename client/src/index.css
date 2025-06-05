@@ -179,3 +179,7 @@
 .btn-secondary {
   @apply border-2 border-white bg-black text-white hover:bg-white hover:text-black transition-all duration-300 shadow-md;
 }
+
+.dark .btn-secondary:hover {
+  @apply bg-primary text-primary-foreground border-primary;
+}
