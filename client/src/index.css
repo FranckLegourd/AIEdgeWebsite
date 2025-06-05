@@ -177,5 +177,5 @@
 }
 
 .btn-secondary {
-  @apply border-2 border-white bg-black text-white hover:bg-white hover:text-primary transition-all duration-300 shadow-md;
+  @apply border-2 border-white bg-black text-white hover:bg-white hover:text-black transition-all duration-300 shadow-md;
 }
