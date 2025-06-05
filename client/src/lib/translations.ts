@@ -50,6 +50,39 @@ export const translations = {
         description: "Deploy intelligent agents that autonomously handle complex tasks and decisions."
       }
     },
+    about: {
+      title: "Your AI Partner from Idea to Execution",
+      subtitle: "At AI Edge International, we specialize in bringing your ideas to life using the power Artificial Intelligence. We help forward-thinking businesses explore and implement tailored AI strategies without the bureaucracy and overhead of big firms.",
+      process: {
+        title: "Our Development Process",
+        analysis: {
+          title: "Analysis",
+          description: "Deep dive into your business needs and data landscape"
+        },
+        design: {
+          title: "Design", 
+          description: "Create custom AI architectures tailored to your requirements"
+        },
+        development: {
+          title: "Development",
+          description: "Build and train AI models with rigorous testing protocols"
+        },
+        deployment: {
+          title: "Deployment",
+          description: "Seamless integration with ongoing support and optimization"
+        }
+      }
+    },
+    testimonials: {
+      title: "Client Success Stories",
+      subtitle: "See how we've transformed businesses with intelligent AI solutions"
+    },
+    features: {
+      rapidDevelopment: "Rapid Development",
+      educationTraining: "Education & Training", 
+      consulting: "Consulting",
+      customSolutions: "Custom Solutions"
+    },
     auth: {
       login: "Sign In",
       register: "Create Account",
@@ -104,7 +137,14 @@ export const translations = {
       company: "Company",
       legal: "Legal",
       copyright: "© {year} AI Edge International. All rights reserved.",
-      availableIn: "Available in:"
+      availableIn: "Available in:",
+      links: {
+        aiConsulting: "AI Consulting",
+        privacyPolicy: "Privacy Policy",
+        termsOfService: "Terms of Service",
+        cookiePolicy: "Cookie Policy",
+        gdprCompliance: "GDPR Compliance"
+      }
     },
     blog: {
       title: "World of AI Innovation",

@@ -189,15 +189,15 @@ export default function HomePage() {
           {/* Process Timeline */}
           <Card className="p-8 md:p-12">
             <h3 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">
-              Our Development Process
+              {t("about.process.title")}
             </h3>
             
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               {[
-                { step: "1", title: "Analysis", description: "Deep dive into your business needs and data landscape" },
-                { step: "2", title: "Design", description: "Create custom AI architectures tailored to your requirements" },
-                { step: "3", title: "Development", description: "Build and train AI models with rigorous testing protocols" },
-                { step: "4", title: "Deployment", description: "Seamless integration with ongoing support and optimization" }
+                { step: "1", title: t("about.process.analysis.title"), description: t("about.process.analysis.description") },
+                { step: "2", title: t("about.process.design.title"), description: t("about.process.design.description") },
+                { step: "3", title: t("about.process.development.title"), description: t("about.process.development.description") },
+                { step: "4", title: t("about.process.deployment.title"), description: t("about.process.deployment.description") }
               ].map((item) => (
                 <div key={item.step} className="text-center">
                   <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
@@ -218,10 +218,10 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
             <div>
               <h2 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-                Your AI Partner from Idea to Execution
+                {t("about.title")}
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
-                At AI Edge International, we specialize in bringing your ideas to life using the power Artificial Intelligence. We help forward-thinking businesses explore and implement tailored AI strategies without the bureaucracy and overhead of big firms.
+                {t("about.subtitle")}
               </p>
               
 
@@ -244,10 +244,10 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-              Client Success Stories
+              {t("testimonials.title")}
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300">
-              See how we've transformed businesses with intelligent AI solutions
+              {t("testimonials.subtitle")}
             </p>
           </div>
 
@@ -317,10 +317,10 @@ export default function HomePage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
               {[
-                { text: "Rapid Development", icon: Rocket },
-                { text: "Education & Training", icon: GraduationCap }, 
-                { text: "Consulting", icon: Users },
-                { text: "Custom Solutions", icon: Settings }
+                { text: t("features.rapidDevelopment"), icon: Rocket },
+                { text: t("features.educationTraining"), icon: GraduationCap }, 
+                { text: t("features.consulting"), icon: Users },
+                { text: t("features.customSolutions"), icon: Settings }
               ].map((feature, index) => (
                 <div key={index} className="flex items-center justify-center space-x-3 text-white">
                   <feature.icon className="h-5 w-5 text-white flex-shrink-0" />
