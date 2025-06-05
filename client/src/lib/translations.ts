@@ -98,8 +98,14 @@ export const translations = {
       company: "Company",
       loginButton: "Sign In",
       registerButton: "Create Account",
-      switchToRegister: "Don't have an account? Sign up",
-      switchToLogin: "Already have an account? Sign in",
+      switchToRegister: {
+        text: "Don't have an account?",
+        link: "Sign up"
+      },
+      switchToLogin: {
+        text: "Already have an account?",
+        link: "Sign in"
+      },
       confirmPassword: "Confirm Password",
       hero: {
         title: "Transform Your Business with AI",
@@ -380,8 +386,14 @@ export const translations = {
       company: "Entreprise",
       loginButton: "Se Connecter",
       registerButton: "Créer un Compte",
-      switchToRegister: "Pas de compte ? Inscrivez-vous",
-      switchToLogin: "Déjà un compte ? Connectez-vous",
+      switchToRegister: {
+        text: "Pas de compte ?",
+        link: "Inscrivez-vous"
+      },
+      switchToLogin: {
+        text: "Déjà un compte ?",
+        link: "Connectez-vous"
+      },
       confirmPassword: "Confirmer le Mot de Passe",
       hero: {
         title: "Transformez Votre Entreprise avec l'IA",
@@ -662,8 +674,14 @@ export const translations = {
       company: "Empresa",
       loginButton: "Iniciar Sesión",
       registerButton: "Crear Cuenta",
-      switchToRegister: "¿No tienes cuenta? Regístrate",
-      switchToLogin: "¿Ya tienes cuenta? Inicia sesión",
+      switchToRegister: {
+        text: "¿No tienes cuenta?",
+        link: "Regístrate"
+      },
+      switchToLogin: {
+        text: "¿Ya tienes cuenta?",
+        link: "Inicia sesión"
+      },
       confirmPassword: "Confirmar Contraseña",
       hero: {
         title: "Transforma Tu Negocio con IA",

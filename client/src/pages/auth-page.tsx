@@ -148,13 +148,13 @@ export default function AuthPage() {
                   </form>
 
                   <p className="text-center text-sm text-muted-foreground mt-4">
-                    Don't have an account?{" "}
+                    {t("auth.switchToRegister.text")}{" "}
                     <button 
                       type="button"
                       onClick={() => setActiveTab("register")}
                       className="text-primary hover:underline font-medium"
                     >
-                      Sign up
+                      {t("auth.switchToRegister.link")}
                     </button>
                   </p>
                 </CardContent>
@@ -268,13 +268,13 @@ export default function AuthPage() {
                   </form>
 
                   <p className="text-center text-sm text-muted-foreground mt-4">
-                    Already have an account?{" "}
+                    {t("auth.switchToLogin.text")}{" "}
                     <button 
                       type="button"
                       onClick={() => setActiveTab("login")}
                       className="text-primary hover:underline font-medium"
                     >
-                      Sign in
+                      {t("auth.switchToLogin.link")}
                     </button>
                   </p>
                 </CardContent>
