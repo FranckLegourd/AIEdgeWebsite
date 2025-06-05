@@ -75,7 +75,7 @@ export default function AuthPage() {
     <div className="min-h-screen flex">
       {/* Left side - Auth forms */}
       <div className="flex-1 flex items-center justify-center p-8 bg-white dark:bg-gray-900">
-        <div className="w-full max-w-md space-y-6">
+        <div className="w-full max-w-lg space-y-6">
           {/* Theme toggle */}
           <div className="flex justify-between items-center">
             <Link href="/">
