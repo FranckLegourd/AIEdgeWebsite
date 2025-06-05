@@ -267,7 +267,7 @@ export const translations = {
       logout: "Déconnexion"
     },
     hero: {
-      title: "Solutions IA pour l'Avenir des Entreprises",
+      title: "Solutions IA pour le Future de L'Entreprises",
       subtitle: "Le prochain bond dans l'évolution des entreprises est autonome. Transformez votre entreprise avec nos solutions de développement et d'automatisation IA de pointe. Nous nous spécialisons dans les technologies agentiques qui offrent des résultats mesurables et des avantages concurrentiels.",
       cta: "Commencez Votre Parcours IA",
       ctaSecondary: "Voir Nos Services",
