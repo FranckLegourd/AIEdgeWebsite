@@ -511,7 +511,7 @@ export const translations = {
     },
     blog: {
       title: "Monde de l'Innovation IA",
-      subtitle: "Plongez dans notre collection d'insights, tutoriels et perspectives qui explorent le monde de pointe de l'intelligence artificielle et de l'automatisation.",
+      subtitle: "Plongez dans notre collection d'idées, de tutoriels et de perspectives qui explorent le monde de pointe de l'intelligence artificielle et de l'automatisation.",
       filters: {
         all: "Tous",
         highlights: "Points Forts",
