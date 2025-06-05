@@ -22,6 +22,12 @@ export const translations = {
         custom: "Consulting"
       }
     },
+    features: {
+      rapidDevelopment: "Rapid Development",
+      educationTraining: "Education & Training", 
+      consulting: "Consulting",
+      customSolutions: "Custom Solutions"
+    },
     services: {
       title: "Our AI Expertise",
       subtitle: "From intelligent automation to predictive analytics, we deliver comprehensive AI solutions that transform how your business operates.",
@@ -348,6 +354,12 @@ export const translations = {
         custom: "Conseil"
       }
     },
+    features: {
+      rapidDevelopment: "Développement Rapide",
+      educationTraining: "Éducation et Formation", 
+      consulting: "Conseil",
+      customSolutions: "Solutions Personnalisées"
+    },
     services: {
       title: "Notre Expertise IA",
       subtitle: "De l'automatisation intelligente à l'analyse prédictive, nous livrons des solutions IA complètes qui transforment le fonctionnement de votre entreprise.",
@@ -673,6 +685,12 @@ export const translations = {
         deployment: "Desarrollo Rápido",
         custom: "Consultoría"
       }
+    },
+    features: {
+      rapidDevelopment: "Desarrollo Rápido",
+      educationTraining: "Educación y Entrenamiento", 
+      consulting: "Consultoría",
+      customSolutions: "Soluciones Personalizadas"
     },
     services: {
       title: "Nuestra Experiencia en IA",
