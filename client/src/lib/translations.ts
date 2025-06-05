@@ -214,8 +214,9 @@ export const translations = {
         morePosts: "More Articles"
       },
       categories: {
-        insights: "Insights",
+        highlights: "Highlights",
         updates: "Updates",
+        insights: "Insights",
         "ai agents": "AI Agents",
         automation: "Automation",
         business: "Business",
@@ -527,8 +528,9 @@ export const translations = {
         morePosts: "Plus d'Articles"
       },
       categories: {
-        insights: "Perspectives",
+        highlights: "Points Forts",
         updates: "Mises à Jour",
+        insights: "Perspectives",
         "ai agents": "Agents IA",
         automation: "Automatisation",
         business: "Affaires",
@@ -788,8 +790,9 @@ export const translations = {
         morePosts: "Más Artículos"
       },
       categories: {
-        insights: "Perspectivas",
+        highlights: "Destacados",
         updates: "Actualizaciones",
+        insights: "Perspectivas",
         "ai agents": "Agentes IA",
         automation: "Automatización",
         business: "Negocios",
