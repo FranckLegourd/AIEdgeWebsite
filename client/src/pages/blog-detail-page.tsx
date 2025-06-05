@@ -104,7 +104,7 @@ export default function BlogDetailPage() {
                 variant="secondary"
                 className="capitalize"
               >
-                {post.category}
+                {t(`blog.categories.${post.category}`)}
               </Badge>
               
               <h1 className="text-4xl md:text-5xl font-bold text-foreground leading-tight">
@@ -168,7 +168,7 @@ export default function BlogDetailPage() {
                     variant="outline" 
                     className="border-primary/20 text-primary/80"
                   >
-                    {tag}
+                    {t(`blog.categories.${tag.toLowerCase()}`) || tag}
                   </Badge>
                 ))}
               </div>

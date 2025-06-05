@@ -137,7 +137,7 @@ export default function BlogPage() {
                         variant="secondary" 
                         className="bg-primary/90 text-primary-foreground capitalize"
                       >
-                        {post.category}
+                        {t(`blog.categories.${post.category}`)}
                       </Badge>
                     </div>
                   </div>
@@ -164,7 +164,7 @@ export default function BlogPage() {
                           variant="outline" 
                           className="text-xs border-primary/20 text-primary/80"
                         >
-                          {tag}
+                          {t(`blog.categories.${tag.toLowerCase()}`) || tag}
                         </Badge>
                       ))}
                     </div>
