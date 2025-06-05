@@ -124,7 +124,7 @@ export default function BlogPage() {
             {filteredPosts.map((post) => (
               <Link key={post.id} href={`/blog/${post.id}`}>
                 <Card 
-                  className="group hover:shadow-xl transition-all duration-300 overflow-hidden border-border/50 hover:border-primary/20 cursor-pointer"
+                  className="group hover:shadow-xl transition-all duration-300 overflow-hidden border-border/50 hover:border-primary/20 cursor-pointer h-full flex flex-col"
                 >
                   <div className="relative overflow-hidden">
                     <img
@@ -152,8 +152,8 @@ export default function BlogPage() {
                     </CardTitle>
                   </CardHeader>
                   
-                  <CardContent className="pt-0">
-                    <p className="text-muted-foreground leading-relaxed mb-4">
+                  <CardContent className="pt-0 flex-grow flex flex-col">
+                    <p className="text-muted-foreground leading-relaxed mb-4 flex-grow">
                       {post.excerpt}
                     </p>
                     
@@ -171,7 +171,7 @@ export default function BlogPage() {
                     
                     <Button 
                       variant="ghost" 
-                      className="p-0 h-auto text-primary hover:text-primary/80 font-medium"
+                      className="p-0 h-auto text-primary hover:text-primary/80 font-medium mt-auto"
                     >
                       {t("blog.readArticle")}
                     </Button>
