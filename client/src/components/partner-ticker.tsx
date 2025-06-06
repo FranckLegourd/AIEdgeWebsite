@@ -27,6 +27,8 @@ import replitLight from "@assets/replit_lt.png";
 import replitDark from "@assets/replit_dk.png";
 import voiceflowLight from "@assets/voiceflow_lt.png";
 import voiceflowDark from "@assets/voiceflow_dk.png";
+import retoolLight from "@assets/retool_lt.png";
+import retoolDark from "@assets/retool_dk.png";
 
 const partners = [
   {
@@ -99,6 +101,11 @@ const partners = [
     lightLogo: voiceflowLight,
     darkLogo: voiceflowDark,
   },
+  {
+    name: "Retool",
+    lightLogo: retoolLight,
+    darkLogo: retoolDark,
+  },
 ];
 
 export function PartnerTicker() {
@@ -119,8 +126,8 @@ export function PartnerTicker() {
           <div className="absolute right-0 top-0 w-32 h-full bg-gradient-to-l from-muted/30 via-muted/30 to-transparent z-10 pointer-events-none"></div>
           
           {/* Scrolling container with seamless loop */}
-          <div className="flex animate-scroll-seamless" style={{ width: `${14 * 224 * 2}px` }}>
-            {/* First set of all 14 logos */}
+          <div className="flex animate-scroll-seamless" style={{ width: `${15 * 224 * 2}px` }}>
+            {/* First set of all 15 logos */}
             {partners.map((partner, index) => (
               <div
                 key={`first-${index}`}
