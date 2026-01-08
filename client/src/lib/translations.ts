@@ -124,7 +124,7 @@ export const translations = {
         title: "Contact Information",
         email: "info@aiedgeinternational.com",
         phone: "+1 (555) 123-4567",
-        location: "San Francisco, CA"
+        location: "Las Vegas, NV"
       }
     },
     footer: {
@@ -462,7 +462,7 @@ export const translations = {
         title: "Informations de Contact",
         email: "info@aiedgeinternational.com",
         phone: "+1 (555) 123-4567",
-        location: "San Francisco, CA"
+        location: "Las Vegas, NV"
       }
     },
     footer: {
@@ -800,7 +800,7 @@ export const translations = {
         title: "Información de Contacto",
         email: "info@aiedgeinternational.com",
         phone: "+1 (555) 123-4567",
-        location: "San Francisco, CA"
+        location: "Las Vegas, NV"
       }
     },
     footer: {
