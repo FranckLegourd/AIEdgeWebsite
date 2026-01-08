@@ -58,7 +58,7 @@ export const translations = {
     },
     about: {
       title: "Your AI Partner from Idea to Execution",
-      subtitle: "At AI Edge International, we specialize in bringing your ideas to life using the power of Artificial Intelligence. We help visionary businesses explore and implement custom AI strategies without the bureaucracy and overhead of large corporations.",
+      subtitle: "At AI Edge International, we specialize in bringing your ideas to life using the power of Artificial Intelligence. We help visionary businesses explore and implement custom AI strategies without the bureaucracy and overhead of large consulting firms.",
       process: {
         title: "Our Development Process",
         analysis: {
@@ -396,7 +396,7 @@ export const translations = {
     },
     about: {
       title: "Votre Partenaire IA de l'Idée à l'Exécution",
-      subtitle: "Chez AI Edge International, nous nous spécialisons dans la concrétisation de vos idées en utilisant le pouvoir de l'Intelligence Artificielle. Nous aidons les entreprises visionnaires à explorer et à mettre en œuvre des stratégies IA sur mesure sans la bureaucratie et les frais généraux des grandes entreprises.",
+      subtitle: "Chez AI Edge International, nous nous spécialisons dans la concrétisation de vos idées en utilisant le pouvoir de l'Intelligence Artificielle. Nous aidons les entreprises visionnaires à explorer et à mettre en œuvre des stratégies IA sur mesure sans la bureaucratie et les frais généraux des grands cabinets de conseil.",
       process: {
         title: "Notre Processus de Développement",
         analysis: {
@@ -734,7 +734,7 @@ export const translations = {
     },
     about: {
       title: "Tu Socio IA de la Idea a la Ejecución",
-      subtitle: "En AI Edge International, nos especializamos en dar vida a tus ideas usando el poder de la Inteligencia Artificial. Ayudamos a empresas visionarias a explorar e implementar estrategias IA personalizadas sin la burocracia y gastos generales de grandes corporaciones.",
+      subtitle: "En AI Edge International, nos especializamos en dar vida a tus ideas usando el poder de la Inteligencia Artificial. Ayudamos a empresas visionarias a explorar e implementar estrategias IA personalizadas sin la burocracia y gastos generales de grandes firmas de consultoría.",
       process: {
         title: "Nuestro Proceso de Desarrollo",
         analysis: {
