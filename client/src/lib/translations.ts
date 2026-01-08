@@ -12,7 +12,10 @@ export const translations = {
       logout: "Logout"
     },
     hero: {
-      title: "AI Solutions for the Future of Business",
+      title: "Your AI Transformation Partner from Idea to Execution",
+      titlePart1: "Your",
+      titleHighlight: "AI Transformation",
+      titlePart2: "Partner from Idea to Execution",
       subtitle: "The next leap in business evolution is autonomous. Transform your business with our cutting-edge AI development and automation solutions. We specialize in agentic technologies that deliver measurable results and competitive advantages.",
       cta: "Start Your AI Journey",
       ctaSecondary: "View Our Services",
@@ -350,7 +353,10 @@ export const translations = {
       logout: "Déconnexion"
     },
     hero: {
-      title: "Solutions IA pour le Future de L'Entreprise",
+      title: "Votre Partenaire de Transformation IA de l'Idée à l'Exécution",
+      titlePart1: "Votre",
+      titleHighlight: "Transformation IA",
+      titlePart2: "Partenaire de l'Idée à l'Exécution",
       subtitle: "Le prochain bond dans l'évolution des entreprises est autonome. Transformez votre entreprise avec nos solutions de développement et d'automatisation IA de pointe. Nous nous spécialisons dans les technologies agentiques qui offrent des résultats mesurables et des avantages concurrentiels.",
       cta: "Commencez Votre Parcours IA",
       ctaSecondary: "Voir Nos Services",
@@ -688,7 +694,10 @@ export const translations = {
       logout: "Cerrar Sesión"
     },
     hero: {
-      title: "Soluciones IA para el Futuro de los Negocios",
+      title: "Tu Socio de Transformación IA de la Idea a la Ejecución",
+      titlePart1: "Tu",
+      titleHighlight: "Transformación IA",
+      titlePart2: "Socio de la Idea a la Ejecución",
       subtitle: "El próximo salto en la evolución empresarial es autónomo. Transforma tu negocio con nuestras soluciones de desarrollo y automatización IA de vanguardia. Nos especializamos en tecnologías agénticas que entregan resultados medibles y ventajas competitivas.",
       cta: "Comienza Tu Viaje IA",
       ctaSecondary: "Ver Nuestros Servicios",
