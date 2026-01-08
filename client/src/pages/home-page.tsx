@@ -103,7 +103,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className={`${isVisible ? "animate-slide-up" : "opacity-0"}`}>
-              <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
+              <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
                 <span className="text-gray-900 dark:text-white">{t("hero.titlePart1")} </span>
                 <span className="text-primary">{t("hero.titleHighlight")} </span>
                 <span className="text-gray-900 dark:text-white">{t("hero.titlePart2")}</span>
