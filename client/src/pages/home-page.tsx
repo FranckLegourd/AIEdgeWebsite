@@ -103,10 +103,13 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className={`${isVisible ? "animate-slide-up" : "opacity-0"}`}>
-              <h1 className="text-2xl md:text-4xl font-bold leading-tight mb-6">
-                <span className="text-gray-900 dark:text-white">{t("hero.titlePart1")} </span>
-                <span className="text-primary">{t("hero.titleHighlight")} </span>
-                <span className="text-gray-900 dark:text-white">{t("hero.titlePart2")}</span>
+              <h1 className="text-xl sm:text-2xl md:text-4xl font-bold leading-tight mb-6">
+                <span className="whitespace-nowrap">
+                  <span className="text-gray-900 dark:text-white">{t("hero.titlePart1")} </span>
+                  <span className="text-primary">{t("hero.titleHighlight")} </span>
+                  <span className="text-gray-900 dark:text-white">{t("hero.titlePart2").split(" ")[0]}</span>
+                </span>
+                <span className="text-gray-900 dark:text-white"> {t("hero.titlePart2").split(" ").slice(1).join(" ")}</span>
               </h1>
               
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
