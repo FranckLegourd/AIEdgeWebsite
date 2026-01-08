@@ -16,7 +16,7 @@ export const translations = {
       titlePart1: "Your",
       titleHighlight: "AI Transformation",
       titlePart2: "Partner from Idea to Execution",
-      subtitle: "The next leap in business evolution is autonomous. Transform your business with our cutting-edge AI development and automation solutions. We specialize in agentic technologies that deliver measurable results and competitive advantages.",
+      subtitle: "We specialize in bringing your ideas to life using the power of Artificial Intelligence. We help visionary businesses of all sizes explore and implement custom AI strategies that deliver measurable results and competitive advantages.",
       cta: "Start Your AI Journey",
       ctaSecondary: "View Our Services",
       features: {
@@ -357,7 +357,7 @@ export const translations = {
       titlePart1: "Votre",
       titleHighlight: "Transformation IA",
       titlePart2: "Partenaire de l'Idée à l'Exécution",
-      subtitle: "Le prochain bond dans l'évolution des entreprises est autonome. Transformez votre entreprise avec nos solutions de développement et d'automatisation IA de pointe. Nous nous spécialisons dans les technologies agentiques qui offrent des résultats mesurables et des avantages concurrentiels.",
+      subtitle: "Nous nous spécialisons dans la concrétisation de vos idées en utilisant la puissance de l'Intelligence Artificielle. Nous aidons les entreprises visionnaires de toutes tailles à explorer et à mettre en œuvre des stratégies IA personnalisées qui offrent des résultats mesurables et des avantages concurrentiels.",
       cta: "Commencez Votre Parcours IA",
       ctaSecondary: "Voir Nos Services",
       features: {
@@ -698,7 +698,7 @@ export const translations = {
       titlePart1: "Tu",
       titleHighlight: "Transformación IA",
       titlePart2: "Socio de la Idea a la Ejecución",
-      subtitle: "El próximo salto en la evolución empresarial es autónomo. Transforma tu negocio con nuestras soluciones de desarrollo y automatización IA de vanguardia. Nos especializamos en tecnologías agénticas que entregan resultados medibles y ventajas competitivas.",
+      subtitle: "Nos especializamos en dar vida a tus ideas usando el poder de la Inteligencia Artificial. Ayudamos a empresas visionarias de todos los tamaños a explorar e implementar estrategias IA personalizadas que entregan resultados medibles y ventajas competitivas.",
       cta: "Comienza Tu Viaje IA",
       ctaSecondary: "Ver Nuestros Servicios",
       features: {
