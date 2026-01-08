@@ -123,7 +123,7 @@ export const translations = {
       info: {
         title: "Contact Information",
         email: "info@aiedgeinternational.com",
-        phone: "+1 (555) 123-4567",
+        phone: "+1 (702) 620-8020",
         location: "Las Vegas, NV"
       }
     },
@@ -461,7 +461,7 @@ export const translations = {
       info: {
         title: "Informations de Contact",
         email: "info@aiedgeinternational.com",
-        phone: "+1 (555) 123-4567",
+        phone: "+1 (702) 620-8020",
         location: "Las Vegas, NV"
       }
     },
@@ -799,7 +799,7 @@ export const translations = {
       info: {
         title: "Información de Contacto",
         email: "info@aiedgeinternational.com",
-        phone: "+1 (555) 123-4567",
+        phone: "+1 (702) 620-8020",
         location: "Las Vegas, NV"
       }
     },
