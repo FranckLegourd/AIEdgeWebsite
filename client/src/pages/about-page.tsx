@@ -280,7 +280,7 @@ export default function AboutPage() {
                   Headquarters
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300">
-                  San Francisco, CA<br />
+                  Las Vegas, NV<br />
                   United States
                 </p>
               </CardContent>
