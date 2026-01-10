@@ -10,7 +10,7 @@ import {
   Shield, 
   Rocket, 
   Cog, 
-  Bot, 
+  Target, 
   Mic, 
   Database, 
   Video, 
@@ -34,7 +34,7 @@ export default function HomePage() {
 
   const services = [
     {
-      icon: Bot,
+      icon: Target,
       title: t("services.automation.title"),
       description: t("services.automation.description"),
       color: "text-primary"

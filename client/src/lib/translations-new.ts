@@ -26,8 +26,8 @@ export const translations = {
       title: "Our AI Expertise",
       subtitle: "From intelligent automation to predictive analytics, we deliver comprehensive AI solutions that transform how your business operates.",
       automation: {
-        title: "Intelligent Automation",
-        description: "Streamline operations with AI-powered workflows that adapt and optimize in real-time."
+        title: "Lead Generation",
+        description: "AI-powered systems that identify, qualify, and nurture high-value prospects automatically."
       },
       ml: {
         title: "Voice Agent Systems",
