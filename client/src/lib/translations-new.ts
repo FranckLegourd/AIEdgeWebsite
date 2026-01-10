@@ -34,7 +34,7 @@ export const translations = {
         description: "Intelligent voice assistants and speech recognition systems that enhance and automate customer interactions."
       },
       analytics: {
-        title: "Retrieval-Augmented Generation (RAG) Systems",
+        title: "Retrieval-Augmented Generation (RAG)",
         description: "Combine your knowledge base with AI to deliver accurate, context-aware responses."
       },
       nlp: {
