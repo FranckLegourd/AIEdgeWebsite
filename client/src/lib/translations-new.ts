@@ -24,7 +24,7 @@ export const translations = {
     },
     services: {
       title: "Our AI Expertise",
-      subtitle: "From intelligent automation to predictive analytics, we deliver comprehensive AI solutions that transform how your business operates.",
+      subtitle: "Custom AI solutions designed to multiply your team's impact—turning complex challenges into automated advantages.",
       automation: {
         title: "Lead Generation",
         description: "AI Agent systems that identify, qualify, and nurture high-value prospects automatically.",
@@ -349,7 +349,7 @@ export const translations = {
     },
     services: {
       title: "Notre Expertise IA",
-      subtitle: "De l'automatisation intelligente à l'analyse prédictive, nous livrons des solutions IA complètes qui transforment le fonctionnement de votre entreprise.",
+      subtitle: "Des solutions IA sur mesure conçues pour démultiplier l'impact de votre équipe—transformant les défis complexes en avantages automatisés.",
       automation: {
         title: "Génération de Prospects",
         description: "Systèmes d'agents IA qui identifient, qualifient et nourrissent automatiquement des prospects à haute valeur.",
@@ -622,7 +622,7 @@ export const translations = {
     },
     services: {
       title: "Nuestra Experiencia en IA",
-      subtitle: "Desde automatización inteligente hasta análisis predictivo, entregamos soluciones IA integrales que transforman cómo opera tu negocio.",
+      subtitle: "Soluciones de IA personalizadas diseñadas para multiplicar el impacto de tu equipo—convirtiendo desafíos complejos en ventajas automatizadas.",
       automation: {
         title: "Generación de Prospectos",
         description: "Sistemas de agentes IA que identifican, califican y nutren automáticamente prospectos de alto valor.",
