@@ -38,15 +38,15 @@ export function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">{t("footer.services")}</h4>
             <ul className="space-y-2 text-gray-400">
-              <li><Link href="/services" className="hover:text-white transition-colors duration-200">• {t("footer.links.leadGeneration")}</Link></li>
-              <li><Link href="/services" className="hover:text-white transition-colors duration-200">• {t("services.ml.title")}</Link></li>
-              <li><Link href="/services" className="hover:text-white transition-colors duration-200">• {t("footer.links.rag")}</Link></li>
-              <li><Link href="/services" className="hover:text-white transition-colors duration-200">• {t("services.nlp.title")}</Link></li>
-              <li><Link href="/services" className="hover:text-white transition-colors duration-200">• {t("services.vision.title")}</Link></li>
-              <li><Link href="/services" className="hover:text-white transition-colors duration-200">• {t("services.agents.title")}</Link></li>
-              <li><Link href="/services" className="hover:text-white transition-colors duration-200">• {t("footer.links.consulting")}</Link></li>
-              <li><Link href="/services" className="hover:text-white transition-colors duration-200">• {t("footer.links.trainingEducation")}</Link></li>
-              <li><Link href="/services" className="hover:text-white transition-colors duration-200">• {t("footer.links.rapidDevelopment")}</Link></li>
+              <li className="flex"><span className="mr-2">•</span><Link href="/services" className="hover:text-white transition-colors duration-200">{t("footer.links.leadGeneration")}</Link></li>
+              <li className="flex"><span className="mr-2">•</span><Link href="/services" className="hover:text-white transition-colors duration-200">{t("services.ml.title")}</Link></li>
+              <li className="flex"><span className="mr-2">•</span><Link href="/services" className="hover:text-white transition-colors duration-200">{t("footer.links.rag")}</Link></li>
+              <li className="flex"><span className="mr-2">•</span><Link href="/services" className="hover:text-white transition-colors duration-200">{t("services.nlp.title")}</Link></li>
+              <li className="flex"><span className="mr-2">•</span><Link href="/services" className="hover:text-white transition-colors duration-200">{t("services.vision.title")}</Link></li>
+              <li className="flex"><span className="mr-2">•</span><Link href="/services" className="hover:text-white transition-colors duration-200">{t("services.agents.title")}</Link></li>
+              <li className="flex"><span className="mr-2">•</span><Link href="/services" className="hover:text-white transition-colors duration-200">{t("footer.links.consulting")}</Link></li>
+              <li className="flex"><span className="mr-2">•</span><Link href="/services" className="hover:text-white transition-colors duration-200">{t("footer.links.trainingEducation")}</Link></li>
+              <li className="flex"><span className="mr-2">•</span><Link href="/services" className="hover:text-white transition-colors duration-200">{t("footer.links.rapidDevelopment")}</Link></li>
             </ul>
           </div>
 
