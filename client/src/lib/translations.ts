@@ -48,7 +48,7 @@ export const translations = {
       },
       nlp: {
         title: "Video & Image Generation",
-        description: "Automate video creation, editing, and analysis with intelligent AI-powered tools."
+        description: "Automate video creation, editing, and analysis with intelligent AI-powered workflows."
       },
       vision: {
         title: "Computer Vision",
