@@ -315,7 +315,7 @@ export default function ServicesPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact">
-              <Button size="lg" className="bg-white text-primary hover:bg-gray-100">
+              <Button size="lg" variant="outline" className="border-white !text-white bg-transparent hover:bg-white hover:!text-primary">
                 {t("services.cta.startJourney")}
                 <ArrowRight className="h-5 w-5 ml-2" />
               </Button>
