@@ -31,19 +31,8 @@ export default function ServicesPage() {
       description: t("services.automation.description"),
       color: "text-primary",
       bgColor: "bg-primary/10",
-      features: [
-        "Automated prospect identification",
-        "AI-powered lead scoring and qualification",
-        "Multi-channel outreach automation",
-        "CRM integration and data enrichment",
-        "Behavioral tracking and engagement analysis"
-      ],
-      useCases: [
-        "B2B sales pipeline automation",
-        "Real estate lead nurturing",
-        "SaaS customer acquisition",
-        "E-commerce conversion optimization"
-      ]
+      features: t("services.automation.features") as unknown as string[],
+      useCases: t("services.automation.useCases") as unknown as string[]
     },
     {
       icon: Mic,
@@ -51,19 +40,8 @@ export default function ServicesPage() {
       description: t("services.ml.description"),
       color: "text-purple-600",
       bgColor: "bg-purple-100 dark:bg-purple-900/20",
-      features: [
-        "Natural voice conversation AI",
-        "Real-time speech recognition",
-        "Multi-language voice support",
-        "Sentiment and emotion detection",
-        "Voice-to-action automation"
-      ],
-      useCases: [
-        "Automated customer support calls",
-        "Appointment scheduling assistants",
-        "Voice-enabled order processing",
-        "Interactive voice response (IVR) systems"
-      ]
+      features: t("services.ml.features") as unknown as string[],
+      useCases: t("services.ml.useCases") as unknown as string[]
     },
     {
       icon: Database,
@@ -71,19 +49,8 @@ export default function ServicesPage() {
       description: t("services.analytics.description"),
       color: "text-green-600",
       bgColor: "bg-green-100 dark:bg-green-900/20",
-      features: [
-        "Knowledge base integration",
-        "Semantic search and retrieval",
-        "Context-aware response generation",
-        "Document parsing and indexing",
-        "Real-time data synchronization"
-      ],
-      useCases: [
-        "Internal knowledge assistants",
-        "Customer support chatbots",
-        "Legal and compliance research",
-        "Technical documentation queries"
-      ]
+      features: t("services.analytics.features") as unknown as string[],
+      useCases: t("services.analytics.useCases") as unknown as string[]
     },
     {
       icon: Video,
@@ -91,19 +58,8 @@ export default function ServicesPage() {
       description: t("services.nlp.description"),
       color: "text-orange-600",
       bgColor: "bg-orange-100 dark:bg-orange-900/20",
-      features: [
-        "AI-powered video creation",
-        "Automated image generation",
-        "Brand-consistent visual content",
-        "Video editing and enhancement",
-        "Thumbnail and graphic design automation"
-      ],
-      useCases: [
-        "Social media content creation",
-        "Product marketing videos",
-        "Personalized video messages",
-        "Ad creative generation"
-      ]
+      features: t("services.nlp.features") as unknown as string[],
+      useCases: t("services.nlp.useCases") as unknown as string[]
     },
     {
       icon: MessageSquare,
@@ -111,19 +67,8 @@ export default function ServicesPage() {
       description: t("services.vision.description"),
       color: "text-purple-600",
       bgColor: "bg-purple-100 dark:bg-purple-900/20",
-      features: [
-        "Personalized message generation",
-        "Audience segmentation automation",
-        "Multi-platform DM campaigns",
-        "Response handling and follow-ups",
-        "Performance analytics and optimization"
-      ],
-      useCases: [
-        "LinkedIn outreach campaigns",
-        "Instagram influencer engagement",
-        "Customer retention messaging",
-        "Event promotion and invitations"
-      ]
+      features: t("services.vision.features") as unknown as string[],
+      useCases: t("services.vision.useCases") as unknown as string[]
     },
     {
       icon: Bot,
@@ -131,19 +76,8 @@ export default function ServicesPage() {
       description: t("services.agents.description"),
       color: "text-teal-600",
       bgColor: "bg-teal-100 dark:bg-teal-900/20",
-      features: [
-        "Multi-agent orchestration",
-        "Autonomous task execution",
-        "Adaptive learning and improvement",
-        "Cross-system integration",
-        "Human-in-the-loop workflows"
-      ],
-      useCases: [
-        "End-to-end process automation",
-        "Research and data analysis",
-        "Customer journey management",
-        "IT operations and monitoring"
-      ]
+      features: t("services.agents.features") as unknown as string[],
+      useCases: t("services.agents.useCases") as unknown as string[]
     }
   ];
 

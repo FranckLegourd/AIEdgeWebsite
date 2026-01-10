@@ -27,27 +27,39 @@ export const translations = {
       subtitle: "From intelligent automation to predictive analytics, we deliver comprehensive AI solutions that transform how your business operates.",
       automation: {
         title: "Lead Generation",
-        description: "AI Agent systems that identify, qualify, and nurture high-value prospects automatically."
+        description: "AI Agent systems that identify, qualify, and nurture high-value prospects automatically.",
+        features: ["Automated prospect identification", "AI-powered lead scoring and qualification", "Multi-channel outreach automation", "CRM integration and data enrichment", "Behavioral tracking and engagement analysis"],
+        useCases: ["B2B sales pipeline automation", "Real estate lead nurturing", "SaaS customer acquisition", "E-commerce conversion optimization"]
       },
       ml: {
         title: "Voice Agent Systems",
-        description: "Intelligent voice assistants and speech recognition systems that enhance and automate customer interactions."
+        description: "Intelligent voice assistants and speech recognition systems that enhance and automate customer interactions.",
+        features: ["Natural voice conversation AI", "Real-time speech recognition", "Multi-language voice support", "Sentiment and emotion detection", "Voice-to-action automation"],
+        useCases: ["Automated customer support calls", "Appointment scheduling assistants", "Voice-enabled order processing", "Interactive voice response (IVR) systems"]
       },
       analytics: {
         title: "Retrieval-Augmented Generation (RAG)",
-        description: "Combine your knowledge base with AI to deliver accurate, context-aware responses."
+        description: "Combine your knowledge base with AI to deliver accurate, context-aware responses.",
+        features: ["Knowledge base integration", "Semantic search and retrieval", "Context-aware response generation", "Document parsing and indexing", "Real-time data synchronization"],
+        useCases: ["Internal knowledge assistants", "Customer support chatbots", "Legal and compliance research", "Technical documentation queries"]
       },
       nlp: {
         title: "Video & Image Generation",
-        description: "Automate video creation, editing, and analysis with intelligent AI-powered workflows."
+        description: "Automate video creation, editing, and analysis with intelligent AI-powered workflows.",
+        features: ["AI-powered video creation", "Automated image generation", "Brand-consistent visual content", "Video editing and enhancement", "Thumbnail and graphic design automation"],
+        useCases: ["Social media content creation", "Product marketing videos", "Personalized video messages", "Ad creative generation"]
       },
       vision: {
         title: "DM Marketing Content Automation",
-        description: "Automate personalized direct message campaigns with AI-generated content at scale."
+        description: "Automate personalized direct message campaigns with AI-generated content at scale.",
+        features: ["Personalized message generation", "Audience segmentation automation", "Multi-platform DM campaigns", "Response handling and follow-ups", "Performance analytics and optimization"],
+        useCases: ["LinkedIn outreach campaigns", "Instagram influencer engagement", "Customer retention messaging", "Event promotion and invitations"]
       },
       agents: {
         title: "AI Agent Workforce",
-        description: "Deploy intelligent agents that autonomously handle repetitive or complex tasks and decisions."
+        description: "Deploy intelligent agents that autonomously handle repetitive or complex tasks and decisions.",
+        features: ["Multi-agent orchestration", "Autonomous task execution", "Adaptive learning and improvement", "Cross-system integration", "Human-in-the-loop workflows"],
+        useCases: ["End-to-end process automation", "Research and data analysis", "Customer journey management", "IT operations and monitoring"]
       }
     },
     about: {
@@ -340,27 +352,39 @@ export const translations = {
       subtitle: "De l'automatisation intelligente à l'analyse prédictive, nous livrons des solutions IA complètes qui transforment le fonctionnement de votre entreprise.",
       automation: {
         title: "Génération de Prospects",
-        description: "Systèmes d'agents IA qui identifient, qualifient et nourrissent automatiquement des prospects à haute valeur."
+        description: "Systèmes d'agents IA qui identifient, qualifient et nourrissent automatiquement des prospects à haute valeur.",
+        features: ["Identification automatisée des prospects", "Scoring et qualification des leads par IA", "Automatisation de la prospection multicanale", "Intégration CRM et enrichissement des données", "Suivi comportemental et analyse d'engagement"],
+        useCases: ["Automatisation du pipeline de ventes B2B", "Nurturing de leads immobiliers", "Acquisition de clients SaaS", "Optimisation des conversions e-commerce"]
       },
       ml: {
         title: "Systèmes d'Agents Vocaux",
-        description: "Assistants vocaux intelligents et systèmes de reconnaissance vocale qui améliorent et automatisent les interactions clients."
+        description: "Assistants vocaux intelligents et systèmes de reconnaissance vocale qui améliorent et automatisent les interactions clients.",
+        features: ["IA conversationnelle vocale naturelle", "Reconnaissance vocale en temps réel", "Support vocal multilingue", "Détection des sentiments et émotions", "Automatisation voix-vers-action"],
+        useCases: ["Appels de support client automatisés", "Assistants de prise de rendez-vous", "Traitement de commandes par la voix", "Systèmes de réponse vocale interactive (SVI)"]
       },
       analytics: {
         title: "Génération Augmentée par Récupération (RAG)",
-        description: "Combinez votre base de connaissances avec l'IA pour fournir des réponses précises et contextuelles."
+        description: "Combinez votre base de connaissances avec l'IA pour fournir des réponses précises et contextuelles.",
+        features: ["Intégration de base de connaissances", "Recherche et récupération sémantique", "Génération de réponses contextuelles", "Analyse et indexation de documents", "Synchronisation des données en temps réel"],
+        useCases: ["Assistants de connaissances internes", "Chatbots de support client", "Recherche juridique et conformité", "Requêtes de documentation technique"]
       },
       nlp: {
         title: "Génération Vidéo et Image",
-        description: "Automatisez la création, l'édition et l'analyse vidéo avec des flux de travail intelligents alimentés par l'IA."
+        description: "Automatisez la création, l'édition et l'analyse vidéo avec des flux de travail intelligents alimentés par l'IA.",
+        features: ["Création vidéo par IA", "Génération d'images automatisée", "Contenu visuel cohérent avec la marque", "Édition et amélioration vidéo", "Automatisation de miniatures et design graphique"],
+        useCases: ["Création de contenu pour réseaux sociaux", "Vidéos marketing produit", "Messages vidéo personnalisés", "Génération de créatifs publicitaires"]
       },
       vision: {
         title: "Automatisation de Contenu Marketing DM",
-        description: "Automatisez les campagnes de messages directs personnalisés avec du contenu généré par l'IA à grande échelle."
+        description: "Automatisez les campagnes de messages directs personnalisés avec du contenu généré par l'IA à grande échelle.",
+        features: ["Génération de messages personnalisés", "Automatisation de la segmentation d'audience", "Campagnes DM multi-plateformes", "Gestion des réponses et relances", "Analytique de performance et optimisation"],
+        useCases: ["Campagnes de prospection LinkedIn", "Engagement d'influenceurs Instagram", "Messages de fidélisation client", "Promotion d'événements et invitations"]
       },
       agents: {
         title: "Main-d'œuvre d'Agents IA",
-        description: "Déployez des agents intelligents qui gèrent de manière autonome des tâches répétitives ou complexes et des décisions."
+        description: "Déployez des agents intelligents qui gèrent de manière autonome des tâches répétitives ou complexes et des décisions.",
+        features: ["Orchestration multi-agents", "Exécution autonome de tâches", "Apprentissage adaptatif et amélioration", "Intégration inter-systèmes", "Flux de travail avec intervention humaine"],
+        useCases: ["Automatisation de processus de bout en bout", "Recherche et analyse de données", "Gestion du parcours client", "Opérations et surveillance IT"]
       }
     },
     about: {
@@ -601,27 +625,39 @@ export const translations = {
       subtitle: "Desde automatización inteligente hasta análisis predictivo, entregamos soluciones IA integrales que transforman cómo opera tu negocio.",
       automation: {
         title: "Generación de Prospectos",
-        description: "Sistemas de agentes IA que identifican, califican y nutren automáticamente prospectos de alto valor."
+        description: "Sistemas de agentes IA que identifican, califican y nutren automáticamente prospectos de alto valor.",
+        features: ["Identificación automatizada de prospectos", "Calificación y scoring de leads con IA", "Automatización de alcance multicanal", "Integración CRM y enriquecimiento de datos", "Seguimiento conductual y análisis de engagement"],
+        useCases: ["Automatización de pipeline de ventas B2B", "Nutrición de leads inmobiliarios", "Adquisición de clientes SaaS", "Optimización de conversión e-commerce"]
       },
       ml: {
         title: "Sistemas de Agentes de Voz",
-        description: "Asistentes de voz inteligentes y sistemas de reconocimiento de voz que mejoran y automatizan las interacciones con clientes."
+        description: "Asistentes de voz inteligentes y sistemas de reconocimiento de voz que mejoran y automatizan las interacciones con clientes.",
+        features: ["IA de conversación por voz natural", "Reconocimiento de voz en tiempo real", "Soporte de voz multilingüe", "Detección de sentimientos y emociones", "Automatización de voz a acción"],
+        useCases: ["Llamadas automatizadas de soporte al cliente", "Asistentes de programación de citas", "Procesamiento de pedidos por voz", "Sistemas de respuesta de voz interactiva (IVR)"]
       },
       analytics: {
         title: "Generación Aumentada por Recuperación (RAG)",
-        description: "Combina tu base de conocimientos con IA para entregar respuestas precisas y contextuales."
+        description: "Combina tu base de conocimientos con IA para entregar respuestas precisas y contextuales.",
+        features: ["Integración de base de conocimientos", "Búsqueda y recuperación semántica", "Generación de respuestas contextuales", "Análisis e indexación de documentos", "Sincronización de datos en tiempo real"],
+        useCases: ["Asistentes de conocimiento interno", "Chatbots de soporte al cliente", "Investigación legal y de cumplimiento", "Consultas de documentación técnica"]
       },
       nlp: {
         title: "Generación de Video e Imagen",
-        description: "Automatiza la creación, edición y análisis de video con flujos de trabajo inteligentes impulsados por IA."
+        description: "Automatiza la creación, edición y análisis de video con flujos de trabajo inteligentes impulsados por IA.",
+        features: ["Creación de video con IA", "Generación automatizada de imágenes", "Contenido visual consistente con la marca", "Edición y mejora de video", "Automatización de miniaturas y diseño gráfico"],
+        useCases: ["Creación de contenido para redes sociales", "Videos de marketing de productos", "Mensajes de video personalizados", "Generación de creativos publicitarios"]
       },
       vision: {
         title: "Automatización de Contenido de Marketing DM",
-        description: "Automatiza campañas de mensajes directos personalizados con contenido generado por IA a escala."
+        description: "Automatiza campañas de mensajes directos personalizados con contenido generado por IA a escala.",
+        features: ["Generación de mensajes personalizados", "Automatización de segmentación de audiencia", "Campañas DM multiplataforma", "Manejo de respuestas y seguimientos", "Analítica de rendimiento y optimización"],
+        useCases: ["Campañas de alcance en LinkedIn", "Engagement con influencers en Instagram", "Mensajes de retención de clientes", "Promoción de eventos e invitaciones"]
       },
       agents: {
         title: "Fuerza Laboral de Agentes IA",
-        description: "Despliega agentes inteligentes que manejan autónomamente tareas repetitivas o complejas y decisiones."
+        description: "Despliega agentes inteligentes que manejan autónomamente tareas repetitivas o complejas y decisiones.",
+        features: ["Orquestación multi-agente", "Ejecución autónoma de tareas", "Aprendizaje adaptativo y mejora", "Integración entre sistemas", "Flujos de trabajo con humano en el ciclo"],
+        useCases: ["Automatización de procesos de extremo a extremo", "Investigación y análisis de datos", "Gestión del recorrido del cliente", "Operaciones y monitoreo de TI"]
       }
     },
     about: {
