@@ -183,7 +183,7 @@ export default function HomePage() {
                   <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">{service.title}</h3>
                   <p className="text-gray-600 dark:text-gray-300 mb-6">{service.description}</p>
                   <Link href="/services" className="text-primary font-semibold hover:underline inline-flex items-center">
-                    Learn More <ArrowRight className="h-4 w-4 ml-1" />
+                    {t("services.learnMore")} <ArrowRight className="h-4 w-4 ml-1" />
                   </Link>
                 </CardContent>
               </Card>

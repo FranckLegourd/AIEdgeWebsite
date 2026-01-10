@@ -222,7 +222,7 @@ export default function ServicesPage() {
 
                   <Link href="/contact">
                     <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-white transition-all duration-300">
-                      Learn More
+                      {t("services.learnMore")}
                       <ArrowRight className="h-4 w-4 ml-2" />
                     </Button>
                   </Link>
@@ -322,7 +322,7 @@ export default function ServicesPage() {
             </Link>
             <Link href="/about">
               <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary">
-                Learn More About Us
+                {t("services.learnMoreAboutUs")}
               </Button>
             </Link>
           </div>
