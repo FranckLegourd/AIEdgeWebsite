@@ -72,6 +72,32 @@ export const translations = {
         description: "Deploy intelligent agents that autonomously handle repetitive or complex tasks and decisions.",
         features: ["Multi-agent orchestration", "Autonomous task execution", "Adaptive learning and improvement", "Cross-system integration", "Human-in-the-loop workflows"],
         useCases: ["End-to-end process automation", "Research and data analysis", "Customer journey management", "IT operations and monitoring"]
+      },
+      keyFeatures: "Key Features:",
+      useCasesLabel: "Use Cases:",
+      benefits: {
+        title: "Why Choose AI Solutions?",
+        subtitle: "Discover the transformative benefits of implementing AI in your business operations",
+        efficiency: { title: "Increased Efficiency", description: "Automate repetitive tasks and optimize workflows to boost productivity by up to 400%." },
+        decisions: { title: "Better Decision Making", description: "Data-driven insights help you make informed decisions that drive business growth." },
+        security: { title: "Enhanced Security", description: "Enterprise-grade security measures protect your data and ensure compliance." },
+        operations: { title: "24/7 Operations", description: "AI systems work around the clock, providing continuous service without breaks." },
+        customer: { title: "Improved Customer Experience", description: "Deliver personalized experiences that exceed customer expectations." },
+        roi: { title: "Measurable ROI", description: "Track and measure the impact of AI solutions with clear metrics and KPIs." }
+      },
+      process: {
+        title: "Our Implementation Process",
+        subtitle: "A proven methodology to ensure successful AI implementation and maximum ROI",
+        discovery: { title: "Discovery & Analysis", description: "We analyze your business processes, data, and goals to identify AI opportunities.", duration: "1-2 weeks" },
+        strategy: { title: "Strategy & Design", description: "Create a comprehensive AI strategy and design custom solutions for your needs.", duration: "2-3 weeks" },
+        development: { title: "Development & Training", description: "Build and train AI models using your data with rigorous testing protocols.", duration: "4-8 weeks" },
+        integration: { title: "Integration & Deployment", description: "Seamlessly integrate AI solutions into your existing systems and workflows.", duration: "2-4 weeks" },
+        monitoring: { title: "Monitoring & Optimization", description: "Continuous monitoring and optimization to ensure peak performance.", duration: "Ongoing" }
+      },
+      cta: {
+        title: "Ready to Transform Your Business?",
+        subtitle: "Let's discuss how our AI solutions can drive innovation and growth for your organization.",
+        startJourney: "Start Your AI Journey"
       }
     },
     about: {
@@ -428,6 +454,32 @@ export const translations = {
         description: "Déployez des agents intelligents qui gèrent de manière autonome des tâches répétitives ou complexes et des décisions.",
         features: ["Orchestration multi-agents", "Exécution autonome de tâches", "Apprentissage adaptatif et amélioration", "Intégration inter-systèmes", "Flux de travail avec intervention humaine"],
         useCases: ["Automatisation de processus de bout en bout", "Recherche et analyse de données", "Gestion du parcours client", "Opérations et surveillance IT"]
+      },
+      keyFeatures: "Fonctionnalités Clés :",
+      useCasesLabel: "Cas d'Utilisation :",
+      benefits: {
+        title: "Pourquoi Choisir les Solutions IA ?",
+        subtitle: "Découvrez les avantages transformateurs de l'implémentation de l'IA dans vos opérations commerciales",
+        efficiency: { title: "Efficacité Accrue", description: "Automatisez les tâches répétitives et optimisez les flux de travail pour augmenter la productivité jusqu'à 400%." },
+        decisions: { title: "Meilleures Décisions", description: "Des insights basés sur les données vous aident à prendre des décisions éclairées qui stimulent la croissance." },
+        security: { title: "Sécurité Renforcée", description: "Des mesures de sécurité de niveau entreprise protègent vos données et assurent la conformité." },
+        operations: { title: "Opérations 24/7", description: "Les systèmes IA fonctionnent en continu, fournissant un service sans interruption." },
+        customer: { title: "Expérience Client Améliorée", description: "Offrez des expériences personnalisées qui dépassent les attentes des clients." },
+        roi: { title: "ROI Mesurable", description: "Suivez et mesurez l'impact des solutions IA avec des métriques et KPIs clairs." }
+      },
+      process: {
+        title: "Notre Processus d'Implémentation",
+        subtitle: "Une méthodologie éprouvée pour assurer une implémentation IA réussie et un ROI maximum",
+        discovery: { title: "Découverte & Analyse", description: "Nous analysons vos processus métier, données et objectifs pour identifier les opportunités IA.", duration: "1-2 semaines" },
+        strategy: { title: "Stratégie & Conception", description: "Créer une stratégie IA complète et concevoir des solutions personnalisées pour vos besoins.", duration: "2-3 semaines" },
+        development: { title: "Développement & Formation", description: "Construire et entraîner des modèles IA avec vos données et des protocoles de test rigoureux.", duration: "4-8 semaines" },
+        integration: { title: "Intégration & Déploiement", description: "Intégrer de manière transparente les solutions IA dans vos systèmes et flux de travail existants.", duration: "2-4 semaines" },
+        monitoring: { title: "Surveillance & Optimisation", description: "Surveillance et optimisation continues pour assurer des performances optimales.", duration: "En continu" }
+      },
+      cta: {
+        title: "Prêt à Transformer Votre Entreprise ?",
+        subtitle: "Discutons de comment nos solutions IA peuvent stimuler l'innovation et la croissance de votre organisation.",
+        startJourney: "Commencez Votre Parcours IA"
       }
     },
     about: {
@@ -784,6 +836,32 @@ export const translations = {
         description: "Despliega agentes inteligentes que manejan autónomamente tareas repetitivas o complejas y decisiones.",
         features: ["Orquestación multi-agente", "Ejecución autónoma de tareas", "Aprendizaje adaptativo y mejora", "Integración entre sistemas", "Flujos de trabajo con humano en el ciclo"],
         useCases: ["Automatización de procesos de extremo a extremo", "Investigación y análisis de datos", "Gestión del recorrido del cliente", "Operaciones y monitoreo de TI"]
+      },
+      keyFeatures: "Características Clave:",
+      useCasesLabel: "Casos de Uso:",
+      benefits: {
+        title: "¿Por Qué Elegir Soluciones IA?",
+        subtitle: "Descubre los beneficios transformadores de implementar IA en tus operaciones empresariales",
+        efficiency: { title: "Mayor Eficiencia", description: "Automatiza tareas repetitivas y optimiza flujos de trabajo para aumentar la productividad hasta un 400%." },
+        decisions: { title: "Mejores Decisiones", description: "Insights basados en datos te ayudan a tomar decisiones informadas que impulsan el crecimiento." },
+        security: { title: "Seguridad Mejorada", description: "Medidas de seguridad de nivel empresarial protegen tus datos y aseguran el cumplimiento." },
+        operations: { title: "Operaciones 24/7", description: "Los sistemas IA trabajan las 24 horas, proporcionando servicio continuo sin interrupciones." },
+        customer: { title: "Experiencia del Cliente Mejorada", description: "Ofrece experiencias personalizadas que superan las expectativas de los clientes." },
+        roi: { title: "ROI Medible", description: "Rastrea y mide el impacto de las soluciones IA con métricas y KPIs claros." }
+      },
+      process: {
+        title: "Nuestro Proceso de Implementación",
+        subtitle: "Una metodología probada para asegurar una implementación IA exitosa y máximo ROI",
+        discovery: { title: "Descubrimiento y Análisis", description: "Analizamos tus procesos de negocio, datos y objetivos para identificar oportunidades IA.", duration: "1-2 semanas" },
+        strategy: { title: "Estrategia y Diseño", description: "Crear una estrategia IA integral y diseñar soluciones personalizadas para tus necesidades.", duration: "2-3 semanas" },
+        development: { title: "Desarrollo y Entrenamiento", description: "Construir y entrenar modelos IA usando tus datos con protocolos de prueba rigurosos.", duration: "4-8 semanas" },
+        integration: { title: "Integración e Implementación", description: "Integrar perfectamente las soluciones IA en tus sistemas y flujos de trabajo existentes.", duration: "2-4 semanas" },
+        monitoring: { title: "Monitoreo y Optimización", description: "Monitoreo y optimización continuos para asegurar el máximo rendimiento.", duration: "Continuo" }
+      },
+      cta: {
+        title: "¿Listo para Transformar Tu Negocio?",
+        subtitle: "Hablemos de cómo nuestras soluciones IA pueden impulsar la innovación y el crecimiento de tu organización.",
+        startJourney: "Comienza Tu Viaje IA"
       }
     },
     about: {

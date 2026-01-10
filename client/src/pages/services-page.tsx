@@ -84,66 +84,66 @@ export default function ServicesPage() {
   const benefits = [
     {
       icon: Zap,
-      title: "Increased Efficiency",
-      description: "Automate repetitive tasks and optimize workflows to boost productivity by up to 400%."
+      title: t("services.benefits.efficiency.title"),
+      description: t("services.benefits.efficiency.description")
     },
     {
       icon: Target,
-      title: "Better Decision Making",
-      description: "Data-driven insights help you make informed decisions that drive business growth."
+      title: t("services.benefits.decisions.title"),
+      description: t("services.benefits.decisions.description")
     },
     {
       icon: Shield,
-      title: "Enhanced Security",
-      description: "Enterprise-grade security measures protect your data and ensure compliance."
+      title: t("services.benefits.security.title"),
+      description: t("services.benefits.security.description")
     },
     {
       icon: Clock,
-      title: "24/7 Operations",
-      description: "AI systems work around the clock, providing continuous service without breaks."
+      title: t("services.benefits.operations.title"),
+      description: t("services.benefits.operations.description")
     },
     {
       icon: Users,
-      title: "Improved Customer Experience",
-      description: "Deliver personalized experiences that exceed customer expectations."
+      title: t("services.benefits.customer.title"),
+      description: t("services.benefits.customer.description")
     },
     {
       icon: BarChart,
-      title: "Measurable ROI",
-      description: "Track and measure the impact of AI solutions with clear metrics and KPIs."
+      title: t("services.benefits.roi.title"),
+      description: t("services.benefits.roi.description")
     }
   ];
 
   const processSteps = [
     {
       step: "01",
-      title: "Discovery & Analysis",
-      description: "We analyze your business processes, data, and goals to identify AI opportunities.",
-      duration: "1-2 weeks"
+      title: t("services.process.discovery.title"),
+      description: t("services.process.discovery.description"),
+      duration: t("services.process.discovery.duration")
     },
     {
       step: "02",
-      title: "Strategy & Design",
-      description: "Create a comprehensive AI strategy and design custom solutions for your needs.",
-      duration: "2-3 weeks"
+      title: t("services.process.strategy.title"),
+      description: t("services.process.strategy.description"),
+      duration: t("services.process.strategy.duration")
     },
     {
       step: "03",
-      title: "Development & Training",
-      description: "Build and train AI models using your data with rigorous testing protocols.",
-      duration: "4-8 weeks"
+      title: t("services.process.development.title"),
+      description: t("services.process.development.description"),
+      duration: t("services.process.development.duration")
     },
     {
       step: "04",
-      title: "Integration & Deployment",
-      description: "Seamlessly integrate AI solutions into your existing systems and workflows.",
-      duration: "2-4 weeks"
+      title: t("services.process.integration.title"),
+      description: t("services.process.integration.description"),
+      duration: t("services.process.integration.duration")
     },
     {
       step: "05",
-      title: "Monitoring & Optimization",
-      description: "Continuous monitoring and optimization to ensure peak performance.",
-      duration: "Ongoing"
+      title: t("services.process.monitoring.title"),
+      description: t("services.process.monitoring.description"),
+      duration: t("services.process.monitoring.duration")
     }
   ];
 
@@ -192,7 +192,7 @@ export default function ServicesPage() {
 
                   <div className="mb-6">
                     <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
-                      Key Features:
+                      {t("services.keyFeatures")}
                     </h4>
                     <ul className="space-y-2">
                       {service.features.map((feature, featureIndex) => (
@@ -206,7 +206,7 @@ export default function ServicesPage() {
 
                   <div className="mb-6">
                     <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
-                      Use Cases:
+                      {t("services.useCasesLabel")}
                     </h4>
                     <div className="flex flex-wrap gap-2">
                       {service.useCases.map((useCase, useCaseIndex) => (
@@ -238,10 +238,10 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-              Why Choose AI Solutions?
+              {t("services.benefits.title")}
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Discover the transformative benefits of implementing AI in your business operations
+              {t("services.benefits.subtitle")}
             </p>
           </div>
 
@@ -270,10 +270,10 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-              Our Implementation Process
+              {t("services.process.title")}
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              A proven methodology to ensure successful AI implementation and maximum ROI
+              {t("services.process.subtitle")}
             </p>
           </div>
 
@@ -308,15 +308,15 @@ export default function ServicesPage() {
       <section className="py-20 bg-gradient-to-br from-primary to-purple-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Ready to Transform Your Business?
+            {t("services.cta.title")}
           </h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto opacity-90">
-            Let's discuss how our AI solutions can drive innovation and growth for your organization.
+            {t("services.cta.subtitle")}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact">
               <Button size="lg" className="bg-white text-primary hover:bg-gray-100">
-                Start Your AI Journey
+                {t("services.cta.startJourney")}
                 <ArrowRight className="h-5 w-5 ml-2" />
               </Button>
             </Link>
