@@ -38,8 +38,8 @@ export const translations = {
         description: "Combine your knowledge base with AI to deliver accurate, context-aware responses."
       },
       nlp: {
-        title: "Natural Language Processing",
-        description: "Transform text data into valuable insights with advanced NLP capabilities."
+        title: "AI Video Automation",
+        description: "Automate video creation, editing, and analysis with intelligent AI-powered tools."
       },
       vision: {
         title: "Computer Vision",
