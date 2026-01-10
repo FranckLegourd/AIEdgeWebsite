@@ -10,7 +10,7 @@ import {
   Shield, 
   Rocket, 
   Cog, 
-  Target, 
+  DollarSign, 
   Mic, 
   Database, 
   Video, 
@@ -34,7 +34,7 @@ export default function HomePage() {
 
   const services = [
     {
-      icon: Target,
+      icon: DollarSign,
       title: t("services.automation.title"),
       description: t("services.automation.description"),
       color: "text-primary"
