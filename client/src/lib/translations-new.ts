@@ -47,7 +47,7 @@ export const translations = {
       },
       agents: {
         title: "AI Agent Systems",
-        description: "Deploy intelligent agents that autonomously handle complex tasks and decisions."
+        description: "Deploy intelligent agents that autonomously handle repetitive or complex tasks and decisions."
       }
     },
     about: {
