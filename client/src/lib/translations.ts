@@ -55,7 +55,7 @@ export const translations = {
         description: "Automate personalized direct message campaigns with AI-generated content at scale."
       },
       agents: {
-        title: "AI Agent Systems",
+        title: "AI Agent Workforce",
         description: "Deploy intelligent agents that autonomously handle repetitive or complex tasks and decisions."
       }
     },
