@@ -5,12 +5,12 @@ import { Button } from "@/components/ui/button";
 import { useTranslation } from "@/hooks/use-translation";
 import { Link } from "wouter";
 import { 
-  Bot, 
-  Brain, 
-  TrendingUp, 
+  Filter, 
+  Mic, 
+  Database, 
+  Video, 
   MessageSquare, 
-  Eye, 
-  Network,
+  Bot,
   ArrowRight,
   CheckCircle,
   Zap,
@@ -26,123 +26,123 @@ export default function ServicesPage() {
 
   const services = [
     {
-      icon: Bot,
+      icon: Filter,
       title: t("services.automation.title"),
       description: t("services.automation.description"),
       color: "text-primary",
       bgColor: "bg-primary/10",
       features: [
-        "Workflow automation and optimization",
-        "Process mining and analysis",
-        "Robotic Process Automation (RPA)",
-        "Business rule engines",
-        "Integration with existing systems"
+        "Automated prospect identification",
+        "AI-powered lead scoring and qualification",
+        "Multi-channel outreach automation",
+        "CRM integration and data enrichment",
+        "Behavioral tracking and engagement analysis"
       ],
       useCases: [
-        "Customer service automation",
-        "Invoice processing",
-        "Data entry automation",
-        "Supply chain optimization"
+        "B2B sales pipeline automation",
+        "Real estate lead nurturing",
+        "SaaS customer acquisition",
+        "E-commerce conversion optimization"
       ]
     },
     {
-      icon: Brain,
+      icon: Mic,
       title: t("services.ml.title"),
       description: t("services.ml.description"),
       color: "text-purple-600",
       bgColor: "bg-purple-100 dark:bg-purple-900/20",
       features: [
-        "Custom model development",
-        "Deep learning architectures",
-        "Feature engineering",
-        "Model training and validation",
-        "MLOps and deployment"
+        "Natural voice conversation AI",
+        "Real-time speech recognition",
+        "Multi-language voice support",
+        "Sentiment and emotion detection",
+        "Voice-to-action automation"
       ],
       useCases: [
-        "Recommendation systems",
-        "Fraud detection",
-        "Quality control",
-        "Price optimization"
+        "Automated customer support calls",
+        "Appointment scheduling assistants",
+        "Voice-enabled order processing",
+        "Interactive voice response (IVR) systems"
       ]
     },
     {
-      icon: TrendingUp,
+      icon: Database,
       title: t("services.analytics.title"),
       description: t("services.analytics.description"),
       color: "text-green-600",
       bgColor: "bg-green-100 dark:bg-green-900/20",
       features: [
-        "Time series forecasting",
-        "Statistical modeling",
-        "Business intelligence dashboards",
-        "Risk assessment models",
-        "Performance optimization"
+        "Knowledge base integration",
+        "Semantic search and retrieval",
+        "Context-aware response generation",
+        "Document parsing and indexing",
+        "Real-time data synchronization"
       ],
       useCases: [
-        "Sales forecasting",
-        "Demand planning",
-        "Risk management",
-        "Market analysis"
+        "Internal knowledge assistants",
+        "Customer support chatbots",
+        "Legal and compliance research",
+        "Technical documentation queries"
       ]
     },
     {
-      icon: MessageSquare,
+      icon: Video,
       title: t("services.nlp.title"),
       description: t("services.nlp.description"),
       color: "text-orange-600",
       bgColor: "bg-orange-100 dark:bg-orange-900/20",
       features: [
-        "Text classification and sentiment analysis",
-        "Named entity recognition",
-        "Language translation",
-        "Chatbots and virtual assistants",
-        "Document processing"
+        "AI-powered video creation",
+        "Automated image generation",
+        "Brand-consistent visual content",
+        "Video editing and enhancement",
+        "Thumbnail and graphic design automation"
       ],
       useCases: [
-        "Customer feedback analysis",
-        "Content moderation",
-        "Legal document review",
-        "Multi-language support"
+        "Social media content creation",
+        "Product marketing videos",
+        "Personalized video messages",
+        "Ad creative generation"
       ]
     },
     {
-      icon: Eye,
+      icon: MessageSquare,
       title: t("services.vision.title"),
       description: t("services.vision.description"),
       color: "text-purple-600",
       bgColor: "bg-purple-100 dark:bg-purple-900/20",
       features: [
-        "Object detection and recognition",
-        "Image classification",
-        "Optical character recognition (OCR)",
-        "Video analysis",
-        "Medical imaging"
+        "Personalized message generation",
+        "Audience segmentation automation",
+        "Multi-platform DM campaigns",
+        "Response handling and follow-ups",
+        "Performance analytics and optimization"
       ],
       useCases: [
-        "Quality inspection",
-        "Security surveillance",
-        "Medical diagnosis",
-        "Autonomous vehicles"
+        "LinkedIn outreach campaigns",
+        "Instagram influencer engagement",
+        "Customer retention messaging",
+        "Event promotion and invitations"
       ]
     },
     {
-      icon: Network,
+      icon: Bot,
       title: t("services.agents.title"),
       description: t("services.agents.description"),
       color: "text-teal-600",
       bgColor: "bg-teal-100 dark:bg-teal-900/20",
       features: [
-        "Multi-agent systems",
-        "Autonomous decision making",
-        "Goal-oriented behavior",
-        "Learning and adaptation",
-        "Human-AI collaboration"
+        "Multi-agent orchestration",
+        "Autonomous task execution",
+        "Adaptive learning and improvement",
+        "Cross-system integration",
+        "Human-in-the-loop workflows"
       ],
       useCases: [
-        "Trading systems",
-        "Smart assistants",
-        "Resource allocation",
-        "Network management"
+        "End-to-end process automation",
+        "Research and data analysis",
+        "Customer journey management",
+        "IT operations and monitoring"
       ]
     }
   ];
