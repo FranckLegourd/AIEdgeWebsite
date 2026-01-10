@@ -43,8 +43,8 @@ export const translations = {
         description: "Intelligent voice assistants and speech recognition systems that enhance and automate customer interactions."
       },
       analytics: {
-        title: "Predictive Analytics",
-        description: "Forecast trends and make data-driven decisions with advanced predictive models."
+        title: "Retrieval-Augmented Generation (RAG) Systems",
+        description: "Combine your knowledge base with AI to deliver accurate, context-aware responses."
       },
       nlp: {
         title: "Natural Language Processing",
