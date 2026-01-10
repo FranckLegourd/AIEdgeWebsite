@@ -15,7 +15,7 @@ import {
   Database, 
   Video, 
   MessageSquare, 
-  Network,
+  Bot,
   Star,
   CheckCircle,
   ArrowRight,
@@ -64,7 +64,7 @@ export default function HomePage() {
       color: "text-purple-600"
     },
     {
-      icon: Network,
+      icon: Bot,
       title: t("services.agents.title"),
       description: t("services.agents.description"),
       color: "text-teal-600"
