@@ -42,8 +42,8 @@ export const translations = {
         description: "Automate video creation, editing, and analysis with intelligent AI-powered workflows."
       },
       vision: {
-        title: "Computer Vision",
-        description: "Extract insights from images and video with state-of-the-art vision models."
+        title: "DM Marketing Content Automation",
+        description: "Automate personalized direct message campaigns with AI-generated content at scale."
       },
       agents: {
         title: "AI Agent Systems",

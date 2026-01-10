@@ -14,7 +14,7 @@ import {
   Mic, 
   Database, 
   Video, 
-  Eye, 
+  MessageSquare, 
   Network,
   Star,
   CheckCircle,
@@ -58,7 +58,7 @@ export default function HomePage() {
       color: "text-orange-600"
     },
     {
-      icon: Eye,
+      icon: MessageSquare,
       title: t("services.vision.title"),
       description: t("services.vision.description"),
       color: "text-purple-600"
