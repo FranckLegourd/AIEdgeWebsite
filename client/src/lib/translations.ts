@@ -180,6 +180,9 @@ export const translations = {
       availableIn: "Available in:",
       links: {
         aiConsulting: "AI Consulting",
+        consulting: "Consulting",
+        trainingEducation: "Training & Education",
+        rapidDevelopment: "Rapid Development",
         privacyPolicy: "Privacy Policy",
         termsOfService: "Terms of Service",
         cookiePolicy: "Cookie Policy",
@@ -562,6 +565,9 @@ export const translations = {
       availableIn: "Disponible en :",
       links: {
         aiConsulting: "Conseil IA",
+        consulting: "Conseil",
+        trainingEducation: "Formation et Éducation",
+        rapidDevelopment: "Développement Rapide",
         privacyPolicy: "Politique de Confidentialité",
         termsOfService: "Conditions de Service",
         cookiePolicy: "Politique des Cookies",
@@ -944,6 +950,9 @@ export const translations = {
       availableIn: "Disponible en:",
       links: {
         aiConsulting: "Consultoría IA",
+        consulting: "Consultoría",
+        trainingEducation: "Formación y Educación",
+        rapidDevelopment: "Desarrollo Rápido",
         privacyPolicy: "Política de Privacidad",
         termsOfService: "Términos de Servicio",
         cookiePolicy: "Política de Cookies",

@@ -41,7 +41,12 @@ export function Footer() {
               <li><Link href="/services" className="hover:text-white transition-colors duration-200">{t("services.automation.title")}</Link></li>
               <li><Link href="/services" className="hover:text-white transition-colors duration-200">{t("services.ml.title")}</Link></li>
               <li><Link href="/services" className="hover:text-white transition-colors duration-200">{t("services.analytics.title")}</Link></li>
-              <li><Link href="/services" className="hover:text-white transition-colors duration-200">{t("footer.links.aiConsulting")}</Link></li>
+              <li><Link href="/services" className="hover:text-white transition-colors duration-200">{t("services.nlp.title")}</Link></li>
+              <li><Link href="/services" className="hover:text-white transition-colors duration-200">{t("services.vision.title")}</Link></li>
+              <li><Link href="/services" className="hover:text-white transition-colors duration-200">{t("services.agents.title")}</Link></li>
+              <li><Link href="/services" className="hover:text-white transition-colors duration-200">{t("footer.links.consulting")}</Link></li>
+              <li><Link href="/services" className="hover:text-white transition-colors duration-200">{t("footer.links.trainingEducation")}</Link></li>
+              <li><Link href="/services" className="hover:text-white transition-colors duration-200">{t("footer.links.rapidDevelopment")}</Link></li>
             </ul>
           </div>
 
