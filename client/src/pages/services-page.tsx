@@ -321,7 +321,7 @@ export default function ServicesPage() {
               </Button>
             </Link>
             <Link href="/about">
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary">
+              <Button size="lg" variant="outline" className="border-white !text-white bg-transparent hover:bg-white hover:!text-primary">
                 {t("services.learnMoreAboutUs")}
               </Button>
             </Link>
