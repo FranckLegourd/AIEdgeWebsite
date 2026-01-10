@@ -12,8 +12,8 @@ import {
   Cog, 
   Bot, 
   Mic, 
-  TrendingUp, 
-  MessageSquare, 
+  Database, 
+  Video, 
   Eye, 
   Network,
   Star,
@@ -46,13 +46,13 @@ export default function HomePage() {
       color: "text-purple-600"
     },
     {
-      icon: TrendingUp,
+      icon: Database,
       title: t("services.analytics.title"),
       description: t("services.analytics.description"),
       color: "text-green-600"
     },
     {
-      icon: MessageSquare,
+      icon: Video,
       title: t("services.nlp.title"),
       description: t("services.nlp.description"),
       color: "text-orange-600"
