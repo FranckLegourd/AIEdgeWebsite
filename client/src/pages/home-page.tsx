@@ -11,7 +11,7 @@ import {
   Rocket, 
   Cog, 
   Bot, 
-  Brain, 
+  Mic, 
   TrendingUp, 
   MessageSquare, 
   Eye, 
@@ -40,7 +40,7 @@ export default function HomePage() {
       color: "text-primary"
     },
     {
-      icon: Brain,
+      icon: Mic,
       title: t("services.ml.title"),
       description: t("services.ml.description"),
       color: "text-purple-600"

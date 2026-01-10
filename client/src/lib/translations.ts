@@ -39,8 +39,8 @@ export const translations = {
         description: "Streamline operations with AI-powered workflows that adapt and optimize in real-time."
       },
       ml: {
-        title: "Machine Learning Models",
-        description: "Custom ML solutions that learn from your data and provide actionable insights."
+        title: "Voice AI Solutions",
+        description: "Intelligent voice assistants and speech recognition systems that enhance customer interactions."
       },
       analytics: {
         title: "Predictive Analytics",
