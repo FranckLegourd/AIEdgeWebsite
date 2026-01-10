@@ -34,6 +34,7 @@ export const translations = {
     services: {
       title: "Our AI Expertise",
       subtitle: "Custom AI solutions designed to multiply your team's impact—turning complex challenges into automated advantages.",
+      getStarted: "Get Started Today",
       automation: {
         title: "Lead Generation",
         description: "AI Agent systems that identify, qualify, and nurture high-value prospects automatically.",
@@ -387,6 +388,7 @@ export const translations = {
     services: {
       title: "Notre Expertise IA",
       subtitle: "Des solutions IA sur mesure conçues pour démultiplier l'impact de votre équipe—transformant les défis complexes en avantages automatisés.",
+      getStarted: "Commencer Aujourd'hui",
       automation: {
         title: "Génération de Prospects",
         description: "Systèmes d'agents IA qui identifient, qualifient et nourrissent automatiquement des prospects à haute valeur.",
@@ -740,6 +742,7 @@ export const translations = {
     services: {
       title: "Nuestra Experiencia en IA",
       subtitle: "Soluciones de IA personalizadas diseñadas para multiplicar el impacto de tu equipo—convirtiendo desafíos complejos en ventajas automatizadas.",
+      getStarted: "Comienza Hoy",
       automation: {
         title: "Generación de Prospectos",
         description: "Sistemas de agentes IA que identifican, califican y nutren automáticamente prospectos de alto valor.",
