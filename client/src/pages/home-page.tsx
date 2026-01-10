@@ -131,16 +131,16 @@ export default function HomePage() {
 
               <div className="flex items-center space-x-8 text-sm text-gray-600 dark:text-gray-400">
                 <div className="flex items-center space-x-2">
-                  <Rocket className="h-5 w-5 text-primary" />
-                  <span>{t("hero.features.deployment")}</span>
+                  <Users className="h-5 w-5 text-purple-500" />
+                  <span>{t("hero.features.custom")}</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <GraduationCap className="h-5 w-5 text-green-500" />
                   <span>{t("hero.features.security")}</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Users className="h-5 w-5 text-purple-500" />
-                  <span>{t("hero.features.custom")}</span>
+                  <Rocket className="h-5 w-5 text-primary" />
+                  <span>{t("hero.features.deployment")}</span>
                 </div>
               </div>
             </div>
