@@ -339,28 +339,28 @@ export const translations = {
       title: "Notre Expertise IA",
       subtitle: "De l'automatisation intelligente à l'analyse prédictive, nous livrons des solutions IA complètes qui transforment le fonctionnement de votre entreprise.",
       automation: {
-        title: "Automatisation Intelligente",
-        description: "Rationalisez les opérations avec des flux de travail alimentés par l'IA qui s'adaptent et s'optimisent en temps réel."
+        title: "Génération de Prospects",
+        description: "Systèmes d'agents IA qui identifient, qualifient et nourrissent automatiquement des prospects à haute valeur."
       },
       ml: {
-        title: "Modèles d'Apprentissage Automatique",
-        description: "Solutions ML personnalisées qui apprennent de vos données et fournissent des insights exploitables."
+        title: "Systèmes d'Agents Vocaux",
+        description: "Assistants vocaux intelligents et systèmes de reconnaissance vocale qui améliorent et automatisent les interactions clients."
       },
       analytics: {
-        title: "Analyse Prédictive",
-        description: "Prévoyez les tendances et prenez des décisions basées sur les données avec des modèles prédictifs avancés."
+        title: "Génération Augmentée par Récupération (RAG)",
+        description: "Combinez votre base de connaissances avec l'IA pour fournir des réponses précises et contextuelles."
       },
       nlp: {
-        title: "Traitement du Langage Naturel",
-        description: "Transformez les données textuelles en insights précieux avec des capacités NLP avancées."
+        title: "Génération Vidéo et Image",
+        description: "Automatisez la création, l'édition et l'analyse vidéo avec des flux de travail intelligents alimentés par l'IA."
       },
       vision: {
-        title: "Vision par Ordinateur",
-        description: "Extrayez des insights d'images et de vidéos avec des modèles de vision de pointe."
+        title: "Automatisation de Contenu Marketing DM",
+        description: "Automatisez les campagnes de messages directs personnalisés avec du contenu généré par l'IA à grande échelle."
       },
       agents: {
-        title: "Systèmes d'Agents IA",
-        description: "Déployez des agents intelligents qui gèrent de manière autonome des tâches et décisions complexes."
+        title: "Main-d'œuvre d'Agents IA",
+        description: "Déployez des agents intelligents qui gèrent de manière autonome des tâches répétitives ou complexes et des décisions."
       }
     },
     about: {
@@ -600,28 +600,28 @@ export const translations = {
       title: "Nuestra Experiencia en IA",
       subtitle: "Desde automatización inteligente hasta análisis predictivo, entregamos soluciones IA integrales que transforman cómo opera tu negocio.",
       automation: {
-        title: "Automatización Inteligente",
-        description: "Optimiza operaciones con flujos de trabajo impulsados por IA que se adaptan y optimizan en tiempo real."
+        title: "Generación de Prospectos",
+        description: "Sistemas de agentes IA que identifican, califican y nutren automáticamente prospectos de alto valor."
       },
       ml: {
-        title: "Modelos de Aprendizaje Automático",
-        description: "Soluciones ML personalizadas que aprenden de tus datos y proporcionan insights accionables."
+        title: "Sistemas de Agentes de Voz",
+        description: "Asistentes de voz inteligentes y sistemas de reconocimiento de voz que mejoran y automatizan las interacciones con clientes."
       },
       analytics: {
-        title: "Análisis Predictivo",
-        description: "Pronostica tendencias y toma decisiones basadas en datos con modelos predictivos avanzados."
+        title: "Generación Aumentada por Recuperación (RAG)",
+        description: "Combina tu base de conocimientos con IA para entregar respuestas precisas y contextuales."
       },
       nlp: {
-        title: "Procesamiento de Lenguaje Natural",
-        description: "Transforma datos de texto en insights valiosos con capacidades NLP avanzadas."
+        title: "Generación de Video e Imagen",
+        description: "Automatiza la creación, edición y análisis de video con flujos de trabajo inteligentes impulsados por IA."
       },
       vision: {
-        title: "Visión por Computadora",
-        description: "Extrae insights de imágenes y video con modelos de visión de última generación."
+        title: "Automatización de Contenido de Marketing DM",
+        description: "Automatiza campañas de mensajes directos personalizados con contenido generado por IA a escala."
       },
       agents: {
-        title: "Sistemas de Agentes IA",
-        description: "Despliega agentes inteligentes que manejan autónomamente tareas y decisiones complejas."
+        title: "Fuerza Laboral de Agentes IA",
+        description: "Despliega agentes inteligentes que manejan autónomamente tareas repetitivas o complejas y decisiones."
       }
     },
     about: {
