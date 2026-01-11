@@ -232,10 +232,10 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { icon: TrendingUp, key: "productivity", color: "text-green-600 bg-green-100 dark:bg-green-900/30" },
               { icon: BarChart3, key: "adoption", color: "text-blue-600 bg-blue-100 dark:bg-blue-900/30" },
-              { icon: Clock, key: "roi", color: "text-purple-600 bg-purple-100 dark:bg-purple-900/30" },
-              { icon: Globe, key: "growth", color: "text-orange-600 bg-orange-100 dark:bg-orange-900/30" }
+              { icon: TrendingUp, key: "revenue", color: "text-green-600 bg-green-100 dark:bg-green-900/30" },
+              { icon: Clock, key: "timeSaved", color: "text-purple-600 bg-purple-100 dark:bg-purple-900/30" },
+              { icon: Globe, key: "competitive", color: "text-orange-600 bg-orange-100 dark:bg-orange-900/30" }
             ].map((stat) => (
               <Card key={stat.key} className="text-center hover:shadow-lg transition-shadow">
                 <CardContent className="p-8">

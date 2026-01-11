@@ -125,30 +125,30 @@ export const translations = {
     },
     whyAiNow: {
       title: "Why AI Now?",
-      subtitle: "The AI revolution is happening today. Businesses that embrace AI are gaining significant competitive advantages.",
+      subtitle: "Small businesses are rapidly adopting AI and seeing real results. The question isn't whether to adopt AI—it's how quickly you can get started.",
       stats: {
-        productivity: {
-          value: "40%",
-          label: "Productivity Increase",
-          description: "Average productivity boost for businesses implementing AI solutions"
-        },
         adoption: {
-          value: "72%",
-          label: "Enterprise Adoption",
-          description: "Of enterprises are actively deploying AI in at least one business function"
+          value: "55%",
+          label: "SMB Adoption Rate",
+          description: "Of small businesses now use AI—up 41% from last year"
         },
-        roi: {
-          value: "3-6 mo",
-          label: "Time to ROI",
-          description: "Typical timeframe to see measurable returns on AI investments"
+        revenue: {
+          value: "91%",
+          label: "Revenue Growth",
+          description: "Of small businesses using AI report increased revenue"
         },
-        growth: {
-          value: "$15.7T",
-          label: "Global AI Impact",
-          description: "Projected contribution of AI to the global economy by 2030"
+        timeSaved: {
+          value: "20+ hrs",
+          label: "Hours Saved Monthly",
+          description: "Average time saved per month by SMBs using AI tools"
+        },
+        competitive: {
+          value: "82%",
+          label: "Competitive Edge",
+          description: "Believe AI adoption is essential to stay competitive"
         }
       },
-      cta: "Don't get left behind. Start your AI journey today."
+      cta: "Your competitors are already moving. Let's get you started."
     },
     dashboard: {
       welcome: "Welcome back",
@@ -521,30 +521,30 @@ export const translations = {
     },
     whyAiNow: {
       title: "Pourquoi l'IA Maintenant ?",
-      subtitle: "La révolution de l'IA se produit aujourd'hui. Les entreprises qui adoptent l'IA obtiennent des avantages concurrentiels significatifs.",
+      subtitle: "Les petites entreprises adoptent rapidement l'IA et obtiennent des résultats concrets. La question n'est plus de savoir si vous devez adopter l'IA, mais à quelle vitesse vous pouvez commencer.",
       stats: {
-        productivity: {
-          value: "40%",
-          label: "Augmentation de la Productivité",
-          description: "Augmentation moyenne de productivité pour les entreprises implémentant des solutions IA"
-        },
         adoption: {
-          value: "72%",
-          label: "Adoption en Entreprise",
-          description: "Des entreprises déploient activement l'IA dans au moins une fonction commerciale"
+          value: "55%",
+          label: "Taux d'Adoption PME",
+          description: "Des petites entreprises utilisent désormais l'IA—en hausse de 41% par rapport à l'année dernière"
         },
-        roi: {
-          value: "3-6 mo",
-          label: "Délai de Retour",
-          description: "Délai typique pour voir des retours mesurables sur les investissements IA"
+        revenue: {
+          value: "91%",
+          label: "Croissance du Chiffre d'Affaires",
+          description: "Des petites entreprises utilisant l'IA signalent une augmentation de leurs revenus"
         },
-        growth: {
-          value: "15,7T$",
-          label: "Impact Global de l'IA",
-          description: "Contribution projetée de l'IA à l'économie mondiale d'ici 2030"
+        timeSaved: {
+          value: "20+ h",
+          label: "Heures Économisées par Mois",
+          description: "Temps moyen économisé par mois par les PME utilisant des outils IA"
+        },
+        competitive: {
+          value: "82%",
+          label: "Avantage Concurrentiel",
+          description: "Croient que l'adoption de l'IA est essentielle pour rester compétitif"
         }
       },
-      cta: "Ne restez pas à la traîne. Commencez votre parcours IA aujourd'hui."
+      cta: "Vos concurrents sont déjà en mouvement. Commençons ensemble."
     },
     dashboard: {
       welcome: "Bon retour",
@@ -917,30 +917,30 @@ export const translations = {
     },
     whyAiNow: {
       title: "¿Por Qué IA Ahora?",
-      subtitle: "La revolución de la IA está sucediendo hoy. Las empresas que adoptan IA están obteniendo ventajas competitivas significativas.",
+      subtitle: "Las pequeñas empresas están adoptando rápidamente la IA y viendo resultados reales. La pregunta no es si adoptar IA, sino qué tan rápido puedes comenzar.",
       stats: {
-        productivity: {
-          value: "40%",
-          label: "Aumento de Productividad",
-          description: "Aumento promedio de productividad para empresas que implementan soluciones IA"
-        },
         adoption: {
-          value: "72%",
-          label: "Adopción Empresarial",
-          description: "De las empresas están desplegando activamente IA en al menos una función comercial"
+          value: "55%",
+          label: "Tasa de Adopción PYME",
+          description: "De las pequeñas empresas ahora usan IA—un aumento del 41% respecto al año pasado"
         },
-        roi: {
-          value: "3-6 me",
-          label: "Tiempo para ROI",
-          description: "Plazo típico para ver retornos medibles en inversiones de IA"
+        revenue: {
+          value: "91%",
+          label: "Crecimiento de Ingresos",
+          description: "De las pequeñas empresas que usan IA reportan mayores ingresos"
         },
-        growth: {
-          value: "$15.7B",
-          label: "Impacto Global de IA",
-          description: "Contribución proyectada de la IA a la economía global para 2030"
+        timeSaved: {
+          value: "20+ hrs",
+          label: "Horas Ahorradas al Mes",
+          description: "Tiempo promedio ahorrado por mes por PYMEs usando herramientas de IA"
+        },
+        competitive: {
+          value: "82%",
+          label: "Ventaja Competitiva",
+          description: "Creen que la adopción de IA es esencial para mantenerse competitivo"
         }
       },
-      cta: "No te quedes atrás. Comienza tu viaje de IA hoy."
+      cta: "Tus competidores ya están avanzando. Empecemos."
     },
     dashboard: {
       welcome: "Bienvenido de vuelta",
