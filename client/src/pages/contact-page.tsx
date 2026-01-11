@@ -299,14 +299,6 @@ export default function ContactPage() {
                   </div>
 
                   <div className="flex items-center space-x-4">
-                    <Phone className="h-5 w-5 text-primary" />
-                    <div>
-                      <p className="font-medium">Phone</p>
-                      <p className="text-sm text-gray-600 dark:text-gray-400">{t("contact.info.phone")}</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-center space-x-4">
                     <MapPin className="h-5 w-5 text-primary" />
                     <div>
                       <p className="font-medium">Location</p>
