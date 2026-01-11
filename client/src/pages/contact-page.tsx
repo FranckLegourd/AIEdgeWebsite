@@ -348,25 +348,6 @@ export default function ContactPage() {
                 </CardContent>
               </Card>
 
-              {/* Social Links */}
-              <Card>
-                <CardHeader>
-                  <CardTitle>Follow Us</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex space-x-4">
-                    <a href="#" className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary/20 transition-colors duration-200">
-                      <Linkedin className="h-5 w-5 text-primary" />
-                    </a>
-                    <a href="#" className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary/20 transition-colors duration-200">
-                      <Twitter className="h-5 w-5 text-primary" />
-                    </a>
-                    <a href="#" className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary/20 transition-colors duration-200">
-                      <Github className="h-5 w-5 text-primary" />
-                    </a>
-                  </div>
-                </CardContent>
-              </Card>
             </div>
           </div>
         </div>
