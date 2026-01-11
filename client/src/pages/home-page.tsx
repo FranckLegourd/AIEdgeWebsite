@@ -97,7 +97,6 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
       <Navigation />
-
       {/* Hero Section */}
       <section className="pt-24 pb-8 min-h-[80vh] flex items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -157,10 +156,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* Partner Ticker */}
       <PartnerTicker />
-
       {/* Services Section */}
       <section className="py-20 bg-gray-50 dark:bg-gray-800/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -215,13 +212,12 @@ export default function HomePage() {
           </Card>
         </div>
       </section>
-
       {/* About/Stats Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
             <div>
-              <h2 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+              <h2 className="md:text-5xl font-bold text-gray-900 dark:text-white mb-6 text-[36px]">
                 {t("about.title")}
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
@@ -242,7 +238,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* Testimonials Section */}
       <section className="py-20 bg-gray-50 dark:bg-gray-800/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -286,7 +281,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-primary to-purple-600 relative overflow-hidden">
         <div className="absolute inset-0">
@@ -335,7 +329,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       <Footer />
     </div>
   );

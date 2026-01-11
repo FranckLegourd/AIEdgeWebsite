@@ -101,7 +101,7 @@ export const translations = {
       }
     },
     about: {
-      title: "AI Solutions for the Future of Business",
+      title: "Practical AI Solutions To Move Your Business Forward",
       subtitle: "At AI Edge International, we specialize in bringing your ideas to life using the power of Artificial Intelligence. We help visionary businesses explore and implement custom AI strategies without the bureaucracy and overhead of large consulting firms.",
       process: {
         title: "Our Development Process",
@@ -488,7 +488,7 @@ export const translations = {
       }
     },
     about: {
-      title: "Solutions IA pour l'Avenir des Entreprises",
+      title: "Solutions IA Pratiques Pour Faire Avancer Votre Entreprise",
       subtitle: "Chez AI Edge International, nous nous spécialisons dans la concrétisation de vos idées en utilisant le pouvoir de l'Intelligence Artificielle. Nous aidons les entreprises visionnaires à explorer et à mettre en œuvre des stratégies IA sur mesure sans la bureaucratie et les frais généraux des grands cabinets de conseil.",
       process: {
         title: "Notre Processus de Développement",
@@ -875,7 +875,7 @@ export const translations = {
       }
     },
     about: {
-      title: "Soluciones IA para el Futuro de los Negocios",
+      title: "Soluciones de IA Prácticas Para Impulsar Tu Negocio",
       subtitle: "En AI Edge International, nos especializamos en dar vida a tus ideas usando el poder de la Inteligencia Artificial. Ayudamos a empresas visionarias a explorar e implementar estrategias IA personalizadas sin la burocracia y gastos generales de grandes firmas de consultoría.",
       process: {
         title: "Nuestro Proceso de Desarrollo",
