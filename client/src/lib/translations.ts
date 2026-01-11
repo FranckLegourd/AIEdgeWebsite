@@ -101,26 +101,70 @@ export const translations = {
       }
     },
     about: {
-      title: "Practical AI Solutions To Move Your Business Forward",
-      subtitle: "Whether you're exploring AI for the first time or scaling an existing initiative, we help you move from idea to execution. We design practical AI strategies and solutions that fit your business so you can innovate faster, automate smarter, and make better decisions with confidence.  We combine deep technical expertise with a hands-on approach without the friction, cost, or slow pace of large consulting firm engagements to deliver practical, results-driven AI strategies that actually get implemented.",
-      process: {
-        title: "Our Development Process",
-        analysis: {
-          title: "Analysis",
-          description: "Deep dive into your business needs and data landscape"
+      hero: {
+        title: "Making AI Practical for Growing Businesses",
+        subtitle: "We help small and medium businesses harness AI to save time, reduce costs, and stay competitive—without the enterprise price tag or complexity."
+      },
+      whyWeStarted: {
+        title: "Why We Started",
+        paragraph1: "We saw a growing gap: large corporations were investing millions in AI, while smaller businesses—the ones that could benefit most from automation—were left behind.",
+        paragraph2: "The AI consulting world felt built for enterprises with big budgets and long timelines. Small business owners were told they needed to 'wait and see' or settle for cookie-cutter solutions that didn't fit their needs.",
+        paragraph3: "We started AI Edge International to change that. Our mission is simple: bring practical, affordable AI solutions to businesses that are ready to grow smarter, not just bigger."
+      },
+      approach: {
+        title: "How We Work",
+        subtitle: "No jargon. No unnecessary complexity. Just practical solutions that fit your business.",
+        understand: {
+          title: "We Listen First",
+          description: "Before talking about technology, we take time to understand your business, your challenges, and what success looks like for you."
         },
-        design: {
-          title: "Design", 
-          description: "Create custom AI architectures tailored to your requirements"
+        quickWins: {
+          title: "Start With Quick Wins",
+          description: "We identify opportunities where AI can make an immediate impact—saving you time or money within weeks, not months."
         },
-        development: {
-          title: "Development",
-          description: "Build and train AI models with rigorous testing protocols"
+        noLockIn: {
+          title: "No Vendor Lock-In",
+          description: "We build solutions you own. No proprietary traps, no ongoing dependencies. Your AI tools work for you, not the other way around."
         },
-        deployment: {
-          title: "Deployment",
-          description: "Seamless integration with ongoing support and optimization"
+        support: {
+          title: "Ongoing Partnership",
+          description: "We don't disappear after launch. We're here to help you adapt, optimize, and grow as your business evolves."
         }
+      },
+      values: {
+        title: "What We Believe",
+        subtitle: "The principles that guide how we work with every client",
+        practical: {
+          title: "Practical Over Flashy",
+          description: "We focus on solutions that work in the real world—not impressive demos that fall apart in production."
+        },
+        yourPace: {
+          title: "Your Business, Your Pace",
+          description: "Every business is different. We meet you where you are and move at a speed that makes sense for your team."
+        },
+        honest: {
+          title: "Honest Guidance",
+          description: "Sometimes AI isn't the answer. We'll tell you when it makes sense—and when a simpler solution is the better choice."
+        },
+        partnership: {
+          title: "Long-Term Partnership",
+          description: "We succeed when you succeed. We're invested in building relationships, not just closing projects."
+        }
+      },
+      contact: {
+        title: "Let's Talk",
+        subtitle: "Curious how AI could help your business? No pressure, no hard sell—just a conversation about what's possible.",
+        location: {
+          title: "Location"
+        },
+        email: {
+          title: "Email"
+        },
+        schedule: {
+          title: "Schedule a Call",
+          description: "Book a free consultation to discuss your needs"
+        },
+        cta: "Start a Conversation"
       }
     },
     whyAiNow: {
@@ -497,26 +541,70 @@ export const translations = {
       }
     },
     about: {
-      title: "Solutions IA Pratiques Pour Faire Avancer Votre Entreprise",
-      subtitle: "Whether you're exploring AI for the first time or scaling an existing initiative, we help you move from idea to execution. We design practical AI strategies and solutions that fit your business so you can innovate faster, automate smarter, and make better decisions with confidence.  We combine deep technical expertise with a hands-on approach without the friction, cost, or slow pace of large consulting firm engagements to deliver practical, results-driven AI strategies that actually get implemented.",
-      process: {
-        title: "Notre Processus de Développement",
-        analysis: {
-          title: "Analyse",
-          description: "Plongée profonde dans vos besoins commerciaux et votre paysage de données"
+      hero: {
+        title: "L'IA Pratique pour les Entreprises en Croissance",
+        subtitle: "Nous aidons les petites et moyennes entreprises à exploiter l'IA pour gagner du temps, réduire les coûts et rester compétitives—sans le prix ni la complexité des grandes entreprises."
+      },
+      whyWeStarted: {
+        title: "Pourquoi Nous Avons Commencé",
+        paragraph1: "Nous avons vu un écart grandissant : les grandes entreprises investissaient des millions dans l'IA, tandis que les plus petites—celles qui pourraient le plus bénéficier de l'automatisation—étaient laissées pour compte.",
+        paragraph2: "Le monde du conseil en IA semblait conçu pour les entreprises avec de gros budgets et de longs délais. On disait aux propriétaires de petites entreprises qu'ils devaient « attendre » ou se contenter de solutions génériques qui ne correspondaient pas à leurs besoins.",
+        paragraph3: "Nous avons créé AI Edge International pour changer cela. Notre mission est simple : apporter des solutions IA pratiques et abordables aux entreprises prêtes à grandir plus intelligemment, pas juste plus grandes."
+      },
+      approach: {
+        title: "Notre Façon de Travailler",
+        subtitle: "Pas de jargon. Pas de complexité inutile. Juste des solutions pratiques adaptées à votre entreprise.",
+        understand: {
+          title: "Nous Écoutons D'abord",
+          description: "Avant de parler technologie, nous prenons le temps de comprendre votre entreprise, vos défis et ce que le succès signifie pour vous."
         },
-        design: {
-          title: "Conception", 
-          description: "Créer des architectures IA personnalisées adaptées à vos exigences"
+        quickWins: {
+          title: "Commencer par des Victoires Rapides",
+          description: "Nous identifions les opportunités où l'IA peut avoir un impact immédiat—vous faisant gagner du temps ou de l'argent en quelques semaines, pas en mois."
         },
-        development: {
-          title: "Développement",
-          description: "Construire et entraîner des modèles IA avec des protocoles de test rigoureux"
+        noLockIn: {
+          title: "Pas de Dépendance Fournisseur",
+          description: "Nous construisons des solutions que vous possédez. Pas de pièges propriétaires, pas de dépendances continues. Vos outils IA travaillent pour vous, pas l'inverse."
         },
-        deployment: {
-          title: "Déploiement",
-          description: "Intégration transparente avec support et optimisation continus"
+        support: {
+          title: "Partenariat Continu",
+          description: "Nous ne disparaissons pas après le lancement. Nous sommes là pour vous aider à vous adapter, optimiser et grandir au fur et à mesure que votre entreprise évolue."
         }
+      },
+      values: {
+        title: "Ce En Quoi Nous Croyons",
+        subtitle: "Les principes qui guident notre travail avec chaque client",
+        practical: {
+          title: "Pratique Plutôt Que Tape-à-l'œil",
+          description: "Nous nous concentrons sur des solutions qui fonctionnent dans le monde réel—pas des démos impressionnantes qui s'effondrent en production."
+        },
+        yourPace: {
+          title: "Votre Entreprise, Votre Rythme",
+          description: "Chaque entreprise est différente. Nous vous rejoignons là où vous êtes et avançons à un rythme qui convient à votre équipe."
+        },
+        honest: {
+          title: "Conseils Honnêtes",
+          description: "Parfois l'IA n'est pas la réponse. Nous vous dirons quand c'est logique—et quand une solution plus simple est le meilleur choix."
+        },
+        partnership: {
+          title: "Partenariat à Long Terme",
+          description: "Nous réussissons quand vous réussissez. Nous investissons dans la construction de relations, pas seulement dans la conclusion de projets."
+        }
+      },
+      contact: {
+        title: "Parlons-en",
+        subtitle: "Curieux de savoir comment l'IA pourrait aider votre entreprise ? Pas de pression, pas de vente forcée—juste une conversation sur ce qui est possible.",
+        location: {
+          title: "Emplacement"
+        },
+        email: {
+          title: "Email"
+        },
+        schedule: {
+          title: "Planifier un Appel",
+          description: "Réservez une consultation gratuite pour discuter de vos besoins"
+        },
+        cta: "Commencer une Conversation"
       }
     },
     whyAiNow: {
@@ -893,26 +981,70 @@ export const translations = {
       }
     },
     about: {
-      title: "Soluciones de IA Prácticas Para Impulsar Tu Negocio",
-      subtitle: "Whether you're exploring AI for the first time or scaling an existing initiative, we help you move from idea to execution. We design practical AI strategies and solutions that fit your business so you can innovate faster, automate smarter, and make better decisions with confidence.  We combine deep technical expertise with a hands-on approach without the friction, cost, or slow pace of large consulting firm engagements to deliver practical, results-driven AI strategies that actually get implemented.",
-      process: {
-        title: "Nuestro Proceso de Desarrollo",
-        analysis: {
-          title: "Análisis",
-          description: "Inmersión profunda en tus necesidades empresariales y panorama de datos"
+      hero: {
+        title: "IA Práctica para Empresas en Crecimiento",
+        subtitle: "Ayudamos a pequeñas y medianas empresas a aprovechar la IA para ahorrar tiempo, reducir costos y mantenerse competitivas—sin el precio ni la complejidad de las grandes empresas."
+      },
+      whyWeStarted: {
+        title: "Por Qué Empezamos",
+        paragraph1: "Vimos una brecha creciente: las grandes corporaciones invertían millones en IA, mientras que las empresas más pequeñas—las que más podrían beneficiarse de la automatización—quedaban atrás.",
+        paragraph2: "El mundo de la consultoría de IA parecía diseñado para empresas con grandes presupuestos y largos plazos. A los propietarios de pequeñas empresas se les decía que tenían que 'esperar' o conformarse con soluciones genéricas que no se ajustaban a sus necesidades.",
+        paragraph3: "Fundamos AI Edge International para cambiar eso. Nuestra misión es simple: llevar soluciones de IA prácticas y asequibles a empresas listas para crecer de forma más inteligente, no solo más grandes."
+      },
+      approach: {
+        title: "Cómo Trabajamos",
+        subtitle: "Sin jerga. Sin complejidad innecesaria. Solo soluciones prácticas que se adaptan a tu negocio.",
+        understand: {
+          title: "Primero Escuchamos",
+          description: "Antes de hablar de tecnología, nos tomamos el tiempo para entender tu negocio, tus desafíos y qué significa el éxito para ti."
         },
-        design: {
-          title: "Diseño", 
-          description: "Crear arquitecturas IA personalizadas adaptadas a tus requisitos"
+        quickWins: {
+          title: "Comenzar con Victorias Rápidas",
+          description: "Identificamos oportunidades donde la IA puede tener un impacto inmediato—ahorrándote tiempo o dinero en semanas, no meses."
         },
-        development: {
-          title: "Desarrollo",
-          description: "Construir y entrenar modelos IA con protocolos de prueba rigurosos"
+        noLockIn: {
+          title: "Sin Dependencia de Proveedor",
+          description: "Construimos soluciones que son tuyas. Sin trampas propietarias, sin dependencias continuas. Tus herramientas de IA trabajan para ti, no al revés."
         },
-        deployment: {
-          title: "Implementación",
-          description: "Integración perfecta con soporte continuo y optimización"
+        support: {
+          title: "Asociación Continua",
+          description: "No desaparecemos después del lanzamiento. Estamos aquí para ayudarte a adaptarte, optimizar y crecer a medida que tu negocio evoluciona."
         }
+      },
+      values: {
+        title: "En Lo Que Creemos",
+        subtitle: "Los principios que guían cómo trabajamos con cada cliente",
+        practical: {
+          title: "Práctico Sobre Llamativo",
+          description: "Nos enfocamos en soluciones que funcionan en el mundo real—no demos impresionantes que fallan en producción."
+        },
+        yourPace: {
+          title: "Tu Negocio, Tu Ritmo",
+          description: "Cada negocio es diferente. Te encontramos donde estás y avanzamos a un ritmo que tenga sentido para tu equipo."
+        },
+        honest: {
+          title: "Orientación Honesta",
+          description: "A veces la IA no es la respuesta. Te diremos cuándo tiene sentido—y cuándo una solución más simple es la mejor opción."
+        },
+        partnership: {
+          title: "Asociación a Largo Plazo",
+          description: "Tenemos éxito cuando tú tienes éxito. Invertimos en construir relaciones, no solo en cerrar proyectos."
+        }
+      },
+      contact: {
+        title: "Hablemos",
+        subtitle: "¿Curioso sobre cómo la IA podría ayudar a tu negocio? Sin presión, sin venta agresiva—solo una conversación sobre lo que es posible.",
+        location: {
+          title: "Ubicación"
+        },
+        email: {
+          title: "Email"
+        },
+        schedule: {
+          title: "Programar una Llamada",
+          description: "Reserva una consulta gratuita para discutir tus necesidades"
+        },
+        cta: "Iniciar una Conversación"
       }
     },
     whyAiNow: {
