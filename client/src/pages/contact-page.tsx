@@ -100,20 +100,24 @@ export default function ContactPage() {
 
   const faqs = [
     {
-      question: "How long does a typical AI implementation take?",
-      answer: "Implementation timelines vary based on complexity, but most projects range from 6-16 weeks from discovery to deployment."
+      question: "I'm not sure if AI is right for my business. How do I know?",
+      answer: "That's exactly why we start with a conversation, not a contract. We'll ask about your day-to-day challenges, where you're spending the most time on repetitive tasks, and what's slowing your team down. Sometimes AI is the answer—sometimes a simpler solution makes more sense. We'll be honest either way."
     },
     {
-      question: "What industries do you serve?",
-      answer: "We serve all industries, with particular expertise in finance, healthcare, manufacturing, retail, and technology sectors."
+      question: "How much does this typically cost?",
+      answer: "It depends on what you need. We work with budgets of all sizes and can often start with a small pilot project to prove value before scaling up. We'll always give you a clear quote upfront—no surprise fees or scope creep."
     },
     {
-      question: "Do you provide ongoing support?",
-      answer: "Yes, we offer comprehensive support packages including monitoring, optimization, and feature updates."
+      question: "I've heard AI projects often fail. What makes yours different?",
+      answer: "Many AI projects fail because they start with technology instead of the problem. We do the opposite—we focus on understanding your specific challenge first, then figure out the simplest way to solve it. We'd rather deliver something small that works than something impressive that doesn't."
     },
     {
-      question: "What's the typical ROI of AI implementation?",
-      answer: "Our clients typically see ROI within 6-12 months, with efficiency gains of 200-400% in automated processes."
+      question: "Do I need technical expertise on my team to work with you?",
+      answer: "Not at all. We handle the technical side and explain everything in plain language. Our goal is to make AI feel approachable, not intimidating."
+    },
+    {
+      question: "What happens after the project is done?",
+      answer: "We don't disappear. We offer ongoing support to make sure everything keeps working smoothly, and we're here when you're ready to tackle the next challenge."
     }
   ];
 
