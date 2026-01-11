@@ -37,7 +37,7 @@ export const translations = {
       ml: {
         title: "Voice Agent Systems",
         description: "Intelligent voice assistants and speech recognition systems that enhance and automate customer interactions.",
-        features: ["Natural voice conversation AI", "Real-time speech recognition", "Multi-language voice support", "Sentiment and emotion detection", "Voice-to-action automation"],
+        features: ["Automated Customer Support", "Real-time speech recognition", "Multi-language voice support", "Sentiment and emotion detection", "Voice-to-action automation"],
         useCases: ["Automated customer support calls", "Appointment scheduling assistants", "Voice-enabled order processing", "Interactive voice response (IVR) systems"]
       },
       analytics: {
@@ -405,7 +405,7 @@ export const translations = {
       ml: {
         title: "Systèmes d'Agents Vocaux",
         description: "Assistants vocaux intelligents et systèmes de reconnaissance vocale qui améliorent et automatisent les interactions clients.",
-        features: ["IA conversationnelle vocale naturelle", "Reconnaissance vocale en temps réel", "Support vocal multilingue", "Détection des sentiments et émotions", "Automatisation voix-vers-action"],
+        features: ["Support Client Automatisé", "Reconnaissance vocale en temps réel", "Support vocal multilingue", "Détection des sentiments et émotions", "Automatisation voix-vers-action"],
         useCases: ["Appels de support client automatisés", "Assistants de prise de rendez-vous", "Traitement de commandes par la voix", "Systèmes de réponse vocale interactive (SVI)"]
       },
       analytics: {
@@ -721,7 +721,7 @@ export const translations = {
       ml: {
         title: "Sistemas de Agentes de Voz",
         description: "Asistentes de voz inteligentes y sistemas de reconocimiento de voz que mejoran y automatizan las interacciones con clientes.",
-        features: ["IA de conversación por voz natural", "Reconocimiento de voz en tiempo real", "Soporte de voz multilingüe", "Detección de sentimientos y emociones", "Automatización de voz a acción"],
+        features: ["Soporte al Cliente Automatizado", "Reconocimiento de voz en tiempo real", "Soporte de voz multilingüe", "Detección de sentimientos y emociones", "Automatización de voz a acción"],
         useCases: ["Llamadas automatizadas de soporte al cliente", "Asistentes de programación de citas", "Procesamiento de pedidos por voz", "Sistemas de respuesta de voz interactiva (IVR)"]
       },
       analytics: {
