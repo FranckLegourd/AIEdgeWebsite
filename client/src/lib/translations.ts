@@ -102,10 +102,10 @@ export const translations = {
     },
     about: {
       title: "Practical AI Solutions That Move Your Business Forward",
-      subtitle: "Whether you're exploring AI for the first time or scaling an existing initiative, we help you move from idea to execution. We design practical AI strategies and solutions that fit your business so you can innovate faster, automate smarter, and make better decisions with confidence. We combine deep technical expertise with a hands-on approach without the friction, cost, or slow pace of large consulting firm engagements to deliver practical, results-driven AI strategies that actually get implemented.",
+      subtitle: "We help small and medium businesses harness AI to save time, reduce costs, and stay competitive—without the enterprise price tag or complexity.",
       hero: {
         title: "Practical AI Solutions That Move Your Business Forward",
-        subtitle: "Whether you're exploring AI for the first time or scaling an existing initiative, we help you move from idea to execution. We design practical AI strategies and solutions that fit your business so you can innovate faster, automate smarter, and make better decisions with confidence. We combine deep technical expertise with a hands-on approach without the friction, cost, or slow pace of large consulting firm engagements to deliver practical, results-driven AI strategies that actually get implemented."
+        subtitle: "We help small and medium businesses harness AI to save time, reduce costs, and stay competitive—without the enterprise price tag or complexity."
       },
       whyWeStarted: {
         title: "Why We Started",
@@ -577,10 +577,10 @@ export const translations = {
     },
     about: {
       title: "Solutions IA Pratiques Qui Font Avancer Votre Entreprise",
-      subtitle: "Que vous découvriez l'IA pour la première fois ou que vous développiez une initiative existante, nous vous aidons à passer de l'idée à l'exécution. Nous concevons des stratégies et solutions IA pratiques adaptées à votre entreprise pour innover plus vite, automatiser plus intelligemment et prendre de meilleures décisions en toute confiance. Nous combinons une expertise technique approfondie avec une approche pratique, sans les frictions, les coûts ou la lenteur des grands cabinets de conseil, pour livrer des stratégies IA axées sur les résultats qui sont réellement mises en œuvre.",
+      subtitle: "Nous aidons les petites et moyennes entreprises à exploiter l'IA pour gagner du temps, réduire les coûts et rester compétitives—sans le prix ni la complexité des grandes entreprises.",
       hero: {
         title: "Solutions IA Pratiques Qui Font Avancer Votre Entreprise",
-        subtitle: "Que vous découvriez l'IA pour la première fois ou que vous développiez une initiative existante, nous vous aidons à passer de l'idée à l'exécution. Nous concevons des stratégies et solutions IA pratiques adaptées à votre entreprise pour innover plus vite, automatiser plus intelligemment et prendre de meilleures décisions en toute confiance. Nous combinons une expertise technique approfondie avec une approche pratique, sans les frictions, les coûts ou la lenteur des grands cabinets de conseil, pour livrer des stratégies IA axées sur les résultats qui sont réellement mises en œuvre."
+        subtitle: "Nous aidons les petites et moyennes entreprises à exploiter l'IA pour gagner du temps, réduire les coûts et rester compétitives—sans le prix ni la complexité des grandes entreprises."
       },
       whyWeStarted: {
         title: "Pourquoi Nous Avons Commencé",
@@ -1052,10 +1052,10 @@ export const translations = {
     },
     about: {
       title: "Soluciones de IA Prácticas Que Impulsan Tu Negocio",
-      subtitle: "Ya sea que estés explorando la IA por primera vez o escalando una iniciativa existente, te ayudamos a pasar de la idea a la ejecución. Diseñamos estrategias y soluciones de IA prácticas que se adaptan a tu negocio para que puedas innovar más rápido, automatizar de manera más inteligente y tomar mejores decisiones con confianza. Combinamos profunda experiencia técnica con un enfoque práctico, sin la fricción, el costo o el ritmo lento de las grandes consultoras, para entregar estrategias de IA orientadas a resultados que realmente se implementan.",
+      subtitle: "Ayudamos a pequeñas y medianas empresas a aprovechar la IA para ahorrar tiempo, reducir costos y mantenerse competitivas—sin el precio ni la complejidad de las grandes empresas.",
       hero: {
         title: "Soluciones de IA Prácticas Que Impulsan Tu Negocio",
-        subtitle: "Ya sea que estés explorando la IA por primera vez o escalando una iniciativa existente, te ayudamos a pasar de la idea a la ejecución. Diseñamos estrategias y soluciones de IA prácticas que se adaptan a tu negocio para que puedas innovar más rápido, automatizar de manera más inteligente y tomar mejores decisiones con confianza. Combinamos profunda experiencia técnica con un enfoque práctico, sin la fricción, el costo o el ritmo lento de las grandes consultoras, para entregar estrategias de IA orientadas a resultados que realmente se implementan."
+        subtitle: "Ayudamos a pequeñas y medianas empresas a aprovechar la IA para ahorrar tiempo, reducir costos y mantenerse competitivas—sin el precio ni la complejidad de las grandes empresas."
       },
       whyWeStarted: {
         title: "Por Qué Empezamos",
