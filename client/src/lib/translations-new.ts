@@ -24,7 +24,7 @@ export const translations = {
     },
     services: {
       title: "Our AI Expertise",
-      subtitle: "Custom AI solutions designed to multiply your team's impact—turning complex challenges into automated advantages.",
+      subtitle: "Integrated AI solutions designed to multiply your team's impact—turning repetitive tasks or complex workflow challenges into automated advantages.",
       getStarted: "Get Started Today",
       learnMore: "Learn More",
       learnMoreAboutUs: "Learn More About Us",
@@ -383,7 +383,7 @@ export const translations = {
     },
     services: {
       title: "Notre Expertise IA",
-      subtitle: "Des solutions IA sur mesure conçues pour démultiplier l'impact de votre équipe—transformant les défis complexes en avantages automatisés.",
+      subtitle: "Des solutions IA intégrées conçues pour démultiplier l'impact de votre équipe—transformant les tâches répétitives ou les défis complexes de flux de travail en avantages automatisés.",
       getStarted: "Commencer Aujourd'hui",
       learnMore: "En Savoir Plus",
       learnMoreAboutUs: "En Savoir Plus Sur Nous",
@@ -690,7 +690,7 @@ export const translations = {
     },
     services: {
       title: "Nuestra Experiencia en IA",
-      subtitle: "Soluciones de IA personalizadas diseñadas para multiplicar el impacto de tu equipo—convirtiendo desafíos complejos en ventajas automatizadas.",
+      subtitle: "Soluciones de IA integradas diseñadas para multiplicar el impacto de tu equipo—convirtiendo tareas repetitivas o desafíos complejos de flujo de trabajo en ventajas automatizadas.",
       getStarted: "Comienza Hoy",
       learnMore: "Más Información",
       learnMoreAboutUs: "Conoce Más Sobre Nosotros",
