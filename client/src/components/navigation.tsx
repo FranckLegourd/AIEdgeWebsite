@@ -94,13 +94,7 @@ export function Navigation() {
                     </DropdownMenuItem>
                   </DropdownMenuContent>
                 </DropdownMenu>
-              ) : (
-                <Link href="/auth">
-                  <Button size="sm" className="ml-4">
-                    {t("nav.clientPortal")}
-                  </Button>
-                </Link>
-              )}
+              ) : null}
             </div>
           </div>
 
@@ -187,13 +181,7 @@ export function Navigation() {
                         {t("nav.logout")}
                       </Button>
                     </div>
-                  ) : (
-                    <Link href="/auth" onClick={() => setIsOpen(false)}>
-                      <Button className="w-full mt-4">
-                        {t("nav.clientPortal")}
-                      </Button>
-                    </Link>
-                  )}
+                  ) : null}
                 </nav>
               </SheetContent>
             </Sheet>
