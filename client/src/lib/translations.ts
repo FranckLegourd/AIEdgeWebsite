@@ -138,7 +138,7 @@ export const translations = {
           description: "Of small businesses using AI report increased revenue"
         },
         timeSaved: {
-          value: "20+ hrs",
+          value: "30+ hrs",
           label: "Hours Saved Monthly",
           description: "Average time saved per month by SMBs using AI tools"
         },
@@ -534,7 +534,7 @@ export const translations = {
           description: "Des petites entreprises utilisant l'IA signalent une augmentation de leurs revenus"
         },
         timeSaved: {
-          value: "20+ h",
+          value: "30+ h",
           label: "Heures Économisées par Mois",
           description: "Temps moyen économisé par mois par les PME utilisant des outils IA"
         },
@@ -930,7 +930,7 @@ export const translations = {
           description: "De las pequeñas empresas que usan IA reportan mayores ingresos"
         },
         timeSaved: {
-          value: "20+ hrs",
+          value: "30+ hrs",
           label: "Horas Ahorradas al Mes",
           description: "Tiempo promedio ahorrado por mes por PYMEs usando herramientas de IA"
         },
