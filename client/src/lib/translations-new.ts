@@ -383,7 +383,7 @@ export const translations = {
     },
     services: {
       title: "Notre Expertise IA",
-      subtitle: "Des solutions IA intégrées conçues pour démultiplier l'impact de votre équipe—transformant les tâches répétitives ou les défis complexes de flux de travail en avantages automatisés.",
+      subtitle: "Des solutions IA intégrées conçues pour multiplier l'impact de votre équipe—transformant les tâches répétitives ou les défis complexes de flux de travail en avantages automatisés.",
       getStarted: "Commencer Aujourd'hui",
       learnMore: "En Savoir Plus",
       learnMoreAboutUs: "En Savoir Plus Sur Nous",
