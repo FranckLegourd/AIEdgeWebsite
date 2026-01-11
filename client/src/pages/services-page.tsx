@@ -31,8 +31,7 @@ export default function ServicesPage() {
       description: t("services.automation.description"),
       color: "text-primary",
       bgColor: "bg-primary/10",
-      features: t("services.automation.features") as unknown as string[],
-      useCases: t("services.automation.useCases") as unknown as string[]
+      features: t("services.automation.features") as unknown as string[]
     },
     {
       icon: Mic,
@@ -40,8 +39,7 @@ export default function ServicesPage() {
       description: t("services.ml.description"),
       color: "text-purple-600",
       bgColor: "bg-purple-100 dark:bg-purple-900/20",
-      features: t("services.ml.features") as unknown as string[],
-      useCases: t("services.ml.useCases") as unknown as string[]
+      features: t("services.ml.features") as unknown as string[]
     },
     {
       icon: Database,
@@ -49,8 +47,7 @@ export default function ServicesPage() {
       description: t("services.analytics.description"),
       color: "text-green-600",
       bgColor: "bg-green-100 dark:bg-green-900/20",
-      features: t("services.analytics.features") as unknown as string[],
-      useCases: t("services.analytics.useCases") as unknown as string[]
+      features: t("services.analytics.features") as unknown as string[]
     },
     {
       icon: Video,
@@ -58,8 +55,7 @@ export default function ServicesPage() {
       description: t("services.nlp.description"),
       color: "text-orange-600",
       bgColor: "bg-orange-100 dark:bg-orange-900/20",
-      features: t("services.nlp.features") as unknown as string[],
-      useCases: t("services.nlp.useCases") as unknown as string[]
+      features: t("services.nlp.features") as unknown as string[]
     },
     {
       icon: MessageSquare,
@@ -67,8 +63,7 @@ export default function ServicesPage() {
       description: t("services.vision.description"),
       color: "text-purple-600",
       bgColor: "bg-purple-100 dark:bg-purple-900/20",
-      features: t("services.vision.features") as unknown as string[],
-      useCases: t("services.vision.useCases") as unknown as string[]
+      features: t("services.vision.features") as unknown as string[]
     },
     {
       icon: Bot,
@@ -76,8 +71,7 @@ export default function ServicesPage() {
       description: t("services.agents.description"),
       color: "text-teal-600",
       bgColor: "bg-teal-100 dark:bg-teal-900/20",
-      features: t("services.agents.features") as unknown as string[],
-      useCases: t("services.agents.useCases") as unknown as string[]
+      features: t("services.agents.features") as unknown as string[]
     }
   ];
 
@@ -202,22 +196,6 @@ export default function ServicesPage() {
                         </li>
                       ))}
                     </ul>
-                  </div>
-
-                  <div className="mb-6">
-                    <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
-                      {t("services.useCasesLabel")}
-                    </h4>
-                    <div className="flex flex-wrap gap-2">
-                      {service.useCases.map((useCase, useCaseIndex) => (
-                        <span
-                          key={useCaseIndex}
-                          className="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full text-xs"
-                        >
-                          {useCase}
-                        </span>
-                      ))}
-                    </div>
                   </div>
 
                   <Link href="/contact">
