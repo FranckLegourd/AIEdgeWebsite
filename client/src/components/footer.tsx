@@ -22,6 +22,7 @@ export function Footer() {
             <p className="text-gray-400 mb-4">
               {t("footer.description")}
             </p>
+            {/* Social icons hidden for now
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">
                 <Linkedin className="h-5 w-5" />
@@ -33,6 +34,7 @@ export function Footer() {
                 <Github className="h-5 w-5" />
               </a>
             </div>
+            */}
           </div>
 
           <div>
