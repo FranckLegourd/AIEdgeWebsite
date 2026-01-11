@@ -213,6 +213,32 @@ export const translations = {
         email: "info@aiedgeinternational.com",
         phone: "+1 (555) 123-4567",
         location: "San Francisco, CA"
+      },
+      faqs: {
+        title: "Frequently Asked Questions",
+        subtitle: "Get answers to common questions about our AI solutions",
+        moreQuestions: "Have more questions? We're here to help.",
+        scheduleCall: "Schedule a Call",
+        q1: {
+          question: "I'm not sure if AI is right for my business. How do I know?",
+          answer: "That's exactly why we start with a conversation, not a contract. We'll ask about your day-to-day challenges, where you're spending the most time on repetitive tasks, and what's slowing your team down. Sometimes AI is the answer—sometimes a simpler solution makes more sense. We'll be honest either way."
+        },
+        q2: {
+          question: "How much does this typically cost?",
+          answer: "It depends on what you need. We work with budgets of all sizes and can often start with a small pilot project to prove value before scaling up. We'll always give you a clear quote upfront—no surprise fees or scope creep."
+        },
+        q3: {
+          question: "I've heard AI projects often fail. What makes yours different?",
+          answer: "Many AI projects fail because they start with technology instead of the problem. We do the opposite—we focus on understanding your specific challenge first, then figure out the simplest way to solve it. We'd rather deliver something small that works than something impressive that doesn't."
+        },
+        q4: {
+          question: "Do I need technical expertise on my team to work with you?",
+          answer: "Not at all. We handle the technical side and explain everything in plain language. Our goal is to make AI feel approachable, not intimidating."
+        },
+        q5: {
+          question: "What happens after the project is done?",
+          answer: "We don't disappear. We offer ongoing support to make sure everything keeps working smoothly, and we're here when you're ready to tackle the next challenge."
+        }
       }
     },
     footer: {
@@ -625,6 +651,32 @@ export const translations = {
         email: "info@aiedgeinternational.com",
         phone: "+1 (555) 123-4567",
         location: "San Francisco, CA"
+      },
+      faqs: {
+        title: "Questions Fréquentes",
+        subtitle: "Trouvez des réponses aux questions courantes sur nos solutions IA",
+        moreQuestions: "Vous avez d'autres questions ? Nous sommes là pour vous aider.",
+        scheduleCall: "Planifier un Appel",
+        q1: {
+          question: "Je ne suis pas sûr que l'IA convienne à mon entreprise. Comment le savoir ?",
+          answer: "C'est exactement pourquoi nous commençons par une conversation, pas un contrat. Nous vous poserons des questions sur vos défis quotidiens, où vous passez le plus de temps sur des tâches répétitives, et ce qui ralentit votre équipe. Parfois l'IA est la réponse—parfois une solution plus simple a plus de sens. Nous serons honnêtes dans tous les cas."
+        },
+        q2: {
+          question: "Combien cela coûte-t-il généralement ?",
+          answer: "Cela dépend de vos besoins. Nous travaillons avec des budgets de toutes tailles et pouvons souvent commencer par un petit projet pilote pour prouver la valeur avant de passer à l'échelle. Nous vous donnerons toujours un devis clair dès le départ—pas de frais surprises ni de dépassement de périmètre."
+        },
+        q3: {
+          question: "J'ai entendu dire que les projets IA échouent souvent. Qu'est-ce qui rend les vôtres différents ?",
+          answer: "Beaucoup de projets IA échouent parce qu'ils commencent par la technologie au lieu du problème. Nous faisons l'inverse—nous nous concentrons d'abord sur la compréhension de votre défi spécifique, puis nous trouvons la façon la plus simple de le résoudre. Nous préférons livrer quelque chose de petit qui fonctionne plutôt que quelque chose d'impressionnant qui ne fonctionne pas."
+        },
+        q4: {
+          question: "Ai-je besoin d'expertise technique dans mon équipe pour travailler avec vous ?",
+          answer: "Pas du tout. Nous gérons le côté technique et expliquons tout en langage simple. Notre objectif est de rendre l'IA accessible, pas intimidante."
+        },
+        q5: {
+          question: "Que se passe-t-il après la fin du projet ?",
+          answer: "Nous ne disparaissons pas. Nous offrons un support continu pour nous assurer que tout continue de fonctionner correctement, et nous sommes là quand vous êtes prêt à relever le prochain défi."
+        }
       }
     },
     footer: {
@@ -985,6 +1037,32 @@ export const translations = {
         email: "info@aiedgeinternational.com",
         phone: "+1 (555) 123-4567",
         location: "San Francisco, CA"
+      },
+      faqs: {
+        title: "Preguntas Frecuentes",
+        subtitle: "Encuentra respuestas a preguntas comunes sobre nuestras soluciones de IA",
+        moreQuestions: "¿Tienes más preguntas? Estamos aquí para ayudarte.",
+        scheduleCall: "Programar una Llamada",
+        q1: {
+          question: "No estoy seguro si la IA es adecuada para mi negocio. ¿Cómo lo sé?",
+          answer: "Por eso empezamos con una conversación, no un contrato. Te preguntaremos sobre tus desafíos diarios, dónde pasas más tiempo en tareas repetitivas y qué está ralentizando a tu equipo. A veces la IA es la respuesta—a veces una solución más simple tiene más sentido. Seremos honestos en cualquier caso."
+        },
+        q2: {
+          question: "¿Cuánto cuesta normalmente?",
+          answer: "Depende de lo que necesites. Trabajamos con presupuestos de todos los tamaños y a menudo podemos comenzar con un pequeño proyecto piloto para demostrar valor antes de escalar. Siempre te daremos un presupuesto claro por adelantado—sin cargos sorpresa ni cambios de alcance."
+        },
+        q3: {
+          question: "He escuchado que los proyectos de IA a menudo fallan. ¿Qué hace diferentes a los tuyos?",
+          answer: "Muchos proyectos de IA fallan porque comienzan con la tecnología en lugar del problema. Nosotros hacemos lo contrario—nos enfocamos primero en entender tu desafío específico, luego encontramos la forma más simple de resolverlo. Preferimos entregar algo pequeño que funcione que algo impresionante que no funcione."
+        },
+        q4: {
+          question: "¿Necesito experiencia técnica en mi equipo para trabajar con ustedes?",
+          answer: "Para nada. Nosotros manejamos el lado técnico y explicamos todo en lenguaje simple. Nuestro objetivo es hacer que la IA se sienta accesible, no intimidante."
+        },
+        q5: {
+          question: "¿Qué pasa después de que termina el proyecto?",
+          answer: "No desaparecemos. Ofrecemos soporte continuo para asegurarnos de que todo siga funcionando correctamente, y estamos aquí cuando estés listo para enfrentar el próximo desafío."
+        }
       }
     },
     footer: {

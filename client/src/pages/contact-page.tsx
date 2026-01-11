@@ -100,24 +100,24 @@ export default function ContactPage() {
 
   const faqs = [
     {
-      question: "I'm not sure if AI is right for my business. How do I know?",
-      answer: "That's exactly why we start with a conversation, not a contract. We'll ask about your day-to-day challenges, where you're spending the most time on repetitive tasks, and what's slowing your team down. Sometimes AI is the answer—sometimes a simpler solution makes more sense. We'll be honest either way."
+      question: t("contact.faqs.q1.question"),
+      answer: t("contact.faqs.q1.answer")
     },
     {
-      question: "How much does this typically cost?",
-      answer: "It depends on what you need. We work with budgets of all sizes and can often start with a small pilot project to prove value before scaling up. We'll always give you a clear quote upfront—no surprise fees or scope creep."
+      question: t("contact.faqs.q2.question"),
+      answer: t("contact.faqs.q2.answer")
     },
     {
-      question: "I've heard AI projects often fail. What makes yours different?",
-      answer: "Many AI projects fail because they start with technology instead of the problem. We do the opposite—we focus on understanding your specific challenge first, then figure out the simplest way to solve it. We'd rather deliver something small that works than something impressive that doesn't."
+      question: t("contact.faqs.q3.question"),
+      answer: t("contact.faqs.q3.answer")
     },
     {
-      question: "Do I need technical expertise on my team to work with you?",
-      answer: "Not at all. We handle the technical side and explain everything in plain language. Our goal is to make AI feel approachable, not intimidating."
+      question: t("contact.faqs.q4.question"),
+      answer: t("contact.faqs.q4.answer")
     },
     {
-      question: "What happens after the project is done?",
-      answer: "We don't disappear. We offer ongoing support to make sure everything keeps working smoothly, and we're here when you're ready to tackle the next challenge."
+      question: t("contact.faqs.q5.question"),
+      answer: t("contact.faqs.q5.answer")
     }
   ];
 
@@ -377,10 +377,10 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-              Frequently Asked Questions
+              {t("contact.faqs.title")}
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300">
-              Get answers to common questions about our AI solutions
+              {t("contact.faqs.subtitle")}
             </p>
           </div>
 
@@ -401,11 +401,11 @@ export default function ContactPage() {
 
           <div className="text-center mt-12">
             <p className="text-gray-600 dark:text-gray-300 mb-4">
-              Have more questions? We're here to help.
+              {t("contact.faqs.moreQuestions")}
             </p>
             <Button variant="outline">
               <MessageSquare className="h-4 w-4 mr-2" />
-              Schedule a Call
+              {t("contact.faqs.scheduleCall")}
             </Button>
           </div>
         </div>
