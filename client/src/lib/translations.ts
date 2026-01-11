@@ -167,6 +167,13 @@ export const translations = {
           description: "Book a free consultation to discuss your needs"
         },
         cta: "Start a Conversation"
+      },
+      process: {
+        title: "Our Implementation Process",
+        analysis: { title: "Discovery & Analysis", description: "We analyze your business processes, data, and goals to identify AI opportunities." },
+        design: { title: "Strategy & Design", description: "Create a comprehensive AI strategy and design custom solutions for your needs." },
+        development: { title: "Development & Training", description: "Build and train AI models using your data with rigorous testing protocols." },
+        deployment: { title: "Integration & Deployment", description: "Seamlessly integrate AI solutions into your existing systems and workflows." }
       }
     },
     whyAiNow: {
@@ -635,6 +642,13 @@ export const translations = {
           description: "Réservez une consultation gratuite pour discuter de vos besoins"
         },
         cta: "Commencer une Conversation"
+      },
+      process: {
+        title: "Notre Processus d'Implémentation",
+        analysis: { title: "Découverte & Analyse", description: "Nous analysons vos processus métier, données et objectifs pour identifier les opportunités IA." },
+        design: { title: "Stratégie & Conception", description: "Créer une stratégie IA complète et concevoir des solutions personnalisées pour vos besoins." },
+        development: { title: "Développement & Formation", description: "Construire et entraîner des modèles IA avec vos données et des protocoles de test rigoureux." },
+        deployment: { title: "Intégration & Déploiement", description: "Intégrer de manière transparente les solutions IA dans vos systèmes et flux de travail existants." }
       }
     },
     whyAiNow: {
@@ -1103,6 +1117,13 @@ export const translations = {
           description: "Reserva una consulta gratuita para discutir tus necesidades"
         },
         cta: "Iniciar una Conversación"
+      },
+      process: {
+        title: "Nuestro Proceso de Implementación",
+        analysis: { title: "Descubrimiento y Análisis", description: "Analizamos tus procesos de negocio, datos y objetivos para identificar oportunidades IA." },
+        design: { title: "Estrategia y Diseño", description: "Crear una estrategia IA integral y diseñar soluciones personalizadas para tus necesidades." },
+        development: { title: "Desarrollo y Entrenamiento", description: "Construir y entrenar modelos IA usando tus datos con protocolos de prueba rigurosos." },
+        deployment: { title: "Integración e Implementación", description: "Integrar perfectamente las soluciones IA en tus sistemas y flujos de trabajo existentes." }
       }
     },
     whyAiNow: {
