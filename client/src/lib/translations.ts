@@ -73,7 +73,7 @@ export const translations = {
         features: ["Multi-agent orchestration", "Autonomous task execution", "Adaptive learning and improvement", "Cross-system integration", "Human-in-the-loop workflows"],
         useCases: ["End-to-end process automation", "Research and data analysis", "Customer journey management", "IT operations and monitoring"]
       },
-      keyFeatures: "Key Features:",
+      keyFeatures: "Use Cases:",
       useCasesLabel: "Use Cases:",
       benefits: {
         title: "Why Choose AI Solutions?",
@@ -469,7 +469,7 @@ export const translations = {
         features: ["Orchestration multi-agents", "Exécution autonome de tâches", "Apprentissage adaptatif et amélioration", "Intégration inter-systèmes", "Flux de travail avec intervention humaine"],
         useCases: ["Automatisation de processus de bout en bout", "Recherche et analyse de données", "Gestion du parcours client", "Opérations et surveillance IT"]
       },
-      keyFeatures: "Fonctionnalités Clés :",
+      keyFeatures: "Cas d'Utilisation :",
       useCasesLabel: "Cas d'Utilisation :",
       benefits: {
         title: "Pourquoi Choisir les Solutions IA ?",
@@ -865,7 +865,7 @@ export const translations = {
         features: ["Orquestación multi-agente", "Ejecución autónoma de tareas", "Aprendizaje adaptativo y mejora", "Integración entre sistemas", "Flujos de trabajo con humano en el ciclo"],
         useCases: ["Automatización de procesos de extremo a extremo", "Investigación y análisis de datos", "Gestión del recorrido del cliente", "Operaciones y monitoreo de TI"]
       },
-      keyFeatures: "Características Clave:",
+      keyFeatures: "Casos de Uso:",
       useCasesLabel: "Casos de Uso:",
       benefits: {
         title: "¿Por Qué Elegir Soluciones IA?",
