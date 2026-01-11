@@ -102,11 +102,11 @@ export const translations = {
     },
     about: {
       title: "Practical AI Solutions That Move Your Business Forward",
-      subtitle: "We help small and medium businesses harness AI to save time, reduce costs, and stay competitive—without the enterprise price tag or complexity.",
+      subtitle: "We help small and medium businesses harness AI to save time, reduce costs, increase revenue and stay competitive—without the enterprise price tag or complexity.",
       homeSubtitle: "Whether you're exploring AI for the first time or scaling an existing initiative, we help you move from idea to execution. We design practical AI strategies and solutions that fit your business so you can innovate faster, automate smarter, and make better decisions with confidence. We combine deep technical expertise with a hands-on approach without the friction, cost, or slow pace of large consulting firm engagements to deliver practical, results-driven AI strategies that actually get implemented.",
       hero: {
         title: "Practical AI Solutions That Move Your Business Forward",
-        subtitle: "We help small and medium businesses harness AI to save time, reduce costs, and stay competitive—without the enterprise price tag or complexity."
+        subtitle: "We help small and medium businesses harness AI to save time, reduce costs, increase revenue and stay competitive—without the enterprise price tag or complexity."
       },
       whyWeStarted: {
         title: "Why We Started",

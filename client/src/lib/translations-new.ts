@@ -93,10 +93,10 @@ export const translations = {
     },
     about: {
       title: "Making AI Practical for Growing Businesses",
-      subtitle: "We help small and medium businesses harness AI to save time, reduce costs, and stay competitive—without the enterprise price tag or complexity.",
+      subtitle: "We help small and medium businesses harness AI to save time, reduce costs, increase revenue and stay competitive—without the enterprise price tag or complexity.",
       hero: {
         title: "Making AI Practical for Growing Businesses",
-        subtitle: "We help small and medium businesses harness AI to save time, reduce costs, and stay competitive—without the enterprise price tag or complexity."
+        subtitle: "We help small and medium businesses harness AI to save time, reduce costs, increase revenue and stay competitive—without the enterprise price tag or complexity."
       },
       whyWeStarted: {
         title: "Why We Started",
