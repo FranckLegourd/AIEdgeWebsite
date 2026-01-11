@@ -122,7 +122,7 @@ export default function ContactPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="pt-16 py-20 bg-gradient-to-br from-primary to-purple-600 relative overflow-hidden">
+      <section className="pt-32 pb-20 bg-gradient-to-br from-primary to-purple-600 relative overflow-hidden">
         <div className="absolute inset-0">
           <img 
             src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080" 
