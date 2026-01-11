@@ -201,7 +201,7 @@ export default function HomePage() {
                 {t("about.title")}
               </h3>
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
-                {t("about.subtitle")}
+                {t("about.homeSubtitle")}
               </p>
               
 
