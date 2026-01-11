@@ -101,6 +101,8 @@ export const translations = {
       }
     },
     about: {
+      title: "Making AI Practical for Growing Businesses",
+      subtitle: "We help small and medium businesses harness AI to save time, reduce costs, and stay competitive—without the enterprise price tag or complexity.",
       hero: {
         title: "Making AI Practical for Growing Businesses",
         subtitle: "We help small and medium businesses harness AI to save time, reduce costs, and stay competitive—without the enterprise price tag or complexity."
@@ -567,6 +569,8 @@ export const translations = {
       }
     },
     about: {
+      title: "L'IA Pratique pour les Entreprises en Croissance",
+      subtitle: "Nous aidons les petites et moyennes entreprises à exploiter l'IA pour gagner du temps, réduire les coûts et rester compétitives—sans le prix ni la complexité des grandes entreprises.",
       hero: {
         title: "L'IA Pratique pour les Entreprises en Croissance",
         subtitle: "Nous aidons les petites et moyennes entreprises à exploiter l'IA pour gagner du temps, réduire les coûts et rester compétitives—sans le prix ni la complexité des grandes entreprises."
@@ -1033,6 +1037,8 @@ export const translations = {
       }
     },
     about: {
+      title: "IA Práctica para Empresas en Crecimiento",
+      subtitle: "Ayudamos a pequeñas y medianas empresas a aprovechar la IA para ahorrar tiempo, reducir costos y mantenerse competitivas—sin el precio ni la complejidad de las grandes empresas.",
       hero: {
         title: "IA Práctica para Empresas en Crecimiento",
         subtitle: "Ayudamos a pequeñas y medianas empresas a aprovechar la IA para ahorrar tiempo, reducir costos y mantenerse competitivas—sin el precio ni la complejidad de las grandes empresas."
