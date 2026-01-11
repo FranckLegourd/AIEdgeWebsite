@@ -56,7 +56,6 @@ export function Footer() {
             <h4 className="text-lg font-semibold mb-4">{t("footer.company")}</h4>
             <ul className="space-y-2 text-gray-400">
               <li className="flex"><span className="mr-2">•</span><Link href="/about" className="hover:text-white transition-colors duration-200">{t("nav.about")}</Link></li>
-              <li className="flex"><span className="mr-2">•</span><a href="#" className="hover:text-white transition-colors duration-200">Blog</a></li>
               <li className="flex"><span className="mr-2">•</span><Link href="/contact" className="hover:text-white transition-colors duration-200">{t("nav.contact")}</Link></li>
             </ul>
           </div>
