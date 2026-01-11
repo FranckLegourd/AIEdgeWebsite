@@ -16,12 +16,15 @@ import {
   Video, 
   MessageSquare, 
   Bot,
-  Star,
   CheckCircle,
   ArrowRight,
   GraduationCap,
   Users,
-  Settings
+  Settings,
+  TrendingUp,
+  BarChart3,
+  Clock,
+  Globe
 } from "lucide-react";
 
 export default function HomePage() {
@@ -70,29 +73,6 @@ export default function HomePage() {
       color: "text-teal-600"
     }
   ];
-
-  const testimonials = [
-    {
-      name: "Jennifer Davis",
-      role: "CEO, TechFlow Solutions",
-      content: "AI Edge International transformed our customer service with their intelligent chatbot. We've seen a 400% improvement in response times and 95% customer satisfaction.",
-      rating: 5
-    },
-    {
-      name: "Michael Wong",
-      role: "Operations Director, GlobalMart",
-      content: "The predictive analytics system they built has revolutionized our inventory management. We've reduced waste by 60% and increased efficiency by 200%.",
-      rating: 5
-    },
-    {
-      name: "Elena Rodriguez",
-      role: "CTO, InnovateLabs",
-      content: "Their AI automation platform streamlined our entire workflow. What used to take hours now happens in minutes, with better accuracy than ever before.",
-      rating: 5
-    }
-  ];
-
-
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
@@ -238,46 +218,48 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      {/* Testimonials Section */}
+      {/* Why AI Now Section */}
       <section className="py-20 bg-gray-50 dark:bg-gray-800/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-2xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">
-              {t("testimonials.title")}
+              {t("whyAiNow.title")}
             </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300">
-              {t("testimonials.subtitle")}
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              {t("whyAiNow.subtitle")}
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <Card key={index}>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              { icon: TrendingUp, key: "productivity", color: "text-green-600 bg-green-100 dark:bg-green-900/30" },
+              { icon: BarChart3, key: "adoption", color: "text-blue-600 bg-blue-100 dark:bg-blue-900/30" },
+              { icon: Clock, key: "roi", color: "text-purple-600 bg-purple-100 dark:bg-purple-900/30" },
+              { icon: Globe, key: "growth", color: "text-orange-600 bg-orange-100 dark:bg-orange-900/30" }
+            ].map((stat) => (
+              <Card key={stat.key} className="text-center hover:shadow-lg transition-shadow">
                 <CardContent className="p-8">
-                  <div className="flex items-center mb-6">
-                    <div className="flex text-yellow-400">
-                      {Array.from({ length: testimonial.rating }).map((_, i) => (
-                        <Star key={i} className="h-5 w-5 fill-current" />
-                      ))}
-                    </div>
+                  <div className={`w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 ${stat.color}`}>
+                    <stat.icon className="h-8 w-8" />
                   </div>
-                  <blockquote className="text-gray-600 dark:text-gray-300 mb-6 italic">
-                    "{testimonial.content}"
-                  </blockquote>
-                  <div className="flex items-center">
-                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
-                      <span className="text-primary font-semibold">
-                        {testimonial.name.split(" ").map(n => n[0]).join("")}
-                      </span>
-                    </div>
-                    <div>
-                      <div className="font-semibold text-gray-900 dark:text-white">{testimonial.name}</div>
-                      <div className="text-sm text-gray-600 dark:text-gray-400">{testimonial.role}</div>
-                    </div>
+                  <div className="text-4xl font-bold text-gray-900 dark:text-white mb-2">
+                    {t(`whyAiNow.stats.${stat.key}.value`)}
                   </div>
+                  <div className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">
+                    {t(`whyAiNow.stats.${stat.key}.label`)}
+                  </div>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">
+                    {t(`whyAiNow.stats.${stat.key}.description`)}
+                  </p>
                 </CardContent>
               </Card>
             ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <p className="text-lg text-gray-700 dark:text-gray-300 font-medium">
+              {t("whyAiNow.cta")}
+            </p>
           </div>
         </div>
       </section>

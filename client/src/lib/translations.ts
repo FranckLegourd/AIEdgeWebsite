@@ -123,23 +123,32 @@ export const translations = {
         }
       }
     },
-    testimonials: {
-      title: "What Our Clients Say",
-      subtitle: "Join hundreds of companies already transforming their operations with our AI solutions.",
-      items: {
-        1: {
-          quote: "has transformed our business processes. We've seen a 300% increase in efficiency.",
-          author: "Sarah Chen, CTO at TechFlow"
+    whyAiNow: {
+      title: "Why AI Now?",
+      subtitle: "The AI revolution is happening today. Businesses that embrace AI are gaining significant competitive advantages.",
+      stats: {
+        productivity: {
+          value: "40%",
+          label: "Productivity Increase",
+          description: "Average productivity boost for businesses implementing AI solutions"
         },
-        2: {
-          quote: "The AI solutions provided by the team exceeded our expectations and delivered ROI within 3 months.",
-          author: "Marcus Rodriguez, VP of Operations at DataCorp"
+        adoption: {
+          value: "72%",
+          label: "Enterprise Adoption",
+          description: "Of enterprises are actively deploying AI in at least one business function"
         },
-        3: {
-          quote: "Their approach to AI implementation is both strategic and practical. Highly recommended.",
-          author: "Dr. Amanda Foster, Head of Innovation at HealthTech Solutions"
+        roi: {
+          value: "3-6 mo",
+          label: "Time to ROI",
+          description: "Typical timeframe to see measurable returns on AI investments"
+        },
+        growth: {
+          value: "$15.7T",
+          label: "Global AI Impact",
+          description: "Projected contribution of AI to the global economy by 2030"
         }
-      }
+      },
+      cta: "Don't get left behind. Start your AI journey today."
     },
     dashboard: {
       welcome: "Welcome back",
@@ -510,23 +519,32 @@ export const translations = {
         }
       }
     },
-    testimonials: {
-      title: "Ce Que Disent Nos Clients",
-      subtitle: "Rejoignez des centaines d'entreprises qui transforment déjà leurs opérations avec nos solutions IA.",
-      items: {
-        1: {
-          quote: "a transformé nos processus commerciaux. Nous avons vu une augmentation de 300% de l'efficacité.",
-          author: "Sarah Chen, CTO chez TechFlow"
+    whyAiNow: {
+      title: "Pourquoi l'IA Maintenant ?",
+      subtitle: "La révolution de l'IA se produit aujourd'hui. Les entreprises qui adoptent l'IA obtiennent des avantages concurrentiels significatifs.",
+      stats: {
+        productivity: {
+          value: "40%",
+          label: "Augmentation de la Productivité",
+          description: "Augmentation moyenne de productivité pour les entreprises implémentant des solutions IA"
         },
-        2: {
-          quote: "Les solutions IA fournies par l'équipe ont dépassé nos attentes et ont livré un ROI en 3 mois.",
-          author: "Marcus Rodriguez, VP des Opérations chez DataCorp"
+        adoption: {
+          value: "72%",
+          label: "Adoption en Entreprise",
+          description: "Des entreprises déploient activement l'IA dans au moins une fonction commerciale"
         },
-        3: {
-          quote: "Leur approche de l'implémentation IA est à la fois stratégique et pratique. Hautement recommandé.",
-          author: "Dr. Amanda Foster, Responsable Innovation chez HealthTech Solutions"
+        roi: {
+          value: "3-6 mo",
+          label: "Délai de Retour",
+          description: "Délai typique pour voir des retours mesurables sur les investissements IA"
+        },
+        growth: {
+          value: "15,7T$",
+          label: "Impact Global de l'IA",
+          description: "Contribution projetée de l'IA à l'économie mondiale d'ici 2030"
         }
-      }
+      },
+      cta: "Ne restez pas à la traîne. Commencez votre parcours IA aujourd'hui."
     },
     dashboard: {
       welcome: "Bon retour",
@@ -897,23 +915,32 @@ export const translations = {
         }
       }
     },
-    testimonials: {
-      title: "Lo Que Dicen Nuestros Clientes",
-      subtitle: "Únete a cientos de empresas que ya están transformando sus operaciones con nuestras soluciones IA.",
-      items: {
-        1: {
-          quote: "ha transformado nuestros procesos empresariales. Hemos visto un aumento del 300% en eficiencia.",
-          author: "Sarah Chen, CTO en TechFlow"
+    whyAiNow: {
+      title: "¿Por Qué IA Ahora?",
+      subtitle: "La revolución de la IA está sucediendo hoy. Las empresas que adoptan IA están obteniendo ventajas competitivas significativas.",
+      stats: {
+        productivity: {
+          value: "40%",
+          label: "Aumento de Productividad",
+          description: "Aumento promedio de productividad para empresas que implementan soluciones IA"
         },
-        2: {
-          quote: "Las soluciones IA proporcionadas por el equipo superaron nuestras expectativas y entregaron ROI en 3 meses.",
-          author: "Marcus Rodriguez, VP de Operaciones en DataCorp"
+        adoption: {
+          value: "72%",
+          label: "Adopción Empresarial",
+          description: "De las empresas están desplegando activamente IA en al menos una función comercial"
         },
-        3: {
-          quote: "Su enfoque hacia la implementación IA es tanto estratégico como práctico. Altamente recomendado.",
-          author: "Dr. Amanda Foster, Jefe de Innovación en HealthTech Solutions"
+        roi: {
+          value: "3-6 me",
+          label: "Tiempo para ROI",
+          description: "Plazo típico para ver retornos medibles en inversiones de IA"
+        },
+        growth: {
+          value: "$15.7B",
+          label: "Impacto Global de IA",
+          description: "Contribución proyectada de la IA a la economía global para 2030"
         }
-      }
+      },
+      cta: "No te quedes atrás. Comienza tu viaje de IA hoy."
     },
     dashboard: {
       welcome: "Bienvenido de vuelta",
