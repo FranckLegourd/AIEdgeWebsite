@@ -145,7 +145,7 @@ export const translations = {
     },
     contact: {
       title: "Ready to Transform Your Business?",
-      subtitle: "Join our growing portfolio of companies that have already revolutionized their operations with our AI solutions.",
+      subtitle: "Join our growing portfolio of businesses that have already revolutionized their operations with our AI solutions.",
       form: {
         firstName: "First Name",
         lastName: "Last Name",
