@@ -66,7 +66,6 @@ export function Footer() {
               <li className="flex"><span className="mr-2">•</span><a href="#" className="hover:text-white transition-colors duration-200">{t("footer.links.privacyPolicy")}</a></li>
               <li className="flex"><span className="mr-2">•</span><a href="#" className="hover:text-white transition-colors duration-200">{t("footer.links.termsOfService")}</a></li>
               <li className="flex"><span className="mr-2">•</span><a href="#" className="hover:text-white transition-colors duration-200">{t("footer.links.cookiePolicy")}</a></li>
-              <li className="flex"><span className="mr-2">•</span><a href="#" className="hover:text-white transition-colors duration-200">{t("footer.links.gdprCompliance")}</a></li>
             </ul>
           </div>
         </div>
