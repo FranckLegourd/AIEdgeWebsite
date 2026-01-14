@@ -32,52 +32,52 @@ export interface IStorage {
   createInquiry(inquiry: InsertInquiry): Promise<Inquiry>;
   updateInquiry(id: number, updates: Partial<InsertInquiry>): Promise<Inquiry | undefined>;
 
-  sessionStore: session.SessionStore;
+  sessionStore: session.Store;
 }
 
 export class DatabaseStorage implements IStorage {
-  sessionStore: session.SessionStore;
+  sessionStore: session.Store;
 
   constructor() {
     this.sessionStore = new PostgresSessionStore({
-      pool,
+      pool: pool!,
       createTableIfMissing: true
     });
   }
 
   // User methods
   async getUser(id: number): Promise<User | undefined> {
-    const [user] = await db.select().from(users).where(eq(users.id, id));
+    const [user] = await db!.select().from(users).where(eq(users.id, id));
     return user || undefined;
   }
 
   async getUserByUsername(username: string): Promise<User | undefined> {
-    const [user] = await db.select().from(users).where(eq(users.username, username));
+    const [user] = await db!.select().from(users).where(eq(users.username, username));
     return user || undefined;
   }
 
   async getUserByEmail(email: string): Promise<User | undefined> {
-    const [user] = await db.select().from(users).where(eq(users.email, email));
+    const [user] = await db!.select().from(users).where(eq(users.email, email));
     return user || undefined;
   }
 
   async createUser(insertUser: InsertUser): Promise<User> {
-    const [user] = await db.insert(users).values(insertUser).returning();
+    const [user] = await db!.insert(users).values(insertUser).returning();
     return user;
   }
 
   async updateUser(id: number, updates: Partial<InsertUser>): Promise<User | undefined> {
-    const [user] = await db.update(users).set(updates).where(eq(users.id, id)).returning();
+    const [user] = await db!.update(users).set(updates).where(eq(users.id, id)).returning();
     return user || undefined;
   }
 
   async getAllUsers(): Promise<User[]> {
-    return await db.select().from(users).orderBy(desc(users.createdAt));
+    return await db!.select().from(users).orderBy(desc(users.createdAt));
   }
 
   // Project methods
   async getProject(id: number): Promise<ProjectWithClient | undefined> {
-    const [project] = await db
+    const [project] = await db!
       .select({
         id: projects.id,
         title: projects.title,
@@ -100,14 +100,14 @@ export class DatabaseStorage implements IStorage {
         },
       })
       .from(projects)
-      .leftJoin(users, eq(projects.clientId, users.id))
+      .innerJoin(users, eq(projects.clientId, users.id))
       .where(eq(projects.id, id));
 
     return project || undefined;
   }
 
   async getProjectsByClient(clientId: number): Promise<ProjectWithClient[]> {
-    return await db
+    return await db!
       .select({
         id: projects.id,
         title: projects.title,
@@ -130,13 +130,13 @@ export class DatabaseStorage implements IStorage {
         },
       })
       .from(projects)
-      .leftJoin(users, eq(projects.clientId, users.id))
+      .innerJoin(users, eq(projects.clientId, users.id))
       .where(eq(projects.clientId, clientId))
       .orderBy(desc(projects.createdAt));
   }
 
   async getAllProjects(): Promise<ProjectWithClient[]> {
-    return await db
+    return await db!
       .select({
         id: projects.id,
         title: projects.title,
@@ -159,12 +159,12 @@ export class DatabaseStorage implements IStorage {
         },
       })
       .from(projects)
-      .leftJoin(users, eq(projects.clientId, users.id))
+      .innerJoin(users, eq(projects.clientId, users.id))
       .orderBy(desc(projects.createdAt));
   }
 
   async createProject(insertProject: InsertProject): Promise<Project> {
-    const [project] = await db.insert(projects).values({
+    const [project] = await db!.insert(projects).values({
       ...insertProject,
       updatedAt: new Date(),
     }).returning();
@@ -172,7 +172,7 @@ export class DatabaseStorage implements IStorage {
   }
 
   async updateProject(id: number, updates: Partial<InsertProject>): Promise<Project | undefined> {
-    const [project] = await db.update(projects).set({
+    const [project] = await db!.update(projects).set({
       ...updates,
       updatedAt: new Date(),
     }).where(eq(projects.id, id)).returning();
@@ -180,27 +180,27 @@ export class DatabaseStorage implements IStorage {
   }
 
   async deleteProject(id: number): Promise<boolean> {
-    const result = await db.delete(projects).where(eq(projects.id, id));
-    return result.rowCount > 0;
+    const result = await db!.delete(projects).where(eq(projects.id, id));
+    return (result.rowCount ?? 0) > 0;
   }
 
   // Inquiry methods
   async getInquiry(id: number): Promise<Inquiry | undefined> {
-    const [inquiry] = await db.select().from(inquiries).where(eq(inquiries.id, id));
+    const [inquiry] = await db!.select().from(inquiries).where(eq(inquiries.id, id));
     return inquiry || undefined;
   }
 
   async getAllInquiries(): Promise<Inquiry[]> {
-    return await db.select().from(inquiries).orderBy(desc(inquiries.createdAt));
+    return await db!.select().from(inquiries).orderBy(desc(inquiries.createdAt));
   }
 
   async createInquiry(insertInquiry: InsertInquiry): Promise<Inquiry> {
-    const [inquiry] = await db.insert(inquiries).values(insertInquiry).returning();
+    const [inquiry] = await db!.insert(inquiries).values(insertInquiry).returning();
     return inquiry;
   }
 
   async updateInquiry(id: number, updates: Partial<InsertInquiry>): Promise<Inquiry | undefined> {
-    const [inquiry] = await db.update(inquiries).set(updates).where(eq(inquiries.id, id)).returning();
+    const [inquiry] = await db!.update(inquiries).set(updates).where(eq(inquiries.id, id)).returning();
     return inquiry || undefined;
   }
 }
@@ -209,7 +209,7 @@ export class MemStorage implements IStorage {
   private users: Map<number, User>;
   private projects: Map<number, Project>;
   private inquiries: Map<number, Inquiry>;
-  sessionStore: session.SessionStore;
+  sessionStore: session.Store;
   currentId: number;
 
   constructor() {
@@ -240,7 +240,14 @@ export class MemStorage implements IStorage {
 
   async createUser(insertUser: InsertUser): Promise<User> {
     const id = this.currentId++;
-    const user: User = { ...insertUser, id, createdAt: new Date() };
+    const user: User = {
+      ...insertUser,
+      id,
+      createdAt: new Date(),
+      role: insertUser.role ?? "client",
+      company: insertUser.company ?? null,
+      isActive: insertUser.isActive ?? true
+    };
     this.users.set(id, user);
     return user;
   }
@@ -288,6 +295,11 @@ export class MemStorage implements IStorage {
     const project: Project = {
       ...insertProject,
       id,
+      status: insertProject.status ?? "pending",
+      budget: insertProject.budget ?? null,
+      startDate: insertProject.startDate ?? null,
+      endDate: insertProject.endDate ?? null,
+      assignedTo: insertProject.assignedTo ?? null,
       createdAt: new Date(),
       updatedAt: new Date()
     };
@@ -317,7 +329,13 @@ export class MemStorage implements IStorage {
 
   async createInquiry(insertInquiry: InsertInquiry): Promise<Inquiry> {
     const id = this.currentId++;
-    const inquiry: Inquiry = { ...insertInquiry, id, createdAt: new Date() };
+    const inquiry: Inquiry = {
+      ...insertInquiry,
+      id,
+      createdAt: new Date(),
+      message: insertInquiry.message ?? null,
+      status: insertInquiry.status ?? "new"
+    };
     this.inquiries.set(id, inquiry);
     return inquiry;
   }

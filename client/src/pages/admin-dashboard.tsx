@@ -16,12 +16,12 @@ import { useTranslation } from "@/hooks/use-translation";
 import { useToast } from "@/hooks/use-toast";
 import { queryClient, apiRequest } from "@/lib/queryClient";
 import { User, ProjectWithClient, Inquiry, InsertProject } from "@shared/schema";
-import { 
-  Loader2, 
-  Plus, 
-  Users, 
-  FolderOpen, 
-  MessageSquare, 
+import {
+  Loader2,
+  Plus,
+  Users,
+  FolderOpen,
+  MessageSquare,
   Settings,
   Mail,
   Building,
@@ -183,7 +183,7 @@ export default function AdminDashboard() {
     }).format(budget / 100);
   };
 
-  const formatDate = (date: string | null) => {
+  const formatDate = (date: string | Date | null) => {
     if (!date) return "TBD";
     return new Date(date).toLocaleDateString();
   };
@@ -235,7 +235,7 @@ export default function AdminDashboard() {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
       <Navigation />
-      
+
       <div className="pt-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           {/* Header */}
@@ -457,7 +457,7 @@ export default function AdminDashboard() {
                               {project.description}
                             </p>
                             <p className="text-sm text-gray-500">
-                              Client: {project.client?.firstName} {project.client?.lastName} 
+                              Client: {project.client?.firstName} {project.client?.lastName}
                               {project.client?.company && ` (${project.client.company})`}
                             </p>
                           </div>
@@ -508,7 +508,7 @@ export default function AdminDashboard() {
 
             <TabsContent value="inquiries" className="space-y-6">
               <h2 className="text-2xl font-bold">Inquiries Management</h2>
-              
+
               <Card>
                 <CardContent className="p-0">
                   <div className="space-y-4 p-6">
@@ -576,7 +576,7 @@ export default function AdminDashboard() {
 
             <TabsContent value="users" className="space-y-6">
               <h2 className="text-2xl font-bold">Users Management</h2>
-              
+
               <Card>
                 <CardContent className="p-0">
                   <div className="space-y-4 p-6">
