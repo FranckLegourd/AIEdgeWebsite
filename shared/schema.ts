@@ -36,9 +36,9 @@ export const inquiries = pgTable("inquiries", {
   firstName: text("first_name").notNull(),
   lastName: text("last_name").notNull(),
   email: text("email").notNull(),
-  company: text("company"),
-  serviceInterest: text("service_interest"),
-  message: text("message").notNull(),
+  company: text("company").notNull(),
+  serviceInterest: text("service_interest").notNull(),
+  message: text("message"),
   status: text("status").notNull().default("new"), // new, contacted, converted, closed
   createdAt: timestamp("created_at").defaultNow().notNull(),
 });
@@ -73,6 +73,12 @@ export const insertProjectSchema = createInsertSchema(projects).omit({
 export const insertInquirySchema = createInsertSchema(inquiries).omit({
   id: true,
   createdAt: true,
+}).extend({
+  firstName: z.string().min(1, "First name is required"),
+  lastName: z.string().min(1, "Last name is required"),
+  email: z.string().email("Invalid email address"),
+  company: z.string().min(1, "Company is required"),
+  serviceInterest: z.string().min(1, "Service interest is required"),
 });
 
 export type InsertUser = z.infer<typeof insertUserSchema>;

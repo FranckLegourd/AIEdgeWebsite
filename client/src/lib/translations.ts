@@ -21,13 +21,13 @@ export const translations = {
       ctaSecondary: "View Our Services",
       features: {
         security: "Education & Training",
-        deployment: "Rapid Development",
+        deployment: "Spec-Driven Development",
         custom: "Consulting"
       }
     },
     features: {
-      rapidDevelopment: "Rapid Development",
-      educationTraining: "Education & Training", 
+      rapidDevelopment: "Spec-Driven Development",
+      educationTraining: "Education & Training",
       consulting: "Consulting",
       customSolutions: "Custom Solutions"
     },
@@ -225,6 +225,7 @@ export const translations = {
         company: "Company Name",
         serviceInterest: "Service Interest",
         message: "Tell us about your project...",
+        other: "Other",
         submit: "Start Your AI Journey"
       },
       info: {
@@ -271,7 +272,7 @@ export const translations = {
         aiConsulting: "AI Consulting",
         consulting: "AI Strategy Consulting",
         trainingEducation: "AI Training & Education",
-        rapidDevelopment: "Agentic Spec-Driven Development",
+        rapidDevelopment: "Spec-Driven Development",
         leadGeneration: "Lead Generation Systems",
         rag: "Retrieval-Augmented Generation",
         privacyPolicy: "Privacy Policy",
@@ -279,6 +280,17 @@ export const translations = {
         cookiePolicy: "Cookie Policy",
         gdprCompliance: "GDPR Compliance"
       }
+    },
+    cookieConsent: {
+      title: "Cookie Preferences",
+      description: "We use cookies to enhance your browsing experience and analyze site traffic. By clicking 'Accept', you consent to our use of cookies.",
+      accept: "Accept Cookies",
+      deny: "Deny Cookies",
+      acceptAriaLabel: "Accept all cookies and close banner",
+      denyAriaLabel: "Deny all cookies and close banner",
+      close: "Close cookie banner",
+      learnMore: "Learn more",
+      manageSettings: "Manage cookie settings"
     },
     auth: {
       title: "Transform Your Business with AI",
@@ -311,11 +323,11 @@ export const translations = {
         subtitle: "Join hundreds of companies leveraging our cutting-edge AI solutions to drive innovation, efficiency, and growth.",
         features: {
           rapidDevelopment: {
-            title: "Rapid Development",
+            title: "Spec-Driven Development",
             description: "Accelerate your AI projects from concept to production"
           },
           education: {
-            title: "Education & Training", 
+            title: "Education & Training",
             description: "Comprehensive AI literacy programs for your team"
           },
           consulting: {
@@ -473,6 +485,68 @@ export const translations = {
           <p>Building ethical AI requires a structured approach that integrates ethical considerations throughout the development lifecycle.</p>
         `
       }
+    },
+    privacy: {
+      title: "Privacy Policy",
+      lastUpdated: "Last Updated",
+      intro: "At AI Edge International, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.",
+      sections: {
+        dataCollection: {
+          title: "Information We Collect",
+          content: "We collect information you provide directly to us, such as when you fill out a contact form, subscribe to our newsletter, or request our services. This may include:\n\n• Name and contact information (email, phone number)\n• Company name and job title\n• Project requirements and business needs\n• Communication preferences"
+        },
+        dataUsage: {
+          title: "How We Use Your Information",
+          content: "We use the information we collect to:\n\n• Provide, maintain, and improve our services\n• Respond to your inquiries and fulfill your requests\n• Send you technical notices and support messages\n• Communicate about products, services, and events\n• Analyze usage patterns to improve user experience"
+        },
+        dataSecurity: {
+          title: "Data Security",
+          content: "We implement appropriate technical and organizational security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. These measures include encryption, secure servers, and regular security assessments."
+        },
+        yourRights: {
+          title: "Your Rights",
+          content: "You have the right to:\n\n• Access the personal information we hold about you\n• Request correction of inaccurate information\n• Request deletion of your personal information\n• Opt-out of marketing communications\n• Lodge a complaint with a supervisory authority"
+        },
+        cookies: {
+          title: "Cookies and Tracking",
+          content: "We use cookies and similar tracking technologies to enhance your browsing experience, analyze site traffic, and understand where our visitors come from. You can control cookie preferences through your browser settings."
+        },
+        contact: {
+          title: "Contact Us",
+          content: "If you have any questions about this Privacy Policy or our data practices, please contact us at privacy@aiedgeinternational.com. We will respond to your inquiry within 5 business days."
+        }
+      }
+    },
+    terms: {
+      title: "Terms of Service",
+      lastUpdated: "Last Updated",
+      intro: "These Terms of Service govern your use of AI Edge International's website and services. By accessing or using our services, you agree to be bound by these terms. Please read them carefully before using our services.",
+      sections: {
+        acceptance: {
+          title: "Acceptance of Terms",
+          content: "By accessing and using our services, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services.\n\nThese terms apply to all visitors, users, and clients who access or use our services."
+        },
+        services: {
+          title: "Description of Services",
+          content: "AI Edge International provides AI consulting, development, and implementation services including:\n\n• AI strategy consulting and assessment\n• Custom AI solution development\n• Machine learning model training and deployment\n• AI integration and automation services\n• Training and support services\n\nWe reserve the right to modify, suspend, or discontinue any aspect of our services at any time."
+        },
+        payment: {
+          title: "Payment Terms",
+          content: "Payment terms are established in individual service agreements. Unless otherwise specified:\n\n• Invoices are due within 30 days of receipt\n• Late payments may incur interest charges\n• All fees are non-refundable unless otherwise stated\n• Prices are subject to change with reasonable notice"
+        },
+        liability: {
+          title: "Limitation of Liability",
+          content: "To the maximum extent permitted by law, AI Edge International shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of our services.\n\nOur total liability shall not exceed the amount paid by you for the services in question during the twelve months preceding the claim."
+        },
+        termination: {
+          title: "Termination",
+          content: "Either party may terminate the service agreement with written notice as specified in the individual contract. Upon termination:\n\n• All outstanding payments become immediately due\n• Access to services will be revoked\n• Confidential information must be returned or destroyed\n• Provisions that by nature should survive will remain in effect"
+        },
+        changes: {
+          title: "Changes to Terms",
+          content: "We reserve the right to update these Terms of Service at any time. We will notify users of any material changes by posting the new terms on our website and updating the \"Last Updated\" date.\n\nYour continued use of our services after changes constitutes acceptance of the modified terms."
+        }
+      }
     }
   },
   fr: {
@@ -488,10 +562,10 @@ export const translations = {
       logout: "Déconnexion"
     },
     hero: {
-      title: "Votre Partenaire de Transformation IA de l'Idée à l'Exécution",
+      title: "Votre Partenaire de Transformation en IA de l'Idée à l'Exécution",
       titlePart1: "Votre",
-      titleHighlight: "Transformation IA",
-      titlePart2: "Partenaire de l'Idée à l'Exécution",
+      titleHighlight: "Partenaire de Transformation",
+      titlePart2: " en IA de l'Idée à l'Exécution",
       subtitle: "Nous nous spécialisons dans la concrétisation de vos idées en utilisant la puissance de l'Intelligence Artificielle. Nous aidons les entreprises visionnaires de toutes tailles à explorer et à mettre en œuvre des stratégies IA personnalisées qui offrent des résultats mesurables et des avantages concurrentiels.",
       cta: "Commencez Votre Parcours IA",
       ctaSecondary: "Voir Nos Services",
@@ -503,7 +577,7 @@ export const translations = {
     },
     features: {
       rapidDevelopment: "Développement Rapide",
-      educationTraining: "Éducation et Formation", 
+      educationTraining: "Éducation et Formation",
       consulting: "Conseil",
       customSolutions: "Solutions Personnalisées"
     },
@@ -701,6 +775,7 @@ export const translations = {
         company: "Nom de l'Entreprise",
         serviceInterest: "Intérêt de Service",
         message: "Parlez-nous de votre projet...",
+        other: "Autre",
         submit: "Commencez Votre Parcours IA"
       },
       info: {
@@ -756,6 +831,17 @@ export const translations = {
         gdprCompliance: "Conformité RGPD"
       }
     },
+    cookieConsent: {
+      title: "Préférences de Cookies",
+      description: "Nous utilisons des cookies pour améliorer votre expérience de navigation et analyser le trafic du site. En cliquant sur 'Accepter', vous consentez à notre utilisation des cookies.",
+      accept: "Accepter les Cookies",
+      deny: "Refuser les Cookies",
+      acceptAriaLabel: "Accepter tous les cookies et fermer la bannière",
+      denyAriaLabel: "Refuser tous les cookies et fermer la bannière",
+      close: "Fermer la bannière de cookies",
+      learnMore: "En savoir plus",
+      manageSettings: "Gérer les paramètres de cookies"
+    },
     auth: {
       title: "Transformez Votre Entreprise avec l'IA",
       subtitle: "Accédez à nos solutions IA complètes et services de conseil experts",
@@ -791,7 +877,7 @@ export const translations = {
             description: "Accélérez vos projets IA du concept à la production"
           },
           education: {
-            title: "Éducation et Formation", 
+            title: "Éducation et Formation",
             description: "Programmes complets d'alphabétisation IA pour votre équipe"
           },
           consulting: {
@@ -949,6 +1035,68 @@ export const translations = {
           <p>La construction d'une IA éthique nécessite une approche structurée qui intègre les considérations éthiques tout au long du cycle de développement.</p>
         `
       }
+    },
+    privacy: {
+      title: "Politique de Confidentialité",
+      lastUpdated: "Dernière mise à jour",
+      intro: "À AI Edge International, nous nous engageons à protéger votre vie privée et à assurer la sécurité de vos informations personnelles. Cette Politique de Confidentialité explique comment nous collectons, utilisons, divulguons et protégeons vos informations lorsque vous visitez notre site web ou utilisez nos services.",
+      sections: {
+        dataCollection: {
+          title: "Informations que Nous Collectons",
+          content: "Nous collectons les informations que vous nous fournissez directement, par exemple lorsque vous remplissez un formulaire de contact, vous abonnez à notre newsletter ou demandez nos services. Cela peut inclure :\n\n• Nom et coordonnées (email, numéro de téléphone)\n• Nom de l'entreprise et titre du poste\n• Exigences du projet et besoins commerciaux\n• Préférences de communication"
+        },
+        dataUsage: {
+          title: "Comment Nous Utilisons Vos Informations",
+          content: "Nous utilisons les informations collectées pour :\n\n• Fournir, maintenir et améliorer nos services\n• Répondre à vos demandes et satisfaire vos requêtes\n• Vous envoyer des avis techniques et des messages de support\n• Communiquer sur les produits, services et événements\n• Analyser les modèles d'utilisation pour améliorer l'expérience utilisateur"
+        },
+        dataSecurity: {
+          title: "Sécurité des Données",
+          content: "Nous mettons en œuvre des mesures de sécurité techniques et organisationnelles appropriées pour protéger vos informations personnelles contre l'accès non autorisé, l'altération, la divulgation ou la destruction. Ces mesures comprennent le chiffrement, des serveurs sécurisés et des évaluations de sécurité régulières."
+        },
+        yourRights: {
+          title: "Vos Droits",
+          content: "Vous avez le droit de :\n\n• Accéder aux informations personnelles que nous détenons sur vous\n• Demander la correction d'informations inexactes\n• Demander la suppression de vos informations personnelles\n• Vous désinscrire des communications marketing\n• Déposer une plainte auprès d'une autorité de contrôle"
+        },
+        cookies: {
+          title: "Cookies et Suivi",
+          content: "Nous utilisons des cookies et des technologies de suivi similaires pour améliorer votre expérience de navigation, analyser le trafic du site et comprendre d'où viennent nos visiteurs. Vous pouvez contrôler les préférences de cookies via les paramètres de votre navigateur."
+        },
+        contact: {
+          title: "Nous Contacter",
+          content: "Si vous avez des questions sur cette Politique de Confidentialité ou nos pratiques en matière de données, veuillez nous contacter à privacy@aiedgeinternational.com. Nous répondrons à votre demande dans les 5 jours ouvrables."
+        }
+      }
+    },
+    terms: {
+      title: "Conditions d'Utilisation",
+      lastUpdated: "Dernière mise à jour",
+      intro: "Ces Conditions d'Utilisation régissent votre utilisation du site web et des services d'AI Edge International. En accédant ou en utilisant nos services, vous acceptez d'être lié par ces conditions. Veuillez les lire attentivement avant d'utiliser nos services.",
+      sections: {
+        acceptance: {
+          title: "Acceptation des Conditions",
+          content: "En accédant et en utilisant nos services, vous reconnaissez avoir lu, compris et accepté d'être lié par ces Conditions d'Utilisation. Si vous n'acceptez pas ces conditions, veuillez ne pas utiliser nos services.\n\nCes conditions s'appliquent à tous les visiteurs, utilisateurs et clients qui accèdent ou utilisent nos services."
+        },
+        services: {
+          title: "Description des Services",
+          content: "AI Edge International fournit des services de conseil, développement et implémentation en IA, notamment :\n\n• Conseil et évaluation en stratégie IA\n• Développement de solutions IA personnalisées\n• Formation et déploiement de modèles d'apprentissage automatique\n• Services d'intégration et d'automatisation IA\n• Services de formation et de support\n\nNous nous réservons le droit de modifier, suspendre ou interrompre tout aspect de nos services à tout moment."
+        },
+        payment: {
+          title: "Conditions de Paiement",
+          content: "Les conditions de paiement sont établies dans les contrats de service individuels. Sauf indication contraire :\n\n• Les factures sont dues dans les 30 jours suivant leur réception\n• Les retards de paiement peuvent entraîner des frais d'intérêt\n• Tous les frais sont non remboursables sauf indication contraire\n• Les prix sont susceptibles de changer avec un préavis raisonnable"
+        },
+        liability: {
+          title: "Limitation de Responsabilité",
+          content: "Dans la mesure maximale permise par la loi, AI Edge International ne sera pas responsable des dommages indirects, accessoires, spéciaux, consécutifs ou punitifs résultant de votre utilisation de nos services.\n\nNotre responsabilité totale ne dépassera pas le montant que vous avez payé pour les services en question au cours des douze mois précédant la réclamation."
+        },
+        termination: {
+          title: "Résiliation",
+          content: "Chaque partie peut résilier le contrat de service avec un préavis écrit tel que spécifié dans le contrat individuel. À la résiliation :\n\n• Tous les paiements en suspens deviennent immédiatement exigibles\n• L'accès aux services sera révoqué\n• Les informations confidentielles doivent être retournées ou détruites\n• Les dispositions qui par nature doivent survivre resteront en vigueur"
+        },
+        changes: {
+          title: "Modifications des Conditions",
+          content: "Nous nous réservons le droit de mettre à jour ces Conditions d'Utilisation à tout moment. Nous informerons les utilisateurs de tout changement important en publiant les nouvelles conditions sur notre site web et en mettant à jour la date de \"Dernière mise à jour\".\n\nVotre utilisation continue de nos services après les modifications constitue une acceptation des conditions modifiées."
+        }
+      }
     }
   },
   es: {
@@ -964,10 +1112,10 @@ export const translations = {
       logout: "Cerrar Sesión"
     },
     hero: {
-      title: "Tu Socio de Transformación IA de la Idea a la Ejecución",
-      titlePart1: "Tu",
-      titleHighlight: "Transformación IA",
-      titlePart2: "Socio de la Idea a la Ejecución",
+      title: "Su Socio de Transformación en IA de la Idea a la Ejecución",
+      titlePart1: "Su",
+      titleHighlight: "Socio de Transformación en IA",
+      titlePart2: "de la Idea a la Ejecución",
       subtitle: "Nos especializamos en dar vida a tus ideas usando el poder de la Inteligencia Artificial. Ayudamos a empresas visionarias de todos los tamaños a explorar e implementar estrategias IA personalizadas que entregan resultados medibles y ventajas competitivas.",
       cta: "Comienza Tu Viaje IA",
       ctaSecondary: "Ver Nuestros Servicios",
@@ -979,7 +1127,7 @@ export const translations = {
     },
     features: {
       rapidDevelopment: "Desarrollo Rápido",
-      educationTraining: "Educación y Entrenamiento", 
+      educationTraining: "Educación y Entrenamiento",
       consulting: "Consultoría",
       customSolutions: "Soluciones Personalizadas"
     },
@@ -1177,6 +1325,7 @@ export const translations = {
         company: "Nombre de la Empresa",
         serviceInterest: "Interés de Servicio",
         message: "Cuéntanos sobre tu proyecto...",
+        other: "Otro",
         submit: "Comienza Tu Viaje IA"
       },
       info: {
@@ -1232,6 +1381,17 @@ export const translations = {
         gdprCompliance: "Cumplimiento GDPR"
       }
     },
+    cookieConsent: {
+      title: "Preferencias de Cookies",
+      description: "Utilizamos cookies para mejorar su experiencia de navegación y analizar el tráfico del sitio. Al hacer clic en 'Aceptar', usted consiente nuestro uso de cookies.",
+      accept: "Aceptar Cookies",
+      deny: "Rechazar Cookies",
+      acceptAriaLabel: "Aceptar todas las cookies y cerrar el banner",
+      denyAriaLabel: "Rechazar todas las cookies y cerrar el banner",
+      close: "Cerrar el banner de cookies",
+      learnMore: "Saber más",
+      manageSettings: "Gestionar configuración de cookies"
+    },
     auth: {
       title: "Transforma Tu Negocio con IA",
       subtitle: "Accede a nuestras soluciones IA integrales y servicios de consultoría expertos",
@@ -1267,7 +1427,7 @@ export const translations = {
             description: "Acelera tus proyectos IA del concepto a la producción"
           },
           education: {
-            title: "Educación y Entrenamiento", 
+            title: "Educación y Entrenamiento",
             description: "Programas integrales de alfabetización IA para tu equipo"
           },
           consulting: {
@@ -1424,6 +1584,68 @@ export const translations = {
           <h2>Framework de Implementación</h2>
           <p>Construir IA ética requiere un enfoque estructurado que integre consideraciones éticas a lo largo del ciclo de desarrollo.</p>
         `
+      }
+    },
+    privacy: {
+      title: "Política de Privacidad",
+      lastUpdated: "Última actualización",
+      intro: "En AI Edge International, estamos comprometidos a proteger su privacidad y garantizar la seguridad de su información personal. Esta Política de Privacidad explica cómo recopilamos, usamos, divulgamos y protegemos su información cuando visita nuestro sitio web o utiliza nuestros servicios.",
+      sections: {
+        dataCollection: {
+          title: "Información que Recopilamos",
+          content: "Recopilamos información que nos proporciona directamente, como cuando completa un formulario de contacto, se suscribe a nuestro boletín o solicita nuestros servicios. Esto puede incluir:\n\n• Nombre e información de contacto (correo electrónico, número de teléfono)\n• Nombre de la empresa y cargo\n• Requisitos del proyecto y necesidades comerciales\n• Preferencias de comunicación"
+        },
+        dataUsage: {
+          title: "Cómo Usamos Su Información",
+          content: "Usamos la información que recopilamos para:\n\n• Proporcionar, mantener y mejorar nuestros servicios\n• Responder a sus consultas y cumplir con sus solicitudes\n• Enviarle avisos técnicos y mensajes de soporte\n• Comunicar sobre productos, servicios y eventos\n• Analizar patrones de uso para mejorar la experiencia del usuario"
+        },
+        dataSecurity: {
+          title: "Seguridad de Datos",
+          content: "Implementamos medidas de seguridad técnicas y organizativas apropiadas para proteger su información personal contra acceso no autorizado, alteración, divulgación o destrucción. Estas medidas incluyen cifrado, servidores seguros y evaluaciones de seguridad regulares."
+        },
+        yourRights: {
+          title: "Sus Derechos",
+          content: "Usted tiene derecho a:\n\n• Acceder a la información personal que tenemos sobre usted\n• Solicitar la corrección de información inexacta\n• Solicitar la eliminación de su información personal\n• Optar por no recibir comunicaciones de marketing\n• Presentar una queja ante una autoridad supervisora"
+        },
+        cookies: {
+          title: "Cookies y Seguimiento",
+          content: "Usamos cookies y tecnologías de seguimiento similares para mejorar su experiencia de navegación, analizar el tráfico del sitio y entender de dónde vienen nuestros visitantes. Puede controlar las preferencias de cookies a través de la configuración de su navegador."
+        },
+        contact: {
+          title: "Contáctenos",
+          content: "Si tiene alguna pregunta sobre esta Política de Privacidad o nuestras prácticas de datos, contáctenos en privacy@aiedgeinternational.com. Responderemos a su consulta dentro de 5 días hábiles."
+        }
+      }
+    },
+    terms: {
+      title: "Términos de Servicio",
+      lastUpdated: "Última actualización",
+      intro: "Estos Términos de Servicio rigen su uso del sitio web y los servicios de AI Edge International. Al acceder o utilizar nuestros servicios, acepta estar sujeto a estos términos. Por favor léalos cuidadosamente antes de usar nuestros servicios.",
+      sections: {
+        acceptance: {
+          title: "Aceptación de Términos",
+          content: "Al acceder y utilizar nuestros servicios, reconoce que ha leído, entendido y acepta estar sujeto a estos Términos de Servicio. Si no está de acuerdo con estos términos, por favor no utilice nuestros servicios.\n\nEstos términos se aplican a todos los visitantes, usuarios y clientes que acceden o utilizan nuestros servicios."
+        },
+        services: {
+          title: "Descripción de Servicios",
+          content: "AI Edge International proporciona servicios de consultoría, desarrollo e implementación de IA, incluyendo:\n\n• Consultoría y evaluación de estrategia de IA\n• Desarrollo de soluciones de IA personalizadas\n• Entrenamiento y despliegue de modelos de aprendizaje automático\n• Servicios de integración y automatización de IA\n• Servicios de capacitación y soporte\n\nNos reservamos el derecho de modificar, suspender o descontinuar cualquier aspecto de nuestros servicios en cualquier momento."
+        },
+        payment: {
+          title: "Términos de Pago",
+          content: "Los términos de pago se establecen en los acuerdos de servicio individuales. A menos que se especifique lo contrario:\n\n• Las facturas vencen dentro de los 30 días de su recepción\n• Los pagos atrasados pueden incurrir en cargos por intereses\n• Todas las tarifas no son reembolsables a menos que se indique lo contrario\n• Los precios están sujetos a cambios con aviso razonable"
+        },
+        liability: {
+          title: "Limitación de Responsabilidad",
+          content: "En la máxima medida permitida por la ley, AI Edge International no será responsable de ningún daño indirecto, incidental, especial, consecuente o punitivo que resulte de su uso de nuestros servicios.\n\nNuestra responsabilidad total no excederá el monto pagado por usted por los servicios en cuestión durante los doce meses anteriores a la reclamación."
+        },
+        termination: {
+          title: "Terminación",
+          content: "Cualquiera de las partes puede terminar el acuerdo de servicio con aviso por escrito según lo especificado en el contrato individual. Al terminar:\n\n• Todos los pagos pendientes se vuelven inmediatamente exigibles\n• El acceso a los servicios será revocado\n• La información confidencial debe ser devuelta o destruida\n• Las disposiciones que por su naturaleza deben sobrevivir permanecerán en vigor"
+        },
+        changes: {
+          title: "Cambios en los Términos",
+          content: "Nos reservamos el derecho de actualizar estos Términos de Servicio en cualquier momento. Notificaremos a los usuarios de cualquier cambio material publicando los nuevos términos en nuestro sitio web y actualizando la fecha de \"Última actualización\".\n\nSu uso continuado de nuestros servicios después de los cambios constituye la aceptación de los términos modificados."
+        }
       }
     }
   }

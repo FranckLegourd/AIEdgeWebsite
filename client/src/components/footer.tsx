@@ -63,8 +63,8 @@ export function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">{t("footer.legal")}</h4>
             <ul className="space-y-2 text-gray-400">
-              <li className="flex"><span className="mr-2">•</span><a href="#" className="hover:text-white transition-colors duration-200">{t("footer.links.privacyPolicy")}</a></li>
-              <li className="flex"><span className="mr-2">•</span><a href="#" className="hover:text-white transition-colors duration-200">{t("footer.links.termsOfService")}</a></li>
+              <li className="flex"><span className="mr-2">•</span><a href="/privacy" className="hover:text-white transition-colors duration-200">{t("footer.links.privacyPolicy")}</a></li>
+              <li className="flex"><span className="mr-2">•</span><a href="/terms" className="hover:text-white transition-colors duration-200">{t("footer.links.termsOfService")}</a></li>
               <li className="flex"><span className="mr-2">•</span><a href="#" className="hover:text-white transition-colors duration-200">{t("footer.links.cookiePolicy")}</a></li>
             </ul>
           </div>

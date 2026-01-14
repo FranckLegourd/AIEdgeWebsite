@@ -146,6 +146,27 @@
       opacity: 1;
     }
   }
+
+  .animate-slide-up-from-bottom {
+    animation: slideUpFromBottom 0.3s ease-out;
+  }
+
+  @keyframes slideUpFromBottom {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-slide-up-from-bottom {
+    animation: none;
+  }
 }
 
 /* Custom scrollbar */

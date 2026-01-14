@@ -18,7 +18,7 @@ export const translations = {
       ctaSecondary: "View Our Services",
       features: {
         security: "Education & Training",
-        deployment: "Rapid Development",
+        deployment: "Spec-Driven Development",
         custom: "Consulting"
       }
     },
@@ -254,7 +254,7 @@ export const translations = {
         aiConsulting: "AI Consulting",
         consulting: "AI Strategy Consulting",
         trainingEducation: "AI Training & Education",
-        rapidDevelopment: "Agentic Spec-Driven Development",
+        rapidDevelopment: "Spec-Driven Development",
         leadGeneration: "Lead Generation Systems",
         rag: "Retrieval-Augmented Generation",
         privacyPolicy: "Privacy Policy",
@@ -288,11 +288,11 @@ export const translations = {
         subtitle: "Join hundreds of companies leveraging our cutting-edge AI solutions to drive innovation, efficiency, and growth.",
         features: {
           rapidDevelopment: {
-            title: "Rapid Development",
+            title: "Spec-Driven Development",
             description: "Accelerate your AI projects from concept to production"
           },
           education: {
-            title: "Education & Training", 
+            title: "Education & Training",
             description: "Comprehensive AI literacy programs for your team"
           },
           consulting: {
@@ -732,7 +732,7 @@ export const translations = {
             description: "Accélérez vos projets IA du concept à la production"
           },
           education: {
-            title: "Éducation et Formation", 
+            title: "Éducation et Formation",
             description: "Programmes complets d'alphabétisation IA pour votre équipe"
           },
           consulting: {
@@ -1120,7 +1120,7 @@ export const translations = {
             description: "Acelera tus proyectos IA del concepto a la producción"
           },
           education: {
-            title: "Educación y Entrenamiento", 
+            title: "Educación y Entrenamiento",
             description: "Programas integrales de alfabetización IA para tu equipo"
           },
           consulting: {

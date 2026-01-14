@@ -4,10 +4,22 @@ import { setupAuth } from "./auth";
 import { storage } from "./storage";
 import { insertProjectSchema, insertInquirySchema } from "@shared/schema";
 import { z } from "zod";
+import nodemailer from "nodemailer";
 
 export function registerRoutes(app: Express): Server {
   // Setup authentication routes
   setupAuth(app);
+
+  // Email transporter configuration for Hostinger
+  const transporter = nodemailer.createTransport({
+    host: process.env.MAIL_HOST || "smtp.hostinger.com",
+    port: parseInt(process.env.MAIL_PORT || "465"),
+    secure: true, // true for 465, false for other ports
+    auth: {
+      user: process.env.MAIL_USERNAME || "agent@aiedgeinternational.com",
+      pass: process.env.MAIL_PASSWORD,
+    },
+  });
 
   // Project routes
   app.get("/api/projects", async (req, res) => {
@@ -158,6 +170,36 @@ export function registerRoutes(app: Express): Server {
       const inquiryData = insertInquirySchema.parse(req.body);
       const inquiry = await storage.createInquiry(inquiryData);
 
+      // Send email notification
+      const mailOptions = {
+        from: `"AI Edge Website" <${process.env.MAIL_USERNAME || "agent@aiedgeinternational.com"}>`,
+        to: "agent@aiedgeinternational.com",
+        subject: `New Inquiry from ${inquiryData.firstName} ${inquiryData.lastName}`,
+        html: `
+          <h2>New Website Inquiry</h2>
+          <p>You have received a new inquiry from the website contact form.</p>
+          
+          <h3>Contact Details:</h3>
+          <ul>
+            <li><strong>Name:</strong> ${inquiryData.firstName} ${inquiryData.lastName}</li>
+            <li><strong>Email:</strong> ${inquiryData.email}</li>
+            <li><strong>Company:</strong> ${inquiryData.company}</li>
+            <li><strong>Service Interest:</strong> ${inquiryData.serviceInterest}</li>
+          </ul>
+
+          <h3>Message:</h3>
+          <p>${(inquiryData.message || "No message provided").replace(/\n/g, '<br>')}</p>
+        `,
+      };
+
+      try {
+        await transporter.sendMail(mailOptions);
+        console.log("Inquiry notification email sent successfully.");
+      } catch (emailError) {
+        console.error("Failed to send inquiry notification email:", emailError);
+        // Do not fail the request if email sending fails, as the inquiry is already saved
+      }
+
       res.status(201).json(inquiry);
     } catch (error) {
       if (error instanceof z.ZodError) {
@@ -232,10 +274,10 @@ export function registerRoutes(app: Express): Server {
 
       const id = parseInt(req.params.id);
       const updates = req.body;
-      
+
       // Don't allow password updates through this endpoint
       delete updates.password;
-      
+
       const user = await storage.updateUser(id, updates);
 
       if (!user) {

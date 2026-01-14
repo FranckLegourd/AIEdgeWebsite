@@ -6,15 +6,15 @@ import { PartnerTicker } from "@/components/partner-ticker";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { useTranslation } from "@/hooks/use-translation";
-import { 
-  Shield, 
-  Rocket, 
-  Cog, 
-  Filter, 
-  Mic, 
-  Database, 
-  Video, 
-  MessageSquare, 
+import {
+  Shield,
+  Rocket,
+  Cog,
+  Filter,
+  Mic,
+  Database,
+  Video,
+  MessageSquare,
   Bot,
   CheckCircle,
   ArrowRight,
@@ -28,7 +28,7 @@ import {
 } from "lucide-react";
 
 export default function HomePage() {
-  const { t } = useTranslation();
+  const { t, language } = useTranslation();
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -88,9 +88,19 @@ export default function HomePage() {
                   <span className="text-primary">{t("hero.titleHighlight")} </span>
                   <span className="text-gray-900 dark:text-white">{t("hero.titlePart2").split(" ")[0]}</span>
                 </span>
-                <span className="text-gray-900 dark:text-white"> {t("hero.titlePart2").split(" ").slice(1).join(" ")}</span>
+                {language === "en" ? <br /> : " "}
+                <span className="text-gray-900 dark:text-white">
+                  {t("hero.titlePart2").split(" ").slice(1).join(" ").startsWith("en IA") ? (
+                    <>
+                      <span className="text-primary"> en IA</span>
+                      {t("hero.titlePart2").split(" ").slice(1).join(" ").substring(5)}
+                    </>
+                  ) : (
+                    <> {t("hero.titlePart2").split(" ").slice(1).join(" ")}</>
+                  )}
+                </span>
               </h1>
-              
+
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
                 {t("hero.subtitle")}
               </p>
@@ -126,10 +136,10 @@ export default function HomePage() {
 
             <div className={`relative ${isVisible ? "animate-fade-in" : "opacity-0"}`}>
               <div className="relative">
-                <img 
-                  src="/neuralllm.jpg" 
-                  alt="Neural network and AI visualization" 
-                  className="rounded-2xl shadow-2xl w-full h-auto" 
+                <img
+                  src="/neuralllm.jpg"
+                  alt="Neural network and AI visualization"
+                  className="rounded-2xl shadow-2xl w-full h-auto"
                 />
               </div>
             </div>
@@ -172,7 +182,7 @@ export default function HomePage() {
             <h3 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">
               {t("about.process.title")}
             </h3>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               {[
                 { step: "1", title: t("about.process.analysis.title"), description: t("about.process.analysis.description") },
@@ -203,15 +213,15 @@ export default function HomePage() {
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
                 {t("about.homeSubtitle")}
               </p>
-              
+
 
             </div>
 
             <div className="relative">
-              <img 
-                src="/office_future.png" 
-                alt="Futuristic AI-powered office workspace" 
-                className="rounded-2xl shadow-2xl w-full h-auto" 
+              <img
+                src="/office_future.png"
+                alt="Futuristic AI-powered office workspace"
+                className="rounded-2xl shadow-2xl w-full h-auto"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
             </div>
@@ -266,13 +276,13 @@ export default function HomePage() {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-primary to-purple-600 relative overflow-hidden">
         <div className="absolute inset-0">
-          <img 
-            src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080" 
-            alt="Abstract AI technology background" 
-            className="w-full h-full object-cover opacity-20" 
+          <img
+            src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080"
+            alt="Abstract AI technology background"
+            className="w-full h-full object-cover opacity-20"
           />
         </div>
-        
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
@@ -295,12 +305,11 @@ export default function HomePage() {
               </Link>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+            <div className="flex flex-wrap justify-center gap-6 max-w-5xl mx-auto">
               {[
                 { text: t("features.rapidDevelopment"), icon: Rocket },
-                { text: t("features.educationTraining"), icon: GraduationCap }, 
-                { text: t("features.consulting"), icon: Users },
-                { text: t("features.customSolutions"), icon: Settings }
+                { text: t("features.educationTraining"), icon: GraduationCap },
+                { text: t("features.consulting"), icon: Users }
               ].map((feature, index) => (
                 <div key={index} className="flex items-center justify-center space-x-3 text-white">
                   <feature.icon className="h-5 w-5 text-white flex-shrink-0" />

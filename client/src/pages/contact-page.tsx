@@ -15,9 +15,9 @@ import { insertInquirySchema } from "@shared/schema";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { 
-  Mail, 
-  Phone, 
+import {
+  Mail,
+  Phone,
   MapPin,
   Clock,
   Send,
@@ -56,10 +56,11 @@ export default function ContactPage() {
     },
     onSuccess: () => {
       setIsSubmitted(true);
+      window.scrollTo({ top: 0, behavior: "smooth" });
       contactForm.reset();
       toast({
         title: "Success",
-        description: "Your inquiry has been submitted successfully. We'll get back to you soon!",
+        description: "Your inquiry has been submitted successfully. Our team will review your request and get back to you within 24 hours or less.",
       });
     },
     onError: (error: Error) => {
@@ -128,13 +129,13 @@ export default function ContactPage() {
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-gradient-to-br from-primary to-purple-600 relative overflow-hidden">
         <div className="absolute inset-0">
-          <img 
-            src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080" 
-            alt="Abstract AI technology background" 
-            className="w-full h-full object-cover opacity-20" 
+          <img
+            src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080"
+            alt="Abstract AI technology background"
+            className="w-full h-full object-cover opacity-20"
           />
         </div>
-        
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center text-white">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
@@ -154,12 +155,14 @@ export default function ContactPage() {
             {/* Contact Form */}
             <div className="lg:col-span-2">
               <Card className="shadow-xl">
-                <CardHeader>
-                  <CardTitle className="text-2xl">Get Started Today</CardTitle>
-                  <p className="text-gray-600 dark:text-gray-300">
-                    Fill out the form below and we'll get back to you within 24 hours.
-                  </p>
-                </CardHeader>
+                {!isSubmitted && (
+                  <CardHeader>
+                    <CardTitle className="text-2xl">Get Started Today</CardTitle>
+                    <p className="text-gray-600 dark:text-gray-300">
+                      Fill out the form below and we'll get back to you within 24 hours or less.
+                    </p>
+                  </CardHeader>
+                )}
                 <CardContent>
                   {isSubmitted ? (
                     <div className="text-center py-12">
@@ -168,7 +171,7 @@ export default function ContactPage() {
                         Thank You!
                       </h3>
                       <p className="text-gray-600 dark:text-gray-300 mb-6">
-                        Your inquiry has been submitted successfully. Our team will review your request and get back to you within 24 hours.
+                        Your inquiry has been submitted successfully. Our team will review your request and get back to you within 24 hours or less.
                       </p>
                       <Button
                         onClick={() => setIsSubmitted(false)}
@@ -181,7 +184,7 @@ export default function ContactPage() {
                     <form onSubmit={contactForm.handleSubmit(onSubmit)} className="space-y-6">
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="space-y-2">
-                          <Label htmlFor="firstName">{t("contact.form.firstName")}</Label>
+                          <Label htmlFor="firstName">{t("contact.form.firstName")} <span className="text-destructive">*</span></Label>
                           <Input
                             id="firstName"
                             {...contactForm.register("firstName")}
@@ -193,7 +196,7 @@ export default function ContactPage() {
                         </div>
 
                         <div className="space-y-2">
-                          <Label htmlFor="lastName">{t("contact.form.lastName")}</Label>
+                          <Label htmlFor="lastName">{t("contact.form.lastName")} <span className="text-destructive">*</span></Label>
                           <Input
                             id="lastName"
                             {...contactForm.register("lastName")}
@@ -206,7 +209,7 @@ export default function ContactPage() {
                       </div>
 
                       <div className="space-y-2">
-                        <Label htmlFor="email">{t("contact.form.email")}</Label>
+                        <Label htmlFor="email">{t("contact.form.email")} <span className="text-destructive">*</span></Label>
                         <Input
                           id="email"
                           type="email"
@@ -219,7 +222,7 @@ export default function ContactPage() {
                       </div>
 
                       <div className="space-y-2">
-                        <Label htmlFor="company">{t("contact.form.company")}</Label>
+                        <Label htmlFor="company">{t("contact.form.company")} <span className="text-destructive">*</span></Label>
                         <Input
                           id="company"
                           {...contactForm.register("company")}
@@ -231,26 +234,28 @@ export default function ContactPage() {
                       </div>
 
                       <div className="space-y-2">
-                        <Label htmlFor="serviceInterest">{t("contact.form.serviceInterest")}</Label>
+                        <Label htmlFor="serviceInterest">{t("contact.form.serviceInterest")} <span className="text-destructive">*</span></Label>
                         <Select onValueChange={(value) => contactForm.setValue("serviceInterest", value)}>
-                          <SelectTrigger>
+                          <SelectTrigger className={contactForm.formState.errors.serviceInterest ? "border-destructive" : ""}>
                             <SelectValue placeholder="Select service interest" />
                           </SelectTrigger>
                           <SelectContent>
-                            <SelectItem value="automation">Intelligent Automation</SelectItem>
-                            <SelectItem value="ml">Machine Learning</SelectItem>
-                            <SelectItem value="analytics">Predictive Analytics</SelectItem>
-                            <SelectItem value="nlp">Natural Language Processing</SelectItem>
-                            <SelectItem value="vision">Computer Vision</SelectItem>
-                            <SelectItem value="agents">AI Agent Systems</SelectItem>
-                            <SelectItem value="consulting">AI Consulting</SelectItem>
-                            <SelectItem value="other">Other</SelectItem>
+                            <SelectItem value="lead_generation">{t("footer.links.leadGeneration")}</SelectItem>
+                            <SelectItem value="voice_agents">{t("services.ml.title")}</SelectItem>
+                            <SelectItem value="rag">{t("footer.links.rag")}</SelectItem>
+                            <SelectItem value="video_image">{t("services.nlp.title")}</SelectItem>
+                            <SelectItem value="dm_marketing">{t("services.vision.title")}</SelectItem>
+                            <SelectItem value="agents">{t("services.agents.title")}</SelectItem>
+                            <SelectItem value="consulting">{t("footer.links.consulting")}</SelectItem>
+                            <SelectItem value="training">{t("footer.links.trainingEducation")}</SelectItem>
+                            <SelectItem value="spec_development">{t("footer.links.rapidDevelopment")}</SelectItem>
+                            <SelectItem value="other">{t("contact.form.other")}</SelectItem>
                           </SelectContent>
                         </Select>
                       </div>
 
                       <div className="space-y-2">
-                        <Label htmlFor="message">{t("contact.form.message")}</Label>
+                        <Label htmlFor="message">{t("contact.form.message")} (Optional)</Label>
                         <Textarea
                           id="message"
                           rows={6}
