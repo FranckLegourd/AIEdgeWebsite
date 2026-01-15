@@ -11,10 +11,11 @@ export function registerRoutes(app: Express): Server {
   setupAuth(app);
 
   // Email transporter configuration for Hostinger
+  // Email transporter configuration for Hostinger
   const transporter = nodemailer.createTransport({
     host: process.env.MAIL_HOST || "smtp.hostinger.com",
-    port: parseInt(process.env.MAIL_PORT || "465"),
-    secure: true, // true for 465, false for other ports
+    port: parseInt(process.env.MAIL_PORT || "587"),
+    secure: false, // true for 465, false for other ports
     auth: {
       user: process.env.MAIL_USERNAME || "agent@aiedgeinternational.com",
       pass: process.env.MAIL_PASSWORD,
