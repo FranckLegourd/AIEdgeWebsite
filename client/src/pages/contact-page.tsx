@@ -46,6 +46,7 @@ export default function ContactPage() {
       company: "",
       serviceInterest: "",
       message: "",
+      status: "new",
     },
   });
 

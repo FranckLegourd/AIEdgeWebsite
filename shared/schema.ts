@@ -1,92 +1,67 @@
-import { pgTable, text, serial, integer, boolean, timestamp, jsonb } from "drizzle-orm/pg-core";
-import { relations } from "drizzle-orm";
-import { createInsertSchema } from "drizzle-zod";
 import { z } from "zod";
 
-export const users = pgTable("users", {
-  id: serial("id").primaryKey(),
-  username: text("username").notNull().unique(),
-  email: text("email").notNull().unique(),
-  password: text("password").notNull(),
-  firstName: text("first_name").notNull(),
-  lastName: text("last_name").notNull(),
-  company: text("company"),
-  role: text("role").notNull().default("client"), // client, admin
-  isActive: boolean("is_active").notNull().default(true),
-  createdAt: timestamp("created_at").defaultNow().notNull(),
+export const insertUserSchema = z.object({
+  username: z.string(),
+  email: z.string().email(),
+  password: z.string(),
+  firstName: z.string(),
+  lastName: z.string(),
+  company: z.string().nullable().optional(),
+  role: z.string().default("client"),
+  isActive: z.boolean().default(true),
 });
 
-export const projects = pgTable("projects", {
-  id: serial("id").primaryKey(),
-  title: text("title").notNull(),
-  description: text("description").notNull(),
-  status: text("status").notNull().default("pending"), // pending, in_progress, completed, cancelled
-  serviceType: text("service_type").notNull(), // automation, ml, analytics, nlp, vision, agents
-  clientId: integer("client_id").notNull().references(() => users.id),
-  assignedTo: integer("assigned_to").references(() => users.id),
-  budget: integer("budget"), // in cents
-  startDate: timestamp("start_date"),
-  endDate: timestamp("end_date"),
-  createdAt: timestamp("created_at").defaultNow().notNull(),
-  updatedAt: timestamp("updated_at").defaultNow().notNull(),
+export const insertProjectSchema = z.object({
+  title: z.string(),
+  description: z.string(),
+  status: z.string().default("pending"),
+  serviceType: z.string(),
+  clientId: z.number(),
+  assignedTo: z.number().nullable().optional(),
+  budget: z.number().nullable().optional(),
+  startDate: z.coerce.date().nullable().optional(),
+  endDate: z.coerce.date().nullable().optional(),
 });
 
-export const inquiries = pgTable("inquiries", {
-  id: serial("id").primaryKey(),
-  firstName: text("first_name").notNull(),
-  lastName: text("last_name").notNull(),
-  email: text("email").notNull(),
-  company: text("company").notNull(),
-  serviceInterest: text("service_interest").notNull(),
-  message: text("message"),
-  status: text("status").notNull().default("new"), // new, contacted, converted, closed
-  createdAt: timestamp("created_at").defaultNow().notNull(),
-});
-
-export const usersRelations = relations(users, ({ many }) => ({
-  projects: many(projects),
-  assignedProjects: many(projects),
-}));
-
-export const projectsRelations = relations(projects, ({ one }) => ({
-  client: one(users, {
-    fields: [projects.clientId],
-    references: [users.id],
-  }),
-  assignee: one(users, {
-    fields: [projects.assignedTo],
-    references: [users.id],
-  }),
-}));
-
-export const insertUserSchema = createInsertSchema(users).omit({
-  id: true,
-  createdAt: true,
-});
-
-export const insertProjectSchema = createInsertSchema(projects).omit({
-  id: true,
-  createdAt: true,
-  updatedAt: true,
-});
-
-export const insertInquirySchema = createInsertSchema(inquiries).omit({
-  id: true,
-  createdAt: true,
-}).extend({
+export const insertInquirySchema = z.object({
   firstName: z.string().min(1, "First name is required"),
   lastName: z.string().min(1, "Last name is required"),
   email: z.string().email("Invalid email address"),
   company: z.string().min(1, "Company is required"),
   serviceInterest: z.string().min(1, "Service interest is required"),
+  message: z.string().nullable().optional(),
+  status: z.string().default("new"),
 });
 
 export type InsertUser = z.infer<typeof insertUserSchema>;
-export type User = typeof users.$inferSelect;
 export type InsertProject = z.infer<typeof insertProjectSchema>;
-export type Project = typeof projects.$inferSelect;
 export type InsertInquiry = z.infer<typeof insertInquirySchema>;
-export type Inquiry = typeof inquiries.$inferSelect;
+
+export type User = InsertUser & {
+  id: number;
+  createdAt: Date;
+  company: string | null; // Normalize optional to null for strict checks
+  role: string;
+  isActive: boolean;
+};
+
+export type Project = InsertProject & {
+  id: number;
+  createdAt: Date;
+  updatedAt: Date;
+  status: string;
+  assignedTo: number | null;
+  budget: number | null;
+  startDate: Date | null;
+  endDate: Date | null;
+};
+
+export type Inquiry = InsertInquiry & {
+  id: number;
+  createdAt: Date;
+  message: string | null;
+  status: string;
+};
 
 // Extended types for API responses
 export type ProjectWithClient = Project & {
@@ -97,3 +72,10 @@ export type ProjectWithClient = Project & {
 export type UserWithProjects = User & {
   projects: Project[];
 };
+
+// Fake exports to satisfy imports in other files that might still import them
+// even though they aren't used for database queries anymore
+export const users = {};
+export const projects = {};
+export const inquiries = {};
+
