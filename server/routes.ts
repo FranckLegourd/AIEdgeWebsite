@@ -20,6 +20,10 @@ export function registerRoutes(app: Express): Server {
       user: process.env.MAIL_USERNAME || "agent@aiedgeinternational.com",
       pass: process.env.MAIL_PASSWORD,
     },
+    // Add explicit timeout settings
+    connectionTimeout: 10000, // 10 seconds
+    greetingTimeout: 10000,
+    socketTimeout: 10000,
   });
 
   // Project routes
