@@ -15,7 +15,7 @@ export function registerRoutes(app: Express): Server {
   const transporter = nodemailer.createTransport({
     host: process.env.MAIL_HOST || "smtp.hostinger.com",
     port: parseInt(process.env.MAIL_PORT || "587"),
-    secure: false, // true for 465, false for other ports
+    secure: (process.env.MAIL_PORT || "587") === "465", // true for 465, false for other ports
     auth: {
       user: process.env.MAIL_USERNAME || "agent@aiedgeinternational.com",
       pass: process.env.MAIL_PASSWORD,
