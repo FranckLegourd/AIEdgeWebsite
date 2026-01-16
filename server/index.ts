@@ -1,4 +1,9 @@
 import 'dotenv/config';
+
+// Debug: Check if environment variables are loaded
+console.log('RAW SESSION_SECRET:', process.env.SESSION_SECRET ? '[SET]' : '[NOT SET]');
+console.log('ENV KEYS with SESSION:', Object.keys(process.env).filter(k => k.includes('SESSION')));
+
 import express, { type Request, Response, NextFunction } from "express";
 import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
