@@ -1,6 +1,8 @@
 import 'dotenv/config';
 
 // Debug: Startup diagnostics for Hostinger
+console.log('ENV DEBUG_TEST:', process.env.DEBUG_TEST);
+console.log('ENV SESSION_SECRET present:', 'SESSION_SECRET' in process.env);
 console.log('=== STARTUP DIAGNOSTICS ===');
 console.log('Current Working Directory (cwd):', process.cwd());
 console.log('__dirname:', import.meta.dirname);
