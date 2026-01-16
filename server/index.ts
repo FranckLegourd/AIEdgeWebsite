@@ -1,8 +1,16 @@
 import 'dotenv/config';
 
-// Debug: Check if environment variables are loaded
+// Debug: Startup diagnostics for Hostinger
+console.log('=== STARTUP DIAGNOSTICS ===');
+console.log('Current Working Directory (cwd):', process.cwd());
+console.log('__dirname:', import.meta.dirname);
+console.log('NODE_ENV:', process.env.NODE_ENV);
+console.log('---');
 console.log('RAW SESSION_SECRET:', process.env.SESSION_SECRET ? '[SET]' : '[NOT SET]');
+console.log('MAIL_HOST:', process.env.MAIL_HOST ? '[SET]' : '[NOT SET]');
+console.log('MAIL_PASSWORD:', process.env.MAIL_PASSWORD ? '[SET]' : '[NOT SET]');
 console.log('ENV KEYS with SESSION:', Object.keys(process.env).filter(k => k.includes('SESSION')));
+console.log('=== END DIAGNOSTICS ===');
 
 import express, { type Request, Response, NextFunction } from "express";
 import { registerRoutes } from "./routes";
