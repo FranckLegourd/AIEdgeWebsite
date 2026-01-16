@@ -1,5 +1,7 @@
 // server/index.ts
-import "dotenv/config";
+import dotenv from "dotenv";
+import path3 from "path";
+import fs2 from "fs";
 import express2 from "express";
 
 // server/routes.ts
@@ -575,6 +577,21 @@ function serveStatic(app2) {
 }
 
 // server/index.ts
+var envPaths = [
+  path3.resolve(process.cwd(), ".env"),
+  // Local dev
+  path3.resolve(process.cwd(), "../.builds/config/.env"),
+  // Hostinger config location
+  path3.resolve(process.cwd(), "../../.builds/config/.env")
+  // Alternative path
+];
+for (const envPath of envPaths) {
+  if (fs2.existsSync(envPath)) {
+    console.log(`Loading .env from: ${envPath}`);
+    dotenv.config({ path: envPath });
+    break;
+  }
+}
 console.log("ENV DEBUG_TEST:", process.env.DEBUG_TEST);
 console.log("ENV SESSION_SECRET present:", "SESSION_SECRET" in process.env);
 console.log("=== STARTUP DIAGNOSTICS ===");
@@ -592,7 +609,7 @@ app.use(express2.json());
 app.use(express2.urlencoded({ extended: false }));
 app.use((req, res, next) => {
   const start = Date.now();
-  const path3 = req.path;
+  const path4 = req.path;
   let capturedJsonResponse = void 0;
   const originalResJson = res.json;
   res.json = function(bodyJson, ...args) {
@@ -601,8 +618,8 @@ app.use((req, res, next) => {
   };
   res.on("finish", () => {
     const duration = Date.now() - start;
-    if (path3.startsWith("/api")) {
-      let logLine = `${req.method} ${path3} ${res.statusCode} in ${duration}ms`;
+    if (path4.startsWith("/api")) {
+      let logLine = `${req.method} ${path4} ${res.statusCode} in ${duration}ms`;
       if (capturedJsonResponse) {
         logLine += ` :: ${JSON.stringify(capturedJsonResponse)}`;
       }

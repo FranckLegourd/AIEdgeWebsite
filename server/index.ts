@@ -1,4 +1,21 @@
-import 'dotenv/config';
+import dotenv from 'dotenv';
+import path from 'path';
+import fs from 'fs';
+
+// Try multiple .env locations (Hostinger stores config in .builds/config/.env)
+const envPaths = [
+  path.resolve(process.cwd(), '.env'),                           // Local dev
+  path.resolve(process.cwd(), '../.builds/config/.env'),         // Hostinger config location
+  path.resolve(process.cwd(), '../../.builds/config/.env'),      // Alternative path
+];
+
+for (const envPath of envPaths) {
+  if (fs.existsSync(envPath)) {
+    console.log(`Loading .env from: ${envPath}`);
+    dotenv.config({ path: envPath });
+    break;
+  }
+}
 
 // Debug: Startup diagnostics for Hostinger
 console.log('ENV DEBUG_TEST:', process.env.DEBUG_TEST);
