@@ -5,8 +5,7 @@ import fs from 'fs';
 // Try multiple .env locations (Hostinger stores config in .builds/config/.env)
 const envPaths = [
   path.resolve(process.cwd(), '.env'),                           // Local dev
-  path.resolve(process.cwd(), '../.builds/config/.env'),         // Hostinger config location
-  path.resolve(process.cwd(), '../../.builds/config/.env'),      // Alternative path
+  path.resolve(process.cwd(), '.builds/config/.env'),            // Hostinger: inside public_html
 ];
 
 for (const envPath of envPaths) {

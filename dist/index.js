@@ -580,10 +580,8 @@ function serveStatic(app2) {
 var envPaths = [
   path3.resolve(process.cwd(), ".env"),
   // Local dev
-  path3.resolve(process.cwd(), "../.builds/config/.env"),
-  // Hostinger config location
-  path3.resolve(process.cwd(), "../../.builds/config/.env")
-  // Alternative path
+  path3.resolve(process.cwd(), ".builds/config/.env")
+  // Hostinger: inside public_html
 ];
 for (const envPath of envPaths) {
   if (fs2.existsSync(envPath)) {
