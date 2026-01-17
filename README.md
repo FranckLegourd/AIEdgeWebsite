@@ -468,5 +468,5 @@ For questions or support, contact: **agent@aiedgeinternational.com**
 ---
 
 <div align="center">
-  Built with ❤️ by <strong>AI Edge International</strong>
+  Built with ❤️ by <strong>Frank Legourd</strong>
 </div>
