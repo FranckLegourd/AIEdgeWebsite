@@ -178,7 +178,7 @@ export function registerRoutes(app: Express): Server {
       // Send email notification
       const mailOptions = {
         from: `"AI Edge Website" <${process.env.MAIL_USERNAME || "agent@aiedgeinternational.com"}>`,
-        to: "agent@aiedgeinternational.com",
+        to: "frank.legourd@aiedgeinternational.com",
         subject: `New Inquiry from ${inquiryData.firstName} ${inquiryData.lastName}`,
         html: `
           <h2>New Website Inquiry</h2>
