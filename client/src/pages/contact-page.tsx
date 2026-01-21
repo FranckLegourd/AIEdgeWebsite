@@ -36,6 +36,7 @@ export default function ContactPage() {
   const { t } = useTranslation();
   const { toast } = useToast();
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [debugInfo, setDebugInfo] = useState<any>(null);
 
   const contactForm = useForm({
     resolver: zodResolver(insertInquirySchema),
@@ -55,8 +56,9 @@ export default function ContactPage() {
       const res = await apiRequest("POST", "/api/inquiries", data);
       return res.json();
     },
-    onSuccess: () => {
+    onSuccess: (data) => {
       setIsSubmitted(true);
+      setDebugInfo(data._debug || null);
       window.scrollTo({ top: 0, behavior: "smooth" });
       contactForm.reset();
       toast({
@@ -175,11 +177,37 @@ export default function ContactPage() {
                         Your inquiry has been submitted successfully. Our team will review your request and get back to you within 24 hours or less.
                       </p>
                       <Button
-                        onClick={() => setIsSubmitted(false)}
+                        onClick={() => {
+                          setIsSubmitted(false);
+                          setDebugInfo(null);
+                        }}
                         variant="outline"
                       >
                         Submit Another Inquiry
                       </Button>
+
+                      {/* Debug Info Section - Remove after troubleshooting */}
+                      {debugInfo && (
+                        <div className="mt-8 p-4 bg-gray-100 dark:bg-gray-800 rounded-lg text-left">
+                          <h4 className="font-bold text-sm mb-2 text-gray-700 dark:text-gray-300">
+                            📧 Email Debug Info (for troubleshooting):
+                          </h4>
+                          <div className="text-xs font-mono space-y-1 text-gray-600 dark:text-gray-400">
+                            <p><strong>Status:</strong> <span className={debugInfo.emailStatus === 'sent' ? 'text-green-600' : 'text-red-600'}>{debugInfo.emailStatus}</span></p>
+                            {debugInfo.emailError && (
+                              <p><strong>Error:</strong> <span className="text-red-600">{debugInfo.emailError}</span></p>
+                            )}
+                            <p><strong>Host:</strong> {debugInfo.mailConfig?.host}</p>
+                            <p><strong>Port:</strong> {debugInfo.mailConfig?.port}</p>
+                            <p><strong>Secure:</strong> {String(debugInfo.mailConfig?.secure)}</p>
+                            <p><strong>Username:</strong> {debugInfo.mailConfig?.username}</p>
+                            <p><strong>Password Set:</strong> {String(debugInfo.mailConfig?.passwordSet)}</p>
+                            <p><strong>Password Length:</strong> {debugInfo.mailConfig?.passwordLength}</p>
+                            <p><strong>Node Env:</strong> {debugInfo.nodeEnv}</p>
+                            <p><strong>Timestamp:</strong> {debugInfo.timestamp}</p>
+                          </div>
+                        </div>
+                      )}
                     </div>
                   ) : (
                     <form onSubmit={contactForm.handleSubmit(onSubmit)} className="space-y-6">
