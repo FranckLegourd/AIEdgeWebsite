@@ -175,9 +175,31 @@ export function registerRoutes(app: Express): Server {
       const inquiryData = insertInquirySchema.parse(req.body);
       const inquiry = await storage.createInquiry(inquiryData);
 
+      // Collect debug info for troubleshooting at Hostinger
+      const mailHost = process.env.MAIL_HOST || "smtp.hostinger.com";
+      const mailPort = process.env.MAIL_PORT || "587";
+      const mailUsername = process.env.MAIL_USERNAME || "agent@aiedgeinternational.com";
+      const mailPasswordSet = !!process.env.MAIL_PASSWORD;
+      const mailPasswordLength = process.env.MAIL_PASSWORD?.length || 0;
+
+      const debugInfo = {
+        mailConfig: {
+          host: mailHost,
+          port: mailPort,
+          secure: mailPort === "465",
+          username: mailUsername,
+          passwordSet: mailPasswordSet,
+          passwordLength: mailPasswordLength,
+        },
+        emailStatus: "pending",
+        emailError: null as string | null,
+        timestamp: new Date().toISOString(),
+        nodeEnv: process.env.NODE_ENV || "not set",
+      };
+
       // Send email notification
       const mailOptions = {
-        from: `"AI Edge Website" <${process.env.MAIL_USERNAME || "agent@aiedgeinternational.com"}>`,
+        from: `"AI Edge Website" <${mailUsername}>`,
         to: "frank.legourd@aiedgeinternational.com",
         subject: `New Inquiry from ${inquiryData.firstName} ${inquiryData.lastName}`,
         html: `
@@ -200,12 +222,19 @@ export function registerRoutes(app: Express): Server {
       try {
         await transporter.sendMail(mailOptions);
         console.log("Inquiry notification email sent successfully.");
-      } catch (emailError) {
+        debugInfo.emailStatus = "sent";
+      } catch (emailError: any) {
         console.error("Failed to send inquiry notification email:", emailError);
+        debugInfo.emailStatus = "failed";
+        debugInfo.emailError = emailError?.message || String(emailError);
         // Do not fail the request if email sending fails, as the inquiry is already saved
       }
 
-      res.status(201).json(inquiry);
+      // Return inquiry with debug info
+      res.status(201).json({
+        ...inquiry,
+        _debug: debugInfo,
+      });
     } catch (error) {
       if (error instanceof z.ZodError) {
         return res.status(400).json({ message: "Validation error", errors: error.errors });
