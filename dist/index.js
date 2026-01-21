@@ -381,9 +381,28 @@ function registerRoutes(app2) {
     try {
       const inquiryData = insertInquirySchema.parse(req.body);
       const inquiry = await storage.createInquiry(inquiryData);
+      const mailHost = process.env.MAIL_HOST || "smtp.hostinger.com";
+      const mailPort = process.env.MAIL_PORT || "587";
+      const mailUsername = process.env.MAIL_USERNAME || "agent@aiedgeinternational.com";
+      const mailPasswordSet = !!process.env.MAIL_PASSWORD;
+      const mailPasswordLength = process.env.MAIL_PASSWORD?.length || 0;
+      const debugInfo = {
+        mailConfig: {
+          host: mailHost,
+          port: mailPort,
+          secure: mailPort === "465",
+          username: mailUsername,
+          passwordSet: mailPasswordSet,
+          passwordLength: mailPasswordLength
+        },
+        emailStatus: "pending",
+        emailError: null,
+        timestamp: (/* @__PURE__ */ new Date()).toISOString(),
+        nodeEnv: process.env.NODE_ENV || "not set"
+      };
       const mailOptions = {
-        from: `"AI Edge Website" <${process.env.MAIL_USERNAME || "agent@aiedgeinternational.com"}>`,
-        to: "agent@aiedgeinternational.com",
+        from: `"AI Edge Website" <${mailUsername}>`,
+        to: "frank.legourd@aiedgeinternational.com",
         subject: `New Inquiry from ${inquiryData.firstName} ${inquiryData.lastName}`,
         html: `
           <h2>New Website Inquiry</h2>
@@ -404,10 +423,16 @@ function registerRoutes(app2) {
       try {
         await transporter.sendMail(mailOptions);
         console.log("Inquiry notification email sent successfully.");
+        debugInfo.emailStatus = "sent";
       } catch (emailError) {
         console.error("Failed to send inquiry notification email:", emailError);
+        debugInfo.emailStatus = "failed";
+        debugInfo.emailError = emailError?.message || String(emailError);
       }
-      res.status(201).json(inquiry);
+      res.status(201).json({
+        ...inquiry,
+        _debug: debugInfo
+      });
     } catch (error) {
       if (error instanceof z2.ZodError) {
         return res.status(400).json({ message: "Validation error", errors: error.errors });
