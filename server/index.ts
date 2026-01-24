@@ -1,6 +1,10 @@
 import dotenv from 'dotenv';
 import path from 'path';
 import fs from 'fs';
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Try multiple .env locations (Hostinger stores config in .builds/config/.env)
 const envPaths = [
@@ -21,7 +25,7 @@ console.log('ENV DEBUG_TEST:', process.env.DEBUG_TEST);
 console.log('ENV SESSION_SECRET present:', 'SESSION_SECRET' in process.env);
 console.log('=== STARTUP DIAGNOSTICS ===');
 console.log('Current Working Directory (cwd):', process.cwd());
-console.log('__dirname:', import.meta.dirname);
+console.log('__dirname:', __dirname);
 console.log('NODE_ENV:', process.env.NODE_ENV);
 console.log('---');
 console.log('RAW SESSION_SECRET:', process.env.SESSION_SECRET ? '[SET]' : '[NOT SET]');
