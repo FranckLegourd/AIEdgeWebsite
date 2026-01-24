@@ -29,13 +29,116 @@ import {
   ArrowRight,
   Linkedin,
   Twitter,
-  Github
+  Github,
+  Calendar
 } from "lucide-react";
+import { useEffect } from "react";
+
+declare global {
+  interface Window {
+    Lunacal: any;
+    Cal: any;
+  }
+}
 
 export default function ContactPage() {
   const { t } = useTranslation();
   const { toast } = useToast();
   const [isSubmitted, setIsSubmitted] = useState(false);
+  useEffect(() => {
+    (function (L: any, U: string, N: string) {
+      let p = (a: any, ar: any) => a.q.push(ar), d = L.document;
+      L.Lunacal = L.Lunacal || function () {
+        let lun = L.Lunacal, ar = arguments;
+        if (!lun.loaded) {
+          lun.ns = {};
+          lun.q = lun.q || [];
+          d.head.appendChild(d.createElement("script")).src = U;
+          lun.loaded = true;
+        }
+        if (ar[0] === N) {
+          const api: any = function () { p(api, arguments); };
+          const ns = ar[1];
+          api.q = api.q || [];
+          if (typeof ns === "string") {
+            lun.ns[ns] = lun.ns[ns] || api;
+            p(lun.ns[ns], ar);
+            p(lun, ["initNamespace", ns]);
+          } else p(lun, ar);
+          return;
+        }
+        p(lun, ar);
+      };
+      if (!L.Cal) L.Cal = L.Lunacal;
+    })(window, "https://app.lunacal.ai/embed/embed.js", "init");
+
+    window.Lunacal("init", "meeting", { origin: "https://app.lunacal.ai" });
+
+    // Enable auto-forwarding of query parameters
+    window.Lunacal.config = window.Lunacal.config || {};
+    window.Lunacal.config.forwardQueryParams = true;
+
+    window.Lunacal.ns.meeting("ui", {
+      "theme": "light",
+      "styles": {
+        "branding": {}
+      },
+      "hideEventTypeDetails": false,
+      "layout": "",
+      "cssVarsPerTheme": {
+        "light": {
+          "theme-border": "#28282B",
+          "theme-background-primary": "#8f51ea",
+          "theme-background-secondary": "#0044ff",
+          "theme-background-card": "#010101",
+          "theme-background-base": "#010101",
+          "theme-text-primary": "#ffffff",
+          "theme-text-secondary": "#ffffff",
+          "theme-text-card": "#ffffff",
+          "theme-text-base": "#ffffff",
+          "theme-rounded-base": "20px",
+          "theme-rounded-calendar": " 20px",
+          "theme-rounded-timeslot": "8px",
+          "theme-rounded-day": "6px",
+          "theme-rounded-button": "4px",
+          "theme-shadow-calendar": "0px 0px 0px 0px #D04F99",
+          "theme-shadow-button": "0px 0px 0px 0px #D1519A88",
+          "theme-shadow-timeslot": "0px 0px 0px 0px #000000",
+          "theme-font-family": "Outfit"
+        },
+        "dark": {
+          "theme-border": "#28282B",
+          "theme-background-primary": "#8f51ea",
+          "theme-background-secondary": "#0044ff",
+          "theme-background-card": "#010101",
+          "theme-background-base": "#010101",
+          "theme-text-primary": "#ffffff",
+          "theme-text-secondary": "#ffffff",
+          "theme-text-card": "#ffffff",
+          "theme-text-base": "#ffffff",
+          "theme-rounded-base": "20px",
+          "theme-rounded-calendar": " 20px",
+          "theme-rounded-timeslot": "8px",
+          "theme-rounded-day": "6px",
+          "theme-rounded-button": "4px",
+          "theme-shadow-calendar": "0px 0px 0px 0px #D04F99",
+          "theme-shadow-button": "0px 0px 0px 0px #D1519A88",
+          "theme-shadow-timeslot": "0px 0px 0px 0px #000000",
+          "theme-font-family": "Outfit"
+        }
+      },
+      "displayedContent": {
+        "image": true,
+        "name": true,
+        "designation": true,
+        "description": true,
+        "eventName": true,
+        "highlightBar": false
+      },
+      "background": null,
+      "stylePreset": "midnight"
+    });
+  }, []);
 
   const contactForm = useForm({
     resolver: zodResolver(insertInquirySchema),
@@ -80,23 +183,23 @@ export default function ContactPage() {
   const benefits = [
     {
       icon: CheckCircle,
-      title: "Free Consultation",
-      description: "Get expert advice on your AI transformation journey at no cost."
+      title: t("contact.benefits.freeConsultation.title"),
+      description: t("contact.benefits.freeConsultation.description")
     },
     {
       icon: Zap,
-      title: "Rapid Response",
-      description: "We respond to all inquiries within 24 hours during business days."
+      title: t("contact.benefits.rapidResponse.title"),
+      description: t("contact.benefits.rapidResponse.description")
     },
     {
       icon: Shield,
-      title: "Confidential Discussion",
-      description: "Your business information is kept strictly confidential."
+      title: t("contact.benefits.confidential.title"),
+      description: t("contact.benefits.confidential.description")
     },
     {
       icon: Users,
-      title: "Expert Team",
-      description: "Connect directly with our AI specialists and industry experts."
+      title: t("contact.benefits.expertTeam.title"),
+      description: t("contact.benefits.expertTeam.description")
     }
   ];
 
@@ -158,9 +261,9 @@ export default function ContactPage() {
               <Card className="shadow-xl">
                 {!isSubmitted && (
                   <CardHeader>
-                    <CardTitle className="text-2xl">Get Started Today</CardTitle>
+                    <CardTitle className="text-2xl">{t("contact.getStartedToday")}</CardTitle>
                     <p className="text-gray-600 dark:text-gray-300">
-                      Fill out the form below and we'll get back to you within 24 hours or less.
+                      {t("contact.formDescription")}
                     </p>
                   </CardHeader>
                 )}
@@ -169,16 +272,16 @@ export default function ContactPage() {
                     <div className="text-center py-12">
                       <CheckCircle className="h-16 w-16 text-green-500 mx-auto mb-6" />
                       <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                        Thank You!
+                        {t("contact.thankYou")}
                       </h3>
                       <p className="text-gray-600 dark:text-gray-300 mb-6">
-                        Your inquiry has been submitted successfully. Our team will review your request and get back to you within 24 hours or less.
+                        {t("contact.successMessage")}
                       </p>
                       <Button
                         onClick={() => setIsSubmitted(false)}
                         variant="outline"
                       >
-                        Submit Another Inquiry
+                        {t("contact.submitAnother")}
                       </Button>
                     </div>
                   ) : (
@@ -238,7 +341,7 @@ export default function ContactPage() {
                         <Label htmlFor="serviceInterest">{t("contact.form.serviceInterest")} <span className="text-destructive">*</span></Label>
                         <Select onValueChange={(value) => contactForm.setValue("serviceInterest", value)}>
                           <SelectTrigger className={contactForm.formState.errors.serviceInterest ? "border-destructive" : ""}>
-                            <SelectValue placeholder="Select service interest" />
+                            <SelectValue placeholder={t("contact.selectServiceInterest")} />
                           </SelectTrigger>
                           <SelectContent>
                             <SelectItem value="lead_generation">{t("footer.links.leadGeneration")}</SelectItem>
@@ -256,7 +359,7 @@ export default function ContactPage() {
                       </div>
 
                       <div className="space-y-2">
-                        <Label htmlFor="message">{t("contact.form.message")} (Optional)</Label>
+                        <Label htmlFor="message">{t("contact.form.message")} {t("contact.optional")}</Label>
                         <Textarea
                           id="message"
                           rows={6}
@@ -274,7 +377,7 @@ export default function ContactPage() {
                         disabled={submitInquiryMutation.isPending}
                       >
                         {submitInquiryMutation.isPending ? (
-                          "Submitting..."
+                          t("contact.submitting")
                         ) : (
                           <>
                             {t("contact.form.submit")}
@@ -290,6 +393,30 @@ export default function ContactPage() {
 
             {/* Contact Information & Benefits */}
             <div className="space-y-8">
+              {/* Free Consultation CTA */}
+              <Card className="bg-primary/5 border-primary/20">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <Calendar className="h-5 w-5 text-primary" />
+                    {t("contact.freeConsultation")}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <p className="text-sm text-gray-600 dark:text-gray-400">
+                    {t("contact.consultationDescription")}
+                  </p>
+                  <Button
+                    className="w-full"
+                    data-cal-link="aiedge/meeting"
+                    data-cal-namespace="meeting"
+                    data-cal-config='{"layout":""}'
+                  >
+                    <Calendar className="mr-2 h-4 w-4" />
+                    {t("contact.book30MinCall")}
+                  </Button>
+                </CardContent>
+              </Card>
+
               {/* Contact Info */}
               <Card>
                 <CardHeader>
@@ -299,7 +426,7 @@ export default function ContactPage() {
                   <div className="flex items-center space-x-4">
                     <Mail className="h-5 w-5 text-primary" />
                     <div>
-                      <p className="font-medium">Email</p>
+                      <p className="font-medium">{t("contact.emailLabel")}</p>
                       <p className="text-sm text-gray-600 dark:text-gray-400">{t("contact.info.email")}</p>
                     </div>
                   </div>
@@ -307,7 +434,7 @@ export default function ContactPage() {
                   <div className="flex items-center space-x-4">
                     <MapPin className="h-5 w-5 text-primary" />
                     <div>
-                      <p className="font-medium">Location</p>
+                      <p className="font-medium">{t("contact.locationLabel")}</p>
                       <p className="text-sm text-gray-600 dark:text-gray-400">{t("contact.info.location")}</p>
                     </div>
                   </div>
@@ -315,8 +442,8 @@ export default function ContactPage() {
                   <div className="flex items-center space-x-4">
                     <Clock className="h-5 w-5 text-primary" />
                     <div>
-                      <p className="font-medium">Business Hours</p>
-                      <p className="text-sm text-gray-600 dark:text-gray-400">Mon-Fri: 9AM-6PM PST</p>
+                      <p className="font-medium">{t("contact.businessHours")}</p>
+                      <p className="text-sm text-gray-600 dark:text-gray-400">{t("contact.businessHoursValue")}</p>
                     </div>
                   </div>
                 </CardContent>
@@ -325,7 +452,7 @@ export default function ContactPage() {
               {/* Benefits */}
               <Card>
                 <CardHeader>
-                  <CardTitle>Why Choose Us?</CardTitle>
+                  <CardTitle>{t("contact.whyChooseUs")}</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   {benefits.map((benefit, index) => (
@@ -382,8 +509,12 @@ export default function ContactPage() {
             <p className="text-gray-600 dark:text-gray-300 mb-4">
               {t("contact.faqs.moreQuestions")}
             </p>
-            <Button variant="outline">
-              <MessageSquare className="h-4 w-4 mr-2" />
+            <Button
+              data-cal-link="aiedge/meeting"
+              data-cal-namespace="meeting"
+              data-cal-config='{"layout":""}'
+            >
+              <Calendar className="mr-2 h-4 w-4" />
               {t("contact.faqs.scheduleCall")}
             </Button>
           </div>

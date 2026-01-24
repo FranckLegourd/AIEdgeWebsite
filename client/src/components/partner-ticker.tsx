@@ -1,4 +1,5 @@
 import { useTheme } from "@/hooks/use-theme";
+import { useTranslation } from "@/hooks/use-translation";
 import relevanceAiLight from "@assets/relevance_ai_lt.png";
 import relevanceAiDark from "@assets/relevance_ai_dk.png";
 import makeLight from "@assets/make_lt.png";
@@ -110,21 +111,22 @@ const partners = [
 
 export function PartnerTicker() {
   const { theme } = useTheme();
+  const { t } = useTranslation();
 
   return (
     <div className="bg-muted/30 py-12 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8">
           <p className="text-sm text-muted-foreground font-medium">
-            We proudly showcase our trusted partners, providing excellence accross the AI technology stack
+            {t("partners.description")}
           </p>
         </div>
-        
+
         <div className="relative overflow-hidden">
           {/* Enhanced gradient overlays for fade effect */}
           <div className="absolute left-0 top-0 w-32 h-full bg-gradient-to-r from-muted/30 via-muted/30 to-transparent z-10 pointer-events-none"></div>
           <div className="absolute right-0 top-0 w-32 h-full bg-gradient-to-l from-muted/30 via-muted/30 to-transparent z-10 pointer-events-none"></div>
-          
+
           {/* Scrolling container with seamless loop */}
           <div className="flex animate-scroll-seamless" style={{ width: `${15 * 224 * 2}px` }}>
             {/* First set of all 15 logos */}
@@ -146,7 +148,7 @@ export function PartnerTicker() {
                 )}
               </div>
             ))}
-            
+
             {/* Second set for seamless loop */}
             {partners.map((partner, index) => (
               <div

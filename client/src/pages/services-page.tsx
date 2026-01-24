@@ -4,12 +4,12 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "@/hooks/use-translation";
 import { Link } from "wouter";
-import { 
-  Filter, 
-  Mic, 
-  Database, 
-  Video, 
-  MessageSquare, 
+import {
+  Filter,
+  Mic,
+  Database,
+  Video,
+  MessageSquare,
   Bot,
   ArrowRight,
   CheckCircle,
@@ -112,32 +112,22 @@ export default function ServicesPage() {
     {
       step: "01",
       title: t("services.process.discovery.title"),
-      description: t("services.process.discovery.description"),
-      duration: t("services.process.discovery.duration")
+      description: t("services.process.discovery.description")
     },
     {
       step: "02",
       title: t("services.process.strategy.title"),
-      description: t("services.process.strategy.description"),
-      duration: t("services.process.strategy.duration")
+      description: t("services.process.strategy.description")
     },
     {
       step: "03",
-      title: t("services.process.development.title"),
-      description: t("services.process.development.description"),
-      duration: t("services.process.development.duration")
+      title: t("services.process.integration.title"),
+      description: t("services.process.integration.description")
     },
     {
       step: "04",
-      title: t("services.process.integration.title"),
-      description: t("services.process.integration.description"),
-      duration: t("services.process.integration.duration")
-    },
-    {
-      step: "05",
       title: t("services.process.monitoring.title"),
-      description: t("services.process.monitoring.description"),
-      duration: t("services.process.monitoring.duration")
+      description: t("services.process.monitoring.description")
     }
   ];
 
@@ -175,11 +165,11 @@ export default function ServicesPage() {
                   <div className={`w-16 h-16 ${service.bgColor} rounded-2xl flex items-center justify-center mb-6`}>
                     <service.icon className={`h-8 w-8 ${service.color}`} />
                   </div>
-                  
+
                   <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
                     {service.title}
                   </h3>
-                  
+
                   <p className="text-gray-600 dark:text-gray-300 mb-6">
                     {service.description}
                   </p>
@@ -262,8 +252,7 @@ export default function ServicesPage() {
                   <div className="flex flex-col md:flex-row">
                     <div className="bg-primary text-white p-8 md:w-48 flex items-center justify-center">
                       <div className="text-center">
-                        <div className="text-3xl font-bold mb-2">{step.step}</div>
-                        <div className="text-sm opacity-90">{step.duration}</div>
+                        <div className="text-3xl font-bold">{step.step}</div>
                       </div>
                     </div>
                     <div className="p-8 flex-1">

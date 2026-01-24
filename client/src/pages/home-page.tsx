@@ -162,14 +162,14 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             {services.map((service, index) => (
-              <Card key={index} className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-                <CardContent className="p-8">
+              <Card key={index} className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 h-full">
+                <CardContent className="p-8 h-full flex flex-col">
                   <div className={`w-16 h-16 bg-gray-100 dark:bg-gray-800 rounded-2xl flex items-center justify-center mb-6`}>
                     <service.icon className={`h-8 w-8 ${service.color}`} />
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">{service.title}</h3>
-                  <p className="text-gray-600 dark:text-gray-300 mb-6">{service.description}</p>
-                  <Link href="/services" className="text-primary font-semibold hover:underline inline-flex items-center">
+                  <p className="text-gray-600 dark:text-gray-300 mb-6 flex-grow">{service.description}</p>
+                  <Link href="/services" className="text-primary font-semibold hover:underline inline-flex items-center mt-auto">
                     {t("services.learnMore")} <ArrowRight className="h-4 w-4 ml-1" />
                   </Link>
                 </CardContent>
@@ -187,8 +187,8 @@ export default function HomePage() {
               {[
                 { step: "1", title: t("about.process.analysis.title"), description: t("about.process.analysis.description") },
                 { step: "2", title: t("about.process.design.title"), description: t("about.process.design.description") },
-                { step: "3", title: t("about.process.development.title"), description: t("about.process.development.description") },
-                { step: "4", title: t("about.process.deployment.title"), description: t("about.process.deployment.description") }
+                { step: "3", title: t("about.process.deployment.title"), description: t("about.process.deployment.description") },
+                { step: "4", title: t("about.process.monitoring.title"), description: t("about.process.monitoring.description") }
               ].map((item) => (
                 <div key={item.step} className="text-center">
                   <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
@@ -255,7 +255,7 @@ export default function HomePage() {
                   <div className="text-4xl font-bold text-gray-900 dark:text-white mb-2">
                     {t(`whyAiNow.stats.${stat.key}.value`)}
                   </div>
-                  <div className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">
+                  <div className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2 whitespace-pre-line">
                     {t(`whyAiNow.stats.${stat.key}.label`)}
                   </div>
                   <p className="text-sm text-gray-600 dark:text-gray-400">

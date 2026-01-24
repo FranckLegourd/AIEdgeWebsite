@@ -24,7 +24,7 @@ export const translations = {
     },
     services: {
       title: "Our AI Expertise",
-      subtitle: "Integrated AI solutions designed to multiply your team's impact—turning repetitive tasks or complex workflow challenges into automated advantages.",
+      subtitle: "Integrated AI solutions designed to multiply your team's impact...turning repetitive tasks or complex workflow challenges into automated advantages.",
       getStarted: "Get Started Today",
       learnMore: "Learn More",
       learnMoreAboutUs: "Learn More About Us",
@@ -93,14 +93,14 @@ export const translations = {
     },
     about: {
       title: "Making AI Practical for Growing Businesses",
-      subtitle: "We help small and medium businesses harness AI to save time, reduce costs, increase revenue and stay competitive—without the enterprise price tag or complexity.",
+      subtitle: "We help small and medium businesses harness AI to save time, reduce costs, increase revenue and stay competitive...without the enterprise price tag or complexity.",
       hero: {
         title: "Making AI Practical for Growing Businesses",
-        subtitle: "We help small and medium businesses harness AI to save time, reduce costs, increase revenue and stay competitive—without the enterprise price tag or complexity."
+        subtitle: "We help small and medium businesses harness AI to save time, reduce costs, increase revenue and stay competitive...without the enterprise price tag or complexity."
       },
       whyWeStarted: {
         title: "Why We Started",
-        paragraph1: "We saw a growing gap: large corporations were investing millions in AI, while smaller businesses—the ones that could benefit most from automation—were left behind.",
+        paragraph1: "We saw a growing gap: large corporations were investing millions in AI, while smaller businesses...the ones that could benefit most from automation...were left behind.",
         paragraph2: "The AI consulting world felt built for enterprises with big budgets and long timelines. Small business owners were told they needed to 'wait and see' or settle for cookie-cutter solutions that didn't fit their needs.",
         paragraph3: "We started AI Edge International to change that. Our mission is simple: bring practical, affordable AI solutions to businesses that are ready to grow smarter, not just bigger."
       },
@@ -113,7 +113,7 @@ export const translations = {
         },
         quickWins: {
           title: "Start With Quick Wins",
-          description: "We identify opportunities where AI can make an immediate impact—saving you time or money within weeks, not months."
+          description: "We identify opportunities where AI can make an immediate impact...saving you time or money within weeks, not months."
         },
         noLockIn: {
           title: "No Vendor Lock-In",
@@ -129,7 +129,7 @@ export const translations = {
         subtitle: "The principles that guide how we work with every client",
         practical: {
           title: "Practical Over Flashy",
-          description: "We focus on solutions that work in the real world—not impressive demos that fall apart in production."
+          description: "We focus on solutions that work in the real world...not impressive demos that fall apart in production."
         },
         yourPace: {
           title: "Your Business, Your Pace",
@@ -137,7 +137,7 @@ export const translations = {
         },
         honest: {
           title: "Honest Guidance",
-          description: "Sometimes AI isn't the answer. We'll tell you when it makes sense—and when a simpler solution is the better choice."
+          description: "Sometimes AI isn't the answer. We'll tell you when it makes sense...and when a simpler solution is the better choice."
         },
         partnership: {
           title: "Long-Term Partnership",
@@ -146,7 +146,7 @@ export const translations = {
       },
       contact: {
         title: "Let's Talk",
-        subtitle: "Curious how AI could help your business? No pressure, no hard sell—just a conversation about what's possible.",
+        subtitle: "Curious how AI could help your business? No pressure, no hard sell...just a conversation about what's possible.",
         location: {
           title: "Location"
         },
@@ -162,12 +162,12 @@ export const translations = {
     },
     whyAiNow: {
       title: "Why AI Now?",
-      subtitle: "Small businesses are rapidly adopting AI and seeing real results. The question isn't whether to adopt AI—it's how quickly you can get started.",
+      subtitle: "Small businesses are rapidly adopting AI and seeing real results. The question isn't whether to adopt AI...it's how quickly you can get started.",
       stats: {
         adoption: {
           value: "55%",
           label: "SMB Adoption Rate",
-          description: "Of small businesses now use AI—up 41% from last year"
+          description: "Of small businesses now use AI...up 41% from last year"
         },
         revenue: {
           value: "91%",
@@ -223,15 +223,15 @@ export const translations = {
         scheduleCall: "Schedule a Call",
         q1: {
           question: "I'm not sure if AI is right for my business. How do I know?",
-          answer: "That's exactly why we start with a conversation, not a contract. We'll ask about your day-to-day challenges, where you're spending the most time on repetitive tasks, and what's slowing your team down. Sometimes AI is the answer—sometimes a simpler solution makes more sense. We'll be honest either way."
+          answer: "That's exactly why we start with a conversation, not a contract. We'll ask about your day-to-day challenges, where you're spending the most time on repetitive tasks, and what's slowing your team down. Sometimes AI is the answer...sometimes a simpler solution makes more sense. We'll be honest either way."
         },
         q2: {
           question: "How much does this typically cost?",
-          answer: "It depends on what you need. We work with budgets of all sizes and can often start with a small pilot project to prove value before scaling up. We'll always give you a clear quote upfront—no surprise fees or scope creep."
+          answer: "It depends on what you need. We work with budgets of all sizes and can often start with a small pilot project to prove value before scaling up. We'll always give you a clear quote upfront...no surprise fees or scope creep."
         },
         q3: {
           question: "I've heard AI projects often fail. What makes yours different?",
-          answer: "Many AI projects fail because they start with technology instead of the problem. We do the opposite—we focus on understanding your specific challenge first, then figure out the simplest way to solve it. We'd rather deliver something small that works than something impressive that doesn't."
+          answer: "Many AI projects fail because they start with technology instead of the problem. We do the opposite...we focus on understanding your specific challenge first, then figure out the simplest way to solve it. We'd rather deliver something small that works than something impressive that doesn't."
         },
         q4: {
           question: "Do I need technical expertise on my team to work with you?",
@@ -402,7 +402,7 @@ export const translations = {
           </ul>
 
           <h2>Looking Ahead</h2>
-          <p>As we stand on the brink of this AI revolution, organizations that embrace agent systems today will be best positioned to thrive in tomorrow's automated economy. The question isn't whether AI agents will transform business—it's how quickly organizations can adapt to harness their power.</p>
+          <p>As we stand on the brink of this AI revolution, organizations that embrace agent systems today will be best positioned to thrive in tomorrow's automated economy. The question isn't whether AI agents will transform business...it's how quickly organizations can adapt to harness their power.</p>
         `,
         2: `
           <p>Deploying machine learning models in production is one of the most critical phases of the ML lifecycle. Despite advances in ML frameworks and tooling, many organizations still struggle with the transition from development to production. This comprehensive guide outlines the best practices for 2024.</p>
@@ -464,7 +464,7 @@ export const translations = {
     },
     services: {
       title: "Notre Expertise IA",
-      subtitle: "Des solutions IA intégrées conçues pour multiplier l'impact de votre équipe—transformant les tâches répétitives ou les défis complexes de flux de travail en avantages automatisés.",
+      subtitle: "Des solutions IA intégrées conçues pour multiplier l'impact de votre équipe...transformant les tâches répétitives ou les défis complexes de flux de travail en avantages automatisés.",
       getStarted: "Commencer Aujourd'hui",
       learnMore: "En Savoir Plus",
       learnMoreAboutUs: "En Savoir Plus Sur Nous",
@@ -533,14 +533,14 @@ export const translations = {
     },
     about: {
       title: "L'IA Pratique pour les Entreprises en Croissance",
-      subtitle: "Nous aidons les petites et moyennes entreprises à exploiter l'IA pour gagner du temps, réduire les coûts et rester compétitives—sans le prix ni la complexité des grandes entreprises.",
+      subtitle: "Nous aidons les petites et moyennes entreprises à exploiter l'IA pour gagner du temps, réduire les coûts et rester compétitives...sans le prix ni la complexité des grandes entreprises.",
       hero: {
         title: "L'IA Pratique pour les Entreprises en Croissance",
-        subtitle: "Nous aidons les petites et moyennes entreprises à exploiter l'IA pour gagner du temps, réduire les coûts et rester compétitives—sans le prix ni la complexité des grandes entreprises."
+        subtitle: "Nous aidons les petites et moyennes entreprises à exploiter l'IA pour gagner du temps, réduire les coûts et rester compétitives...sans le prix ni la complexité des grandes entreprises."
       },
       whyWeStarted: {
         title: "Pourquoi Nous Avons Commencé",
-        paragraph1: "Nous avons vu un écart grandissant : les grandes entreprises investissaient des millions dans l'IA, tandis que les plus petites—celles qui pourraient le plus bénéficier de l'automatisation—étaient laissées pour compte.",
+        paragraph1: "Nous avons vu un écart grandissant : les grandes entreprises investissaient des millions dans l'IA, tandis que les plus petites...celles qui pourraient le plus bénéficier de l'automatisation...étaient laissées pour compte.",
         paragraph2: "Le monde du conseil en IA semblait conçu pour les entreprises avec de gros budgets et de longs délais. On disait aux propriétaires de petites entreprises qu'ils devaient « attendre » ou se contenter de solutions génériques qui ne correspondaient pas à leurs besoins.",
         paragraph3: "Nous avons créé AI Edge International pour changer cela. Notre mission est simple : apporter des solutions IA pratiques et abordables aux entreprises prêtes à grandir plus intelligemment, pas juste plus grandes."
       },
@@ -553,7 +553,7 @@ export const translations = {
         },
         quickWins: {
           title: "Commencer par des Victoires Rapides",
-          description: "Nous identifions les opportunités où l'IA peut avoir un impact immédiat—vous faisant gagner du temps ou de l'argent en quelques semaines, pas en mois."
+          description: "Nous identifions les opportunités où l'IA peut avoir un impact immédiat...vous faisant gagner du temps ou de l'argent en quelques semaines, pas en mois."
         },
         noLockIn: {
           title: "Pas de Dépendance Fournisseur",
@@ -569,7 +569,7 @@ export const translations = {
         subtitle: "Les principes qui guident notre travail avec chaque client",
         practical: {
           title: "Pratique Plutôt Que Tape-à-l'œil",
-          description: "Nous nous concentrons sur des solutions qui fonctionnent dans le monde réel—pas des démos impressionnantes qui s'effondrent en production."
+          description: "Nous nous concentrons sur des solutions qui fonctionnent dans le monde réel...pas des démos impressionnantes qui s'effondrent en production."
         },
         yourPace: {
           title: "Votre Entreprise, Votre Rythme",
@@ -577,7 +577,7 @@ export const translations = {
         },
         honest: {
           title: "Conseils Honnêtes",
-          description: "Parfois l'IA n'est pas la réponse. Nous vous dirons quand c'est logique—et quand une solution plus simple est le meilleur choix."
+          description: "Parfois l'IA n'est pas la réponse. Nous vous dirons quand c'est logique...et quand une solution plus simple est le meilleur choix."
         },
         partnership: {
           title: "Partenariat à Long Terme",
@@ -586,7 +586,7 @@ export const translations = {
       },
       contact: {
         title: "Parlons-en",
-        subtitle: "Curieux de savoir comment l'IA pourrait aider votre entreprise ? Pas de pression, pas de vente forcée—juste une conversation sur ce qui est possible.",
+        subtitle: "Curieux de savoir comment l'IA pourrait aider votre entreprise ? Pas de pression, pas de vente forcée...juste une conversation sur ce qui est possible.",
         location: {
           title: "Emplacement"
         },
@@ -607,7 +607,7 @@ export const translations = {
         adoption: {
           value: "55%",
           label: "Taux d'Adoption PME",
-          description: "Des petites entreprises utilisent désormais l'IA—en hausse de 41% par rapport à l'année dernière"
+          description: "Des petites entreprises utilisent désormais l'IA...en hausse de 41% par rapport à l'année dernière"
         },
         revenue: {
           value: "91%",
@@ -663,15 +663,15 @@ export const translations = {
         scheduleCall: "Planifier un Appel",
         q1: {
           question: "Je ne suis pas sûr que l'IA convienne à mon entreprise. Comment le savoir ?",
-          answer: "C'est exactement pourquoi nous commençons par une conversation, pas un contrat. Nous vous poserons des questions sur vos défis quotidiens, où vous passez le plus de temps sur des tâches répétitives, et ce qui ralentit votre équipe. Parfois l'IA est la réponse—parfois une solution plus simple a plus de sens. Nous serons honnêtes dans tous les cas."
+          answer: "C'est exactement pourquoi nous commençons par une conversation, pas un contrat. Nous vous poserons des questions sur vos défis quotidiens, où vous passez le plus de temps sur des tâches répétitives, et ce qui ralentit votre équipe. Parfois l'IA est la réponse...parfois une solution plus simple a plus de sens. Nous serons honnêtes dans tous les cas."
         },
         q2: {
           question: "Combien cela coûte-t-il généralement ?",
-          answer: "Cela dépend de vos besoins. Nous travaillons avec des budgets de toutes tailles et pouvons souvent commencer par un petit projet pilote pour prouver la valeur avant de passer à l'échelle. Nous vous donnerons toujours un devis clair dès le départ—pas de frais surprises ni de dépassement de périmètre."
+          answer: "Cela dépend de vos besoins. Nous travaillons avec des budgets de toutes tailles et pouvons souvent commencer par un petit projet pilote pour prouver la valeur avant de passer à l'échelle. Nous vous donnerons toujours un devis clair dès le départ...pas de frais surprises ni de dépassement de périmètre."
         },
         q3: {
           question: "J'ai entendu dire que les projets IA échouent souvent. Qu'est-ce qui rend les vôtres différents ?",
-          answer: "Beaucoup de projets IA échouent parce qu'ils commencent par la technologie au lieu du problème. Nous faisons l'inverse—nous nous concentrons d'abord sur la compréhension de votre défi spécifique, puis nous trouvons la façon la plus simple de le résoudre. Nous préférons livrer quelque chose de petit qui fonctionne plutôt que quelque chose d'impressionnant qui ne fonctionne pas."
+          answer: "Beaucoup de projets IA échouent parce qu'ils commencent par la technologie au lieu du problème. Nous faisons l'inverse...nous nous concentrons d'abord sur la compréhension de votre défi spécifique, puis nous trouvons la façon la plus simple de le résoudre. Nous préférons livrer quelque chose de petit qui fonctionne plutôt que quelque chose d'impressionnant qui ne fonctionne pas."
         },
         q4: {
           question: "Ai-je besoin d'expertise technique dans mon équipe pour travailler avec vous ?",
@@ -852,7 +852,7 @@ export const translations = {
     },
     services: {
       title: "Nuestra Experiencia en IA",
-      subtitle: "Soluciones de IA integradas diseñadas para multiplicar el impacto de tu equipo—convirtiendo tareas repetitivas o desafíos complejos de flujo de trabajo en ventajas automatizadas.",
+      subtitle: "Soluciones de IA integradas diseñadas para multiplicar el impacto de tu equipo...convirtiendo tareas repetitivas o desafíos complejos de flujo de trabajo en ventajas automatizadas.",
       getStarted: "Comienza Hoy",
       learnMore: "Más Información",
       learnMoreAboutUs: "Conoce Más Sobre Nosotros",
@@ -921,14 +921,14 @@ export const translations = {
     },
     about: {
       title: "IA Práctica para Empresas en Crecimiento",
-      subtitle: "Ayudamos a pequeñas y medianas empresas a aprovechar la IA para ahorrar tiempo, reducir costos y mantenerse competitivas—sin el precio ni la complejidad de las grandes empresas.",
+      subtitle: "Ayudamos a pequeñas y medianas empresas a aprovechar la IA para ahorrar tiempo, reducir costos y mantenerse competitivas...sin el precio ni la complejidad de las grandes empresas.",
       hero: {
         title: "IA Práctica para Empresas en Crecimiento",
-        subtitle: "Ayudamos a pequeñas y medianas empresas a aprovechar la IA para ahorrar tiempo, reducir costos y mantenerse competitivas—sin el precio ni la complejidad de las grandes empresas."
+        subtitle: "Ayudamos a pequeñas y medianas empresas a aprovechar la IA para ahorrar tiempo, reducir costos y mantenerse competitivas...sin el precio ni la complejidad de las grandes empresas."
       },
       whyWeStarted: {
         title: "Por Qué Empezamos",
-        paragraph1: "Vimos una brecha creciente: las grandes corporaciones invertían millones en IA, mientras que las empresas más pequeñas—las que más podrían beneficiarse de la automatización—quedaban atrás.",
+        paragraph1: "Vimos una brecha creciente: las grandes corporaciones invertían millones en IA, mientras que las empresas más pequeñas...las que más podrían beneficiarse de la automatización...quedaban atrás.",
         paragraph2: "El mundo de la consultoría de IA parecía diseñado para empresas con grandes presupuestos y largos plazos. A los propietarios de pequeñas empresas se les decía que tenían que 'esperar' o conformarse con soluciones genéricas que no se ajustaban a sus necesidades.",
         paragraph3: "Fundamos AI Edge International para cambiar eso. Nuestra misión es simple: llevar soluciones de IA prácticas y asequibles a empresas listas para crecer de forma más inteligente, no solo más grandes."
       },
@@ -941,7 +941,7 @@ export const translations = {
         },
         quickWins: {
           title: "Comenzar con Victorias Rápidas",
-          description: "Identificamos oportunidades donde la IA puede tener un impacto inmediato—ahorrándote tiempo o dinero en semanas, no meses."
+          description: "Identificamos oportunidades donde la IA puede tener un impacto inmediato...ahorrándote tiempo o dinero en semanas, no meses."
         },
         noLockIn: {
           title: "Sin Dependencia de Proveedor",
@@ -957,7 +957,7 @@ export const translations = {
         subtitle: "Los principios que guían cómo trabajamos con cada cliente",
         practical: {
           title: "Práctico Sobre Llamativo",
-          description: "Nos enfocamos en soluciones que funcionan en el mundo real—no demos impresionantes que fallan en producción."
+          description: "Nos enfocamos en soluciones que funcionan en el mundo real...no demos impresionantes que fallan en producción."
         },
         yourPace: {
           title: "Tu Negocio, Tu Ritmo",
@@ -965,7 +965,7 @@ export const translations = {
         },
         honest: {
           title: "Orientación Honesta",
-          description: "A veces la IA no es la respuesta. Te diremos cuándo tiene sentido—y cuándo una solución más simple es la mejor opción."
+          description: "A veces la IA no es la respuesta. Te diremos cuándo tiene sentido...y cuándo una solución más simple es la mejor opción."
         },
         partnership: {
           title: "Asociación a Largo Plazo",
@@ -974,7 +974,7 @@ export const translations = {
       },
       contact: {
         title: "Hablemos",
-        subtitle: "¿Curioso sobre cómo la IA podría ayudar a tu negocio? Sin presión, sin venta agresiva—solo una conversación sobre lo que es posible.",
+        subtitle: "¿Curioso sobre cómo la IA podría ayudar a tu negocio? Sin presión, sin venta agresiva...solo una conversación sobre lo que es posible.",
         location: {
           title: "Ubicación"
         },
@@ -995,7 +995,7 @@ export const translations = {
         adoption: {
           value: "55%",
           label: "Tasa de Adopción PYME",
-          description: "De las pequeñas empresas ahora usan IA—un aumento del 41% respecto al año pasado"
+          description: "De las pequeñas empresas ahora usan IA...un aumento del 41% respecto al año pasado"
         },
         revenue: {
           value: "91%",
@@ -1051,15 +1051,15 @@ export const translations = {
         scheduleCall: "Programar una Llamada",
         q1: {
           question: "No estoy seguro si la IA es adecuada para mi negocio. ¿Cómo lo sé?",
-          answer: "Por eso empezamos con una conversación, no un contrato. Te preguntaremos sobre tus desafíos diarios, dónde pasas más tiempo en tareas repetitivas y qué está ralentizando a tu equipo. A veces la IA es la respuesta—a veces una solución más simple tiene más sentido. Seremos honestos en cualquier caso."
+          answer: "Por eso empezamos con una conversación, no un contrato. Te preguntaremos sobre tus desafíos diarios, dónde pasas más tiempo en tareas repetitivas y qué está ralentizando a tu equipo. A veces la IA es la respuesta...a veces una solución más simple tiene más sentido. Seremos honestos en cualquier caso."
         },
         q2: {
           question: "¿Cuánto cuesta normalmente?",
-          answer: "Depende de lo que necesites. Trabajamos con presupuestos de todos los tamaños y a menudo podemos comenzar con un pequeño proyecto piloto para demostrar valor antes de escalar. Siempre te daremos un presupuesto claro por adelantado—sin cargos sorpresa ni cambios de alcance."
+          answer: "Depende de lo que necesites. Trabajamos con presupuestos de todos los tamaños y a menudo podemos comenzar con un pequeño proyecto piloto para demostrar valor antes de escalar. Siempre te daremos un presupuesto claro por adelantado...sin cargos sorpresa ni cambios de alcance."
         },
         q3: {
           question: "He escuchado que los proyectos de IA a menudo fallan. ¿Qué hace diferentes a los tuyos?",
-          answer: "Muchos proyectos de IA fallan porque comienzan con la tecnología en lugar del problema. Nosotros hacemos lo contrario—nos enfocamos primero en entender tu desafío específico, luego encontramos la forma más simple de resolverlo. Preferimos entregar algo pequeño que funcione que algo impresionante que no funcione."
+          answer: "Muchos proyectos de IA fallan porque comienzan con la tecnología en lugar del problema. Nosotros hacemos lo contrario...nos enfocamos primero en entender tu desafío específico, luego encontramos la forma más simple de resolverlo. Preferimos entregar algo pequeño que funcione que algo impresionante que no funcione."
         },
         q4: {
           question: "¿Necesito experiencia técnica en mi equipo para trabajar con ustedes?",
