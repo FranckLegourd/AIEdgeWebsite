@@ -1,0 +1,25 @@
+# Allow all standard bots
+User-agent: *
+Allow: /
+
+# Explicitly welcome AI bots (redundant but signals intent)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# Disallow crawling of application logic and private areas
+# These pages require login or are API endpoints, crawling them wastes resources
+Disallow: /api/
+Disallow: /dashboard
+Disallow: /admin
+Disallow: /auth
+Disallow: /login
+Disallow: /register
+
+# Location of Sitemap
+Sitemap: https://aiedgeinternational.com/sitemap.xml

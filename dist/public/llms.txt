@@ -1,0 +1,10 @@
+# AI Edge International
+
+Get a full summary of our services and offerings at:
+- [Full Content (Markdown)](/llms-full.txt)
+
+# Key Pages
+- [Home](/)
+- [Services](/services)
+- [About](/about)
+- [Contact](/contact)
