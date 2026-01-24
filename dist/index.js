@@ -2,6 +2,7 @@
 import dotenv from "dotenv";
 import path3 from "path";
 import fs2 from "fs";
+import { fileURLToPath as fileURLToPath2 } from "url";
 import express2 from "express";
 
 // server/routes.ts
@@ -511,6 +512,9 @@ var vite_config_default = defineConfig({
 
 // server/vite.ts
 import { nanoid } from "nanoid";
+import { fileURLToPath } from "url";
+var __filename = fileURLToPath(import.meta.url);
+var __dirname = path2.dirname(__filename);
 var viteLogger = createLogger();
 function log(message, source = "express") {
   const formattedTime = (/* @__PURE__ */ new Date()).toLocaleTimeString("en-US", {
@@ -545,7 +549,7 @@ async function setupVite(app2, server) {
     const url = req.originalUrl;
     try {
       const clientTemplate = path2.resolve(
-        import.meta.dirname,
+        __dirname,
         "..",
         "client",
         "index.html"
@@ -564,7 +568,7 @@ async function setupVite(app2, server) {
   });
 }
 function serveStatic(app2) {
-  const distPath = path2.resolve(import.meta.dirname, "public");
+  const distPath = path2.resolve(__dirname, "public");
   if (!fs.existsSync(distPath)) {
     throw new Error(
       `Could not find the build directory: ${distPath}, make sure to build the client first`
@@ -577,6 +581,8 @@ function serveStatic(app2) {
 }
 
 // server/index.ts
+var __filename2 = fileURLToPath2(import.meta.url);
+var __dirname2 = path3.dirname(__filename2);
 var envPaths = [
   path3.resolve(process.cwd(), ".env"),
   // Local dev
@@ -594,7 +600,7 @@ console.log("ENV DEBUG_TEST:", process.env.DEBUG_TEST);
 console.log("ENV SESSION_SECRET present:", "SESSION_SECRET" in process.env);
 console.log("=== STARTUP DIAGNOSTICS ===");
 console.log("Current Working Directory (cwd):", process.cwd());
-console.log("__dirname:", import.meta.dirname);
+console.log("__dirname:", __dirname2);
 console.log("NODE_ENV:", process.env.NODE_ENV);
 console.log("---");
 console.log("RAW SESSION_SECRET:", process.env.SESSION_SECRET ? "[SET]" : "[NOT SET]");
