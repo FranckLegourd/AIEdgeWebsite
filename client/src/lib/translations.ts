@@ -16,7 +16,7 @@ export const translations = {
       titlePart1: "Your",
       titleHighlight: "AI Transformation",
       titlePart2: "Partner from Idea to Execution",
-      subtitle: "We specialize in bringing your ideas to life using the power of Artificial Intelligence. We help visionary businesses of all sizes explore and implement custom AI strategies that deliver measurable results and competitive advantages.",
+      subtitle: "We specialize in bringing your ideas to life using the power of Artificial Intelligence. We help visionary businesses of all sizes explore and implement effective AI strategies that deliver measurable results and competitive advantages.",
       cta: "Start Your AI Journey",
       ctaSecondary: "View Our Services",
       features: {
@@ -603,7 +603,7 @@ export const translations = {
       titlePart1: "Votre",
       titleHighlight: "Partenaire de Transformation",
       titlePart2: " en IA de l'Idée à l'Exécution",
-      subtitle: "Nous nous spécialisons dans la concrétisation de vos idées en utilisant la puissance de l'Intelligence Artificielle. Nous aidons les entreprises visionnaires de toutes tailles à explorer et à mettre en œuvre des stratégies IA personnalisées qui offrent des résultats mesurables et des avantages concurrentiels.",
+      subtitle: "Nous nous spécialisons dans la concrétisation de vos idées en utilisant la puissance de l'Intelligence Artificielle. Nous aidons les entreprises visionnaires de toutes tailles à explorer et à mettre en œuvre des stratégies IA efficaces qui offrent des résultats mesurables et des avantages concurrentiels.",
       cta: "Commencez Votre Parcours IA",
       ctaSecondary: "Voir Nos Services",
       features: {
@@ -1190,7 +1190,7 @@ export const translations = {
       titlePart1: "Su",
       titleHighlight: "Socio de Transformación en IA",
       titlePart2: "de la Idea a la Ejecución",
-      subtitle: "Nos especializamos en dar vida a tus ideas usando el poder de la Inteligencia Artificial. Ayudamos a empresas visionarias de todos los tamaños a explorar e implementar estrategias IA personalizadas que entregan resultados medibles y ventajas competitivas.",
+      subtitle: "Nos especializamos en dar vida a tus ideas usando el poder de la Inteligencia Artificial. Ayudamos a empresas visionarias de todos los tamaños a explorar e implementar estrategias IA efectivas que entregan resultados medibles y ventajas competitivas.",
       cta: "Comienza Tu Viaje IA",
       ctaSecondary: "Ver Nuestros Servicios",
       features: {
