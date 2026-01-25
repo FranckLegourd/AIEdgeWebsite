@@ -24,12 +24,15 @@ import n8nLight from "@assets/n8n_lt.png";
 import n8nDark from "@assets/n8n_dk.png";
 import openaiLight from "@assets/openai_lt.png";
 import openaiDark from "@assets/openai_dk.png";
-import replitLight from "@assets/replit_lt.png";
-import replitDark from "@assets/replit_dk.png";
-import voiceflowLight from "@assets/voiceflow_lt.png";
-import voiceflowDark from "@assets/voiceflow_dk.png";
-import retoolLight from "@assets/retool_lt.png";
-import retoolDark from "@assets/retool_dk.png";
+
+import elevenlabsLight from "@assets/elevenlabs_lt.png";
+import elevenlabsDark from "@assets/elevenlabs_dk.png";
+import vercelLight from "@assets/vercel_lt.png";
+import vercelDark from "@assets/vercel_dk.png";
+import apifyLight from "@assets/apify_lt.png";
+import apifyDark from "@assets/apify_dk.png";
+import zapierLight from "@assets/zapier_lt.png";
+import zapierDark from "@assets/zapier_dk.png";
 
 const partners = [
   {
@@ -92,20 +95,26 @@ const partners = [
     lightLogo: openaiLight,
     darkLogo: openaiDark,
   },
+
   {
-    name: "Replit",
-    lightLogo: replitLight,
-    darkLogo: replitDark,
+    name: "ElevenLabs",
+    lightLogo: elevenlabsLight,
+    darkLogo: elevenlabsDark,
   },
   {
-    name: "VoiceFlow",
-    lightLogo: voiceflowLight,
-    darkLogo: voiceflowDark,
+    name: "Vercel",
+    lightLogo: vercelLight,
+    darkLogo: vercelDark,
   },
   {
-    name: "Retool",
-    lightLogo: retoolLight,
-    darkLogo: retoolDark,
+    name: "Apify",
+    lightLogo: apifyLight,
+    darkLogo: apifyDark,
+  },
+  {
+    name: "Zapier",
+    lightLogo: zapierLight,
+    darkLogo: zapierDark,
   },
 ];
 
