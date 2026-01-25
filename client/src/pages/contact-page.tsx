@@ -72,13 +72,13 @@ export default function ContactPage() {
       if (!L.Cal) L.Cal = L.Lunacal;
     })(window, "https://app.lunacal.ai/embed/embed.js", "init");
 
-    window.Lunacal("init", "meeting", { origin: "https://app.lunacal.ai" });
+    window.Lunacal("init", "discovery", { origin: "https://app.lunacal.ai" });
 
     // Enable auto-forwarding of query parameters
     window.Lunacal.config = window.Lunacal.config || {};
     window.Lunacal.config.forwardQueryParams = true;
 
-    window.Lunacal.ns.meeting("ui", {
+    window.Lunacal.ns.discovery("ui", {
       "theme": "light",
       "styles": {
         "branding": {}
@@ -407,8 +407,8 @@ export default function ContactPage() {
                   </p>
                   <Button
                     className="w-full"
-                    data-cal-link="aiedge/meeting"
-                    data-cal-namespace="meeting"
+                    data-cal-link="aiedge/discovery"
+                    data-cal-namespace="discovery"
                     data-cal-config='{"layout":""}'
                   >
                     <Calendar className="mr-2 h-4 w-4" />
@@ -510,8 +510,8 @@ export default function ContactPage() {
               {t("contact.faqs.moreQuestions")}
             </p>
             <Button
-              data-cal-link="aiedge/meeting"
-              data-cal-namespace="meeting"
+              data-cal-link="aiedge/discovery"
+              data-cal-namespace="discovery"
               data-cal-config='{"layout":""}'
             >
               <Calendar className="mr-2 h-4 w-4" />
