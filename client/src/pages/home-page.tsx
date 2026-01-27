@@ -252,11 +252,11 @@ export default function HomePage() {
                   <div className={`w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 ${stat.color}`}>
                     <stat.icon className="h-8 w-8" />
                   </div>
-                  <div className="text-4xl font-bold text-gray-900 dark:text-white mb-2">
-                    {t(`whyAiNow.stats.${stat.key}.value`)}
-                  </div>
                   <div className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2 whitespace-pre-line">
                     {t(`whyAiNow.stats.${stat.key}.label`)}
+                  </div>
+                  <div className="text-4xl font-bold text-gray-900 dark:text-white mb-2">
+                    {t(`whyAiNow.stats.${stat.key}.value`)}
                   </div>
                   <p className="text-sm text-gray-600 dark:text-gray-400">
                     {t(`whyAiNow.stats.${stat.key}.description`)}

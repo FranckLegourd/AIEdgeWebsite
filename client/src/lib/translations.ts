@@ -182,7 +182,7 @@ export const translations = {
     },
     whyAiNow: {
       title: "Why AI Now?",
-      subtitle: "Small businesses are rapidly adopting AI and seeing real results. The question isn't whether to adopt AI...it's how quickly you can get started.",
+      subtitle: "Smart businesses are rapidly adopting AI and seeing real results. The question isn't whether to adopt AI...it's how quickly you can get started.",
       stats: {
         adoption: {
           value: "55%",
@@ -220,7 +220,7 @@ export const translations = {
     },
     contact: {
       title: "Ready to Transform Your Business?",
-      subtitle: "Join our growing portfolio of businesses that have already revolutionized their operations with our AI solutions.",
+      subtitle: "Let's explore what AI can do for you.",
       getStartedToday: "Get Started Today",
       formDescription: "Fill out the form below and we'll get back to you within 24 hours or less.",
       thankYou: "Thank You!",
@@ -299,7 +299,7 @@ export const translations = {
       }
     },
     footer: {
-      description: "Transforming businesses with intelligent AI solutions and cutting-edge automation technologies.",
+      description: "Helping businesses leverage the power of Artificial Intelligence.",
       services: "Services",
       company: "Company",
       legal: "Legal",
@@ -769,7 +769,7 @@ export const translations = {
     },
     whyAiNow: {
       title: "Pourquoi l'IA Maintenant ?",
-      subtitle: "Les petites entreprises adoptent rapidement l'IA et obtiennent des résultats concrets. La question n'est plus de savoir si vous devez adopter l'IA, mais à quelle vitesse vous pouvez commencer.",
+      subtitle: "Les entreprises avisées adoptent rapidement l'IA et obtiennent des résultats concrets. La question n'est plus de savoir si vous devez adopter l'IA, mais à quelle vitesse vous pouvez commencer.",
       stats: {
         adoption: {
           value: "55%",
@@ -807,7 +807,7 @@ export const translations = {
     },
     contact: {
       title: "Prêt à Transformer Votre Entreprise ?",
-      subtitle: "Rejoignez notre portefeuille croissant d'entreprises qui ont déjà révolutionné leurs opérations avec nos solutions IA.",
+      subtitle: "Explorons ensemble ce que l'IA peut faire pour vous.",
       getStartedToday: "Commencez Aujourd'hui",
       formDescription: "Remplissez le formulaire ci-dessous et nous vous répondrons dans les 24 heures ou moins.",
       thankYou: "Merci !",
@@ -886,7 +886,7 @@ export const translations = {
       }
     },
     footer: {
-      description: "Transformer les entreprises avec des solutions IA intelligentes et des technologies d'automatisation de pointe.",
+      description: "Aider les entreprises à exploiter la puissance de l'Intelligence Artificielle.",
       services: "Services",
       company: "Entreprise",
       legal: "Légal",
@@ -1356,7 +1356,7 @@ export const translations = {
     },
     whyAiNow: {
       title: "¿Por Qué IA Ahora?",
-      subtitle: "Las pequeñas empresas están adoptando rápidamente la IA y viendo resultados reales. La pregunta no es si adoptar IA, sino qué tan rápido puedes comenzar.",
+      subtitle: "Las empresas sabias están adoptando rápidamente la IA y viendo resultados reales. La pregunta no es si adoptar IA, sino qué tan rápido puedes comenzar.",
       stats: {
         adoption: {
           value: "55%",
@@ -1394,7 +1394,7 @@ export const translations = {
     },
     contact: {
       title: "¿Listo para Transformar Tu Negocio?",
-      subtitle: "Únete a nuestro creciente portafolio de empresas que ya han revolucionado sus operaciones con nuestras soluciones IA.",
+      subtitle: "Exploremos qué puede hacer la IA por ti.",
       getStartedToday: "Comienza Hoy",
       formDescription: "Completa el formulario a continuación y te responderemos en 24 horas o menos.",
       thankYou: "¡Gracias!",
@@ -1473,7 +1473,7 @@ export const translations = {
       }
     },
     footer: {
-      description: "Transformando negocios con soluciones IA inteligentes y tecnologías de automatización de vanguardia.",
+      description: "Ayudando a las empresas a aprovechar el poder de la Inteligencia Artificial.",
       services: "Servicios",
       company: "Empresa",
       legal: "Legal",
